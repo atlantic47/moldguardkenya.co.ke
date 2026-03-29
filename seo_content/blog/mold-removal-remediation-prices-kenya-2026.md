@@ -24,6 +24,24 @@ Professional remediation involves:
 
 *Note: These prices are estimates based on standard industry rates in Kenya. Final costs depend heavily on an on-site inspection.*
 
+### Detailed Service Pricing Breakdown
+
+| Service | Cost (KES) | Description |
+| :--- | :--- | :--- |
+| **Mold Inspection** | 4,000 – 6,000 | Initial assessment to check for mold presence |
+| **Air Quality Testing** | 7,000 – 12,000 | Testing the air for mold spores |
+| **Mold Removal (per sq ft)** | 1,500 – 2,000 | Cost of removing mold from affected areas |
+| **Remediation Services\*** | 10,000 – 50,000 | Preventative measures to stop mold regrowth |
+
+> **\*Important Notice:** The total cost for broader Remediation Services heavily depends on the size and scale of the affected area in your home.
+
+### Average vs. Highest Cost Remediation Scenarios
+
+| Infestation Scale | Average Cost (KES) | Highest Cost (Severe Cases) |
+| :--- | :--- | :--- |
+| **Average Mold Removal** (Depending on house size) | 20,000 – 100,000 | 120,000 |
+| **Severe Whole-House Remediation** (Depending on house size) | 85,000 – 250,000 | 300,000+ |
+
 ### 1. Professional Mold Inspection & Air Quality Testing
 Before any work begins, certified technicians must assess the extent of the damage. Sometimes mold is hidden behind walls or under flooring.
 - **Visual Inspection & Moisture Mapping:** Ksh 3,500 – Ksh 7,500
