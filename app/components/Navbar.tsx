@@ -155,7 +155,7 @@ export default function Navbar() {
 
           {/* Logo + Tagline */}
           <Link href="/" className="flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
-            <span style={{ fontSize: "2rem" }}>🌿</span>
+            <span style={{ fontSize: "2rem" }}>🛡️</span>
             <div>
               <div style={{ display: "flex", alignItems: "baseline", gap: "0.15rem", lineHeight: 1 }}>
                 <span style={{ fontWeight: 900, fontSize: "1.2rem", color: "var(--primary)", letterSpacing: "-0.02em" }}>MoldGuard</span>

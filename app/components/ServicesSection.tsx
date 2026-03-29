@@ -39,7 +39,7 @@ export default function ServicesSection() {
     <section style={{ background: "white", padding: "5rem 0" }}>
       <div className="container">
         <p style={{ textAlign: "center", color: "var(--primary)", fontWeight: 700, fontSize: "1rem", marginBottom: "0.5rem" }}>
-          🌿 What We Offer
+          🛡️ What We Offer
         </p>
         <h2 className="section-heading" style={{ marginBottom: "0.5rem" }}>
           Our Services

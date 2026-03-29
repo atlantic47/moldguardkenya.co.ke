@@ -16,7 +16,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "1rem" }}>
-            <span style={{ fontSize: "1.75rem" }}>🌿</span>
+            <span style={{ fontSize: "1.75rem" }}>🛡️</span>
             <div>
               <span style={{ fontWeight: 800, fontSize: "1.15rem", color: "white", lineHeight: 1 }}>MoldGuard</span>
               <span style={{ display: "block", fontSize: "0.65rem", color: "rgba(255,255,255,0.6)", fontWeight: 500, letterSpacing: "0.08em" }}>KENYA</span>

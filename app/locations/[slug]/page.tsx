@@ -113,7 +113,7 @@ export default async function LocationPostPage({ params }: Props) {
             <div className="container" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }}>
               <div>
                 <p style={{ color: "var(--primary)", fontWeight: 600, fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
-                  🌿 Serving {locationName}
+                  📍 Serving {locationName}
                 </p>
                 <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.2, marginBottom: "1.25rem" }}>
                   Kenya&apos;s #1 Mold Removal Experts

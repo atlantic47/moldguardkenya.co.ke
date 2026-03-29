@@ -15,7 +15,7 @@ export default function WhoWeAre() {
         {/* Left: Text */}
         <div>
           <p style={{ color: "var(--primary)", fontWeight: 600, fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
-            🌿 Who We Are
+            🛡️ Who We Are
           </p>
           <h2
             style={{

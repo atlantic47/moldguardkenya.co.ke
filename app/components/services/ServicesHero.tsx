@@ -8,7 +8,7 @@ export default function ServicesHero() {
         {/* Left: Text */}
         <div style={{ zIndex: 1 }}>
           <p style={{ color: "var(--primary)", fontWeight: 600, fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
-            🌿 Services
+            🛡️ Services
           </p>
           <h1 style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.15, marginBottom: "1.25rem" }}>
             Mold Removal Solutions by MoldGuard Kenya

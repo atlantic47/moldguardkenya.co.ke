@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
     <section style={{ background: "var(--cream)", padding: "5rem 0" }}>
       <div className="container">
         <p style={{ textAlign: "center", color: "var(--primary)", fontWeight: 700, fontSize: "1rem", marginBottom: "0.5rem" }}>
-          🌿 Client Stories
+          💬 Client Stories
         </p>
         <h2 className="section-heading" style={{ marginBottom: "0.5rem" }}>
           What Our Happy Clients Says

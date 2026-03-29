@@ -50,7 +50,7 @@ export default function FAQSection() {
         {/* Left: FAQ */}
         <div>
           <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "1rem", marginBottom: "0.5rem" }}>
-            🌿 Got Questions?
+            ❔ Got Questions?
           </p>
           <h2
             style={{
