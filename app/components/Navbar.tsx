@@ -215,6 +215,15 @@ export default function Navbar() {
               </Link>
             </li>
 
+            {/* SHOP */}
+            <li>
+              <Link
+                href="/shop"
+                style={{ display: "block", padding: "0.6rem 0.85rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname.startsWith('/shop') ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease" }}
+                className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
+              >SHOP</Link>
+            </li>
+
             {/* Locations mega-menu */}
             <li className="nav-locations-trigger" style={{ position: "relative" }}>
               <Link
@@ -261,6 +270,15 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
+            </li>
+
+            {/* BLOG */}
+            <li>
+              <Link
+                href="/blog"
+                style={{ display: "block", padding: "0.6rem 0.85rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname.startsWith('/blog') ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease" }}
+                className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
+              >BLOG</Link>
             </li>
 
             {/* ABOUT US */}
@@ -341,6 +359,7 @@ export default function Navbar() {
             {[
               { label: "HOME", href: "/" },
               { label: "SERVICES", href: "/services" },
+              { label: "SHOP", href: "/shop" },
               { label: "BLOG", href: "/blog" },
               { label: "ABOUT US", href: "/about" },
               { label: "CONTACT", href: "/contact" },

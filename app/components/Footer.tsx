@@ -100,7 +100,7 @@ export default function Footer() {
               📞 <a href="tel:0717140369" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>0717140369</a>
             </li>
             <li style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)" }}>
-              📍 Nairobi, Kenya
+              📍 Development House, Moi Ave, Nairobi
             </li>
             <li style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)" }}>
               📧 info@moldguardkenya.co.ke

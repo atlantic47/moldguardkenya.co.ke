@@ -75,13 +75,13 @@ export default function ServicesSection() {
                 <p style={{ color: "var(--text-mid)", fontSize: "0.85rem", lineHeight: 1.6, marginBottom: "1rem" }}>
                   {service.desc}
                 </p>
-                <a
-                  href="tel:0717140369"
+                <Link
+                  href="/services"
                   className="btn-primary"
                   style={{ fontSize: "0.8rem", padding: "0.5rem 1.25rem", width: "100%", justifyContent: "center" }}
                 >
                   ▶ Learn More
-                </a>
+                </Link>
               </div>
             </div>
           ))}
