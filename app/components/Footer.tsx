@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
           <p style={{ fontSize: "0.875rem", lineHeight: 1.7, color: "rgba(255,255,255,0.6)", marginBottom: "1.25rem", maxWidth: "300px" }}>
-            Expert mold removal and remediation services across Kenya. Protecting your health and property with professional, eco-friendly solutions.
+            Expert mould removal and remediation services across Kenya. Protecting your health and property with professional, eco-friendly solutions.
           </p>
           <div style={{ display: "flex", gap: "0.75rem" }}>
             {["f", "t", "in", "ig"].map((icon) => (
@@ -73,7 +73,7 @@ export default function Footer() {
           <h4 style={{ color: "white", fontWeight: 700, marginBottom: "1.25rem", fontSize: "0.95rem" }}>Services</h4>
           <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
             {[
-              "Mold Inspection",
+              "Mould Inspection",
               "Air Quality Testing",
               "HEPA Filtration",
               "Structural Drying",

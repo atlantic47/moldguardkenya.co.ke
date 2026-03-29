@@ -33,13 +33,13 @@ export default function MoistureMapping() {
             Our team uses advanced <strong>moisture mapping</strong> and <strong>leak detection</strong> to find and fix problems early. This way, we can stop big issues before they start.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1rem" }}>
-            At <strong>MoldGuard Kenya</strong>, we know finding moisture is key to stopping mold. Our <strong>moisture mapping</strong> uses top-notch gear to see moisture levels. This helps us find trouble spots accurately.
+            At <strong>MoldGuard Kenya</strong>, we know finding moisture is key to stopping mould. Our <strong>moisture mapping</strong> uses top-notch gear to see moisture levels. This helps us find trouble spots accurately.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1rem" }}>
             <em>Leak detection</em> is also a big part of what we do. We use special tools to find leaks and hidden water spots. This helps us fix the real problem, not just the symptoms.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7 }}>
-            By using these methods, we get a full picture of the property. Then, we create a plan to fix mold and stop it from coming back. Our aim is to remove mold and prevent it from coming back by fixing moisture issues.
+            By using these methods, we get a full picture of the property. Then, we create a plan to fix mould and stop it from coming back. Our aim is to remove mould and prevent it from coming back by fixing moisture issues.
           </p>
         </div>
 

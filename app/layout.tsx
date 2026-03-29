@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mold Removal & Remediation Services in Kenya | MoldGuard Kenya",
+  title: "Mould Removal & Remediation Services in Kenya | MoldGuard Kenya",
   description:
-    "MoldGuard Kenya offers expert mold removal and remediation services across Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mold and improve your indoor air quality. Call 0717140369.",
+    "MoldGuard Kenya offers expert mould removal and remediation services across Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mould and improve your indoor air quality. Call 0717140369.",
   keywords:
-    "mold removal Kenya, mold remediation Nairobi, indoor air quality, moisture detection, HEPA filtration, mold inspection Kenya",
+    "mould removal Kenya, mould remediation Nairobi, indoor air quality, moisture detection, HEPA filtration, mould inspection Kenya",
 };
 
 export default function RootLayout({

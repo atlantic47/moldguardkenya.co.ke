@@ -7,9 +7,9 @@ import PageHero from "../components/PageHero";
 import { getAllSeoMetadata } from "@/lib/markdown";
 
 export const metadata: Metadata = {
-  title: "Mold Removal Blog | Expert Advice & Guides | MoldGuard Kenya",
+  title: "Mould Removal Blog | Expert Advice & Guides | MoldGuard Kenya",
   description:
-    "Read the latest tips, guides, and expert advice on mold removal, prevention, and indoor air quality in Kenya from MoldGuard Kenya's certified specialists.",
+    "Read the latest tips, guides, and expert advice on mould removal, prevention, and indoor air quality in Kenya from MoldGuard Kenya's certified specialists.",
 };
 
 const BLOG_ICONS = ["🌧️", "🦠", "🏠", "💰", "💧", "☔", "⚠️", "📋", "🔬", "🌊"];
@@ -24,7 +24,7 @@ export default function BlogListingPage() {
         {/* HERO */}
         <PageHero
           title="MoldGuard Expert Blog"
-          subtitle="Kenya's most comprehensive resource on mold prevention, health risks, and certified remediation."
+          subtitle="Kenya's most comprehensive resource on mould prevention, health risks, and certified remediation."
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]}
           bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/73111f67-897c-473d-82d2-8a2bf68434ce.jpg"
         />
@@ -37,7 +37,7 @@ export default function BlogListingPage() {
                 {posts.length} Expert Articles
               </h2>
               <p style={{ color: "var(--text-mid)", fontSize: "0.95rem", margin: 0 }}>
-                Written by Kenya&apos;s leading certified mold remediation specialists.
+                Written by Kenya&apos;s leading certified mould remediation specialists.
               </p>
             </div>
             <a href="tel:0717140369" className="btn-primary" style={{ fontSize: "0.875rem", padding: "0.65rem 1.4rem" }}>
@@ -64,7 +64,7 @@ export default function BlogListingPage() {
                         {data.title || slug.replace(/-/g, " ")}
                       </h2>
                       <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.95rem", lineHeight: 1.7, margin: 0 }}>
-                        {data.description || "Read this comprehensive guide from Kenya's leading mold remediation experts."}
+                        {data.description || "Read this comprehensive guide from Kenya's leading mould remediation experts."}
                       </p>
                       <span style={{ color: "var(--gold-light)", fontWeight: 700, fontSize: "0.9rem", display: "flex", alignItems: "center", gap: "0.4rem" }}>
                         Read Full Article <span>→</span>
@@ -72,18 +72,18 @@ export default function BlogListingPage() {
                     </div>
                     <div className="featured-article-padding" style={{ display: "flex", flexDirection: "column", justifyContent: "center", gap: "1.5rem" }}>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem" }}>
-                        {["Mold Prevention", "Kenya", "Expert Guide"].map((tag) => (
+                        {["Mould Prevention", "Kenya", "Expert Guide"].map((tag) => (
                           <span key={tag} style={{ background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "999px", padding: "0.3rem 0.85rem", fontSize: "0.75rem", fontWeight: 600, color: "var(--text-mid)" }}>{tag}</span>
                         ))}
                       </div>
                       <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.75, margin: 0 }}>
-                        {data.description || "A comprehensive in-depth analysis of the mold landscape in Kenya, including causes, health risks, and professional solutions."}
+                        {data.description || "A comprehensive in-depth analysis of the mould landscape in Kenya, including causes, health risks, and professional solutions."}
                       </p>
                       <div style={{ display: "flex", gap: "0.75rem", alignItems: "center" }}>
                         <div style={{ width: "40px", height: "40px", background: "var(--primary)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: 700, fontSize: "1rem" }}>MG</div>
                         <div>
                           <div style={{ fontWeight: 700, fontSize: "0.875rem", color: "var(--text-dark)" }}>MoldGuard Kenya</div>
-                          <div style={{ fontSize: "0.8rem", color: "var(--text-light)" }}>Certified Mold Specialists</div>
+                          <div style={{ fontSize: "0.8rem", color: "var(--text-light)" }}>Certified Mould Specialists</div>
                         </div>
                       </div>
                     </div>
@@ -109,7 +109,7 @@ export default function BlogListingPage() {
                         {data.title || slug.replace(/-/g, " ")}
                       </h2>
                       <p style={{ color: "var(--text-mid)", fontSize: "0.875rem", lineHeight: 1.65, flex: 1, margin: 0, display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-                        {data.description || "Expert mold remediation insights for Kenyan homeowners and property managers."}
+                        {data.description || "Expert mould remediation insights for Kenyan homeowners and property managers."}
                       </p>
                       <span style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.875rem", display: "flex", alignItems: "center", gap: "0.35rem", marginTop: "auto" }} className="group-hover:gap-2 transition-all">
                         Read Article <span>→</span>
@@ -126,10 +126,10 @@ export default function BlogListingPage() {
         <section style={{ background: "linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%)", padding: "4rem 0", color: "white", textAlign: "center" }}>
           <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.25rem" }}>
             <h2 style={{ fontSize: "clamp(1.5rem, 2.5vw, 2rem)", fontWeight: 800, lineHeight: 1.25, maxWidth: "500px" }}>
-              Dealing with Mold Right Now?
+              Dealing with Mould Right Now?
             </h2>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", maxWidth: "420px", lineHeight: 1.7 }}>
-              Don&apos;t wait — contact Kenya&apos;s certified rapid-response mold specialists today.
+              Don&apos;t wait — contact Kenya&apos;s certified rapid-response mould specialists today.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
               <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "0.95rem", padding: "0.8rem 1.75rem" }}>

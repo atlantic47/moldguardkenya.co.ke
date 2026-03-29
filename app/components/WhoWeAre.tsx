@@ -26,13 +26,13 @@ export default function WhoWeAre() {
               marginBottom: "1.25rem",
             }}
           >
-            Understanding the Mold Crisis in Kenyan Homes and Businesses
+            Understanding the Mould Crisis in Kenyan Homes and Businesses
           </h2>
           <p style={{ color: "var(--text-mid)", lineHeight: 1.8, marginBottom: "1rem", fontSize: "0.95rem" }}>
-            Kenya&apos;s climate and geography make it a hotspot for mold in homes and businesses. The tropical climate, with its high temperatures and humidity, is perfect for mold growth. This affects the indoor air quality and the health of those living or working there.
+            Kenya&apos;s climate and geography make it a hotspot for mould in homes and businesses. The tropical climate, with its high temperatures and humidity, is perfect for mould growth. This affects the indoor air quality and the health of those living or working there.
           </p>
           <p style={{ color: "var(--text-mid)", lineHeight: 1.8, marginBottom: "2rem", fontSize: "0.95rem" }}>
-            High humidity in Kenya&apos;s tropical climate helps mold spread indoors. When humidity is over 60%, mold spores can easily grow. This harms buildings and makes the air unhealthy, leading to health problems for people inside. At <strong>MoldGuard Kenya</strong>, we see how humidity affects indoor air quality. We&apos;ve seen many cases where high humidity caused severe mold problems.
+            High humidity in Kenya&apos;s tropical climate helps mould spread indoors. When humidity is over 60%, mould spores can easily grow. This harms buildings and makes the air unhealthy, leading to health problems for people inside. At <strong>MoldGuard Kenya</strong>, we see how humidity affects indoor air quality. We&apos;ve seen many cases where high humidity caused severe mould problems.
           </p>
 
           <div style={{ display: "flex", gap: "1rem" }}>

@@ -7,9 +7,9 @@ import NewsletterSection from "../components/NewsletterSection";
 import PageHero from "../components/PageHero";
 
 export const metadata: Metadata = {
-  title: "About MoldGuard Kenya | Certified Mold Remediation Experts",
+  title: "About MoldGuard Kenya | Certified Mould Remediation Experts",
   description:
-    "Learn about MoldGuard Kenya, the leading professional mold removal experts in Kenya. Discover our mission, our certified processes, and why we are trusted.",
+    "Learn about MoldGuard Kenya, the leading professional mould removal experts in Kenya. Discover our mission, our certified processes, and why we are trusted.",
 };
 
 const process = [
@@ -17,19 +17,19 @@ const process = [
     step: "01",
     icon: "🔍",
     title: "Advanced Inspection",
-    desc: "Utilizing thermal imaging and moisture meters to locate hidden mold behind walls, under floors, and inside ceilings.",
+    desc: "Utilizing thermal imaging and moisture meters to locate hidden mould behind walls, under floors, and inside ceilings.",
   },
   {
     step: "02",
     icon: "🛡️",
     title: "Strict Containment",
-    desc: "Establishing negative air pressure zones to prevent cross-contamination and mold spore spread during removal.",
+    desc: "Establishing negative air pressure zones to prevent cross-contamination and mould spore spread during removal.",
   },
   {
     step: "03",
     icon: "🧹",
     title: "Safe Remediation",
-    desc: "Physically removing contaminated materials safely, rather than simply bleaching over the surface mold.",
+    desc: "Physically removing contaminated materials safely, rather than simply bleaching over the surface mould.",
   },
   {
     step: "04",
@@ -53,7 +53,7 @@ const stats = [
 ];
 
 const values = [
-  { icon: "🌿", title: "Eco-Friendly Treatments", desc: "Products that are tough on mold but gentle on your family and pets." },
+  { icon: "🌿", title: "Eco-Friendly Treatments", desc: "Products that are tough on mould but gentle on your family and pets." },
   { icon: "🔬", title: "Science-Backed Process", desc: "Every step backed by IICRC standards and evidence-based protocols." },
   { icon: "📊", title: "Transparent Reporting", desc: "Detailed before/after documentation provided for every remediation job." },
   { icon: "🚀", title: "Rapid Response", desc: "Same-day and emergency response teams covering all major areas in Kenya." },
@@ -67,7 +67,7 @@ export default function AboutPage() {
         {/* HERO */}
         <PageHero
           title="About MoldGuard Kenya"
-          subtitle="We are Kenya's leading certified mold remediation company — protecting families and properties with science-backed solutions."
+          subtitle="We are Kenya's leading certified mould remediation company — protecting families and properties with science-backed solutions."
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
           bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/5b8b2f77-4f18-4ddb-bec8-bce550f34123.jpg"
         />
@@ -79,7 +79,7 @@ export default function AboutPage() {
               <div style={{ position: "relative", height: "480px", borderRadius: "1.5rem", overflow: "hidden", boxShadow: "0 24px 64px rgba(45,80,22,0.18)" }}>
                 <Image
                   src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/8e626626-0a65-4016-b728-2abad223b45e.jpg"
-                  alt="MoldGuard Kenya certified mold remediation team"
+                  alt="MoldGuard Kenya certified mould remediation team"
                   fill
                   style={{ objectFit: "cover" }}
                 />
@@ -93,13 +93,13 @@ export default function AboutPage() {
             <div>
               <p style={{ color: "var(--primary)", fontWeight: 600, fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>🛡️ Who We Are</p>
               <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.2, marginBottom: "1.25rem" }}>
-                Professional Mold Experts in Kenya
+                Professional Mould Experts in Kenya
               </h2>
               <p style={{ color: "var(--text-mid)", lineHeight: 1.85, marginBottom: "1.25rem", fontSize: "1rem" }}>
-                MoldGuard Kenya is a leading, certified mold remediation and removal company serving homes and businesses across Kenya. Understanding the severe impact that indoor mold can have on your health and property, we have dedicated ourselves to providing safe, effective, and permanent mold solutions.
+                MoldGuard Kenya is a leading, certified mould remediation and removal company serving homes and businesses across Kenya. Understanding the severe impact that indoor mould can have on your health and property, we have dedicated ourselves to providing safe, effective, and permanent mould solutions.
               </p>
               <p style={{ color: "var(--text-mid)", lineHeight: 1.85, marginBottom: "2rem", fontSize: "1rem" }}>
-                We are more than just a cleaning service; we are certified professionals trained in the science of mold detection, containment, and eradication.
+                We are more than just a cleaning service; we are certified professionals trained in the science of mould detection, containment, and eradication.
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
                 {["IICRC Certified", "99.97% HEPA Filtration", "Eco-Friendly", "Same-Day Response"].map((b) => (
@@ -133,10 +133,10 @@ export default function AboutPage() {
                 Creating Healthier Indoor Environments for All Kenyans
               </h2>
               <p style={{ color: "var(--text-mid)", lineHeight: 1.85, marginBottom: "1.5rem", fontSize: "1rem" }}>
-                Our mission is simple: to create healthier indoor environments for all Kenyans. We believe that no one should have to compromise their health or the structural integrity of their property due to unchecked mold growth.
+                Our mission is simple: to create healthier indoor environments for all Kenyans. We believe that no one should have to compromise their health or the structural integrity of their property due to unchecked mould growth.
               </p>
               <p style={{ color: "var(--text-mid)", lineHeight: 1.85, marginBottom: "2rem", fontSize: "1rem" }}>
-                By utilizing state-of-the-art moisture mapping technology and adhering to strict international remediation standards, we strive to be the most trusted name in mold removal throughout the country.
+                By utilizing state-of-the-art moisture mapping technology and adhering to strict international remediation standards, we strive to be the most trusted name in mould removal throughout the country.
               </p>
               <Link href="/contact" className="btn-primary">Get a Free Consultation →</Link>
             </div>
@@ -185,7 +185,7 @@ export default function AboutPage() {
               Ready for a Healthier Home?
             </h2>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "500px" }}>
-              Don&apos;t let mold dictate your indoor air quality. Reach out to Kenya&apos;s most trusted mold remediation specialists today.
+              Don&apos;t let mould dictate your indoor air quality. Reach out to Kenya&apos;s most trusted mould remediation specialists today.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
               <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>📞 Call 0717140369</a>

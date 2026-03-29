@@ -1,7 +1,7 @@
 export default function RemediationProcedures() {
   const steps = [
     "Containment of the affected area to prevent cross-contamination",
-    "Removal of mold-infested materials and debris",
+    "Removal of mould-infested materials and debris",
     "Cleaning and disinfecting of surfaces",
     "Verification of the effectiveness of the remediation process",
   ];
@@ -12,20 +12,20 @@ export default function RemediationProcedures() {
         
         <p className="section-label" style={{ marginBottom: "0.5rem" }}>Safe & Effective</p>
         <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.2, marginBottom: "1.5rem", maxWidth: "800px" }}>
-          Mold Remediation and Removal Procedures
+          Mould Remediation and Removal Procedures
         </h2>
         
         <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, maxWidth: "800px", marginBottom: "1.25rem" }}>
-          At MoldGuard Kenya, we focus on keeping our clients safe and healthy. We use the best <strong>mold remediation</strong> and <strong>mold removal</strong> methods. Our team has the latest tools and techniques to remove mold from your property. First, we check the affected area to see how much mold there is. Then, we make a plan to get rid of the mold. We wear <em>personal protective equipment</em> to avoid mold spores.
+          At MoldGuard Kenya, we focus on keeping our clients safe and healthy. We use the best <strong>mould remediation</strong> and <strong>mould removal</strong> methods. Our team has the latest tools and techniques to remove mould from your property. First, we check the affected area to see how much mould there is. Then, we make a plan to get rid of the mould. We wear <em>personal protective equipment</em> to avoid mould spores.
         </p>
         
         <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, maxWidth: "800px", marginBottom: "3rem" }}>
-          We use <strong>specialized cleaning solutions</strong> to kill and remove mold. Our team knows how to handle different molds and surfaces. This ensures the process is done right and safely.
+          We use <strong>specialized cleaning solutions</strong> to kill and remove mould. Our team knows how to handle different moulds and surfaces. This ensures the process is done right and safely.
         </p>
 
         <div style={{ width: "100%", maxWidth: "900px" }}>
           <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--primary-dark)", marginBottom: "1.5rem" }}>
-            The mold removal process includes several steps:
+            The mould removal process includes several steps:
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1.5rem" }}>
             {steps.map((step, i) => (
@@ -42,7 +42,7 @@ export default function RemediationProcedures() {
         </div>
 
         <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, maxWidth: "800px", marginTop: "3rem" }}>
-          We follow these steps and use the latest technology. This makes our <strong>mold remediation</strong> and <strong>mold removal</strong> services safe and effective for our clients.
+          We follow these steps and use the latest technology. This makes our <strong>mould remediation</strong> and <strong>mould removal</strong> services safe and effective for our clients.
         </p>
 
       </div>

@@ -1,7 +1,7 @@
 export default function ContainmentStrategies() {
   const tableData = [
     { method: "Physical Barriers", desc: "Heavy-duty plastic sheeting and tape", benefit: "Effective isolation of contaminated area" },
-    { method: "Negative Air Machines", desc: "Creates negative pressure environment", benefit: "Prevents mold spores from escaping" },
+    { method: "Negative Air Machines", desc: "Creates negative pressure environment", benefit: "Prevents mould spores from escaping" },
     { method: "Air Scrubbers", desc: "Further purifies the air", benefit: "Enhances indoor air quality" },
   ];
 
@@ -11,39 +11,39 @@ export default function ContainmentStrategies() {
         
         <div>
           <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, color: "var(--gold)", lineHeight: 1.2, marginBottom: "1.25rem" }}>
-            Comprehensive Mold Containment Strategies for Residential Properties
+            Comprehensive Mould Containment Strategies for Residential Properties
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            <strong>Mold containment</strong> is key in <strong>mold remediation</strong>. Our team at MoldGuard Kenya uses detailed strategies for homes. This step stops mold spores from spreading, keeping homes safe and healthy.
+            <strong>Mould containment</strong> is key in <strong>mould remediation</strong>. Our team at MoldGuard Kenya uses detailed strategies for homes. This step stops mould spores from spreading, keeping homes safe and healthy.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            We use physical barriers to keep mold in one place. <strong>Heavy-duty plastic sheeting and tape seal off the moldy area</strong>. This stops mold spores from getting out during cleanup.
+            We use physical barriers to keep mould in one place. <strong>Heavy-duty plastic sheeting and tape seal off the moldy area</strong>. This stops mould spores from getting out during cleanup.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            We also use negative air machines. These machines keep the air pressure low in the mold area. This <em>negative pressure</em> makes sure air flows in and is cleaned by HEPA machines. This stops mold spores from spreading outside.
+            We also use negative air machines. These machines keep the air pressure low in the mould area. This <em>negative pressure</em> makes sure air flows in and is cleaned by HEPA machines. This stops mould spores from spreading outside.
           </p>
 
           <div style={{ background: "rgba(255,255,255,0.1)", padding: "1.5rem", borderRadius: "1rem", marginBottom: "1.5rem", borderLeft: "4px solid var(--gold)" }}>
             <p style={{ fontStyle: "italic", fontSize: "1.05rem", color: "white", marginBottom: "0.5rem" }}>
               "The goal of containment is to isolate the moldy area to prevent further contamination. This is achieved through the use of barriers and negative air pressure."
             </p>
-            <p style={{ fontSize: "0.85rem", color: "var(--gold)", fontWeight: 600 }}>— Experts say, "Containment is vital for mold removal. Without it, mold can spread easily."</p>
+            <p style={{ fontSize: "0.85rem", color: "var(--gold)", fontWeight: 600 }}>— Experts say, "Containment is vital for mould removal. Without it, mould can spread easily."</p>
           </div>
 
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7 }}>
-            We mix these methods for effective <strong>mold containment</strong>. This protects people&apos;s health and prevents damage. MoldGuard Kenya is dedicated to providing top mold containment services for homes.
+            We mix these methods for effective <strong>mould containment</strong>. This protects people&apos;s health and prevents damage. MoldGuard Kenya is dedicated to providing top mould containment services for homes.
           </p>
         </div>
 
         <div>
           <div style={{ background: "white", borderRadius: "1rem", padding: "2rem", color: "var(--text-dark)", boxShadow: "0 10px 30px rgba(0,0,0,0.2)" }}>
             <h3 style={{ fontWeight: 800, color: "var(--primary-dark)", marginBottom: "1.25rem", fontSize: "1.25rem" }}>
-              Our mold containment plans also include:
+              Our mould containment plans also include:
             </h3>
             <ul style={{ listStyle: "none", margin: "0 0 2rem 0", padding: 0, display: "flex", flexDirection: "column", gap: "1rem" }}>
               <li style={{ display: "flex", gap: "0.75rem", alignItems: "start" }}>
                 <span style={{ color: "var(--primary)" }}>✅</span>
-                <span>Sealing vents and ducts to stop mold spread</span>
+                <span>Sealing vents and ducts to stop mould spread</span>
               </li>
               <li style={{ display: "flex", gap: "0.75rem", alignItems: "start" }}>
                 <span style={{ color: "var(--primary)" }}>✅</span>
@@ -51,7 +51,7 @@ export default function ContainmentStrategies() {
               </li>
               <li style={{ display: "flex", gap: "0.75rem", alignItems: "start" }}>
                 <span style={{ color: "var(--primary)" }}>✅</span>
-                <span>Following strict rules for workers to avoid mold spread</span>
+                <span>Following strict rules for workers to avoid mould spread</span>
               </li>
             </ul>
 

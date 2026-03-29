@@ -32,7 +32,7 @@ export default function HeroSection() {
               marginBottom: "1.25rem",
             }}
           >
-            Mold Removal &amp; Remediation Services in Kenya | MoldGuard Kenya
+            Mould Removal &amp; Remediation Services in Kenya | MoldGuard Kenya
           </h1>
           <div
             style={{
@@ -47,10 +47,10 @@ export default function HeroSection() {
             }}
           >
             <p>
-              Discovering mold in your home can be very stressful. At <strong>MoldGuard</strong>, we offer expert solutions to improve your <strong>indoor air quality</strong>. Our team is skilled in professional <em>mold removal Kenya</em> projects, making sure your space is safe.
+              Discovering mould in your home can be very stressful. At <strong>MoldGuard</strong>, we offer expert solutions to improve your <strong>indoor air quality</strong>. Our team is skilled in professional <em>mould removal Kenya</em> projects, making sure your space is safe.
             </p>
             <p>
-              We use the latest technology to find and remove hidden moisture and mold spores. By choosing our <strong>mold remediation services</strong>, you&apos;re choosing a healthier place to live or work. We act fast to stop mold from spreading and damaging your space.
+              We use the latest technology to find and remove hidden moisture and mould spores. By choosing our <strong>mould remediation services</strong>, you&apos;re choosing a healthier place to live or work. We act fast to stop mould from spreading and damaging your space.
             </p>
             <p>
               Our technicians work hard to give you lasting results all over Kenya. We know the climate challenges in <strong>Kenya</strong> are unique. Call us at 0717140369 for quick help and to book your first meeting today.
@@ -100,7 +100,7 @@ export default function HeroSection() {
         <div style={{ position: "relative", height: "460px", borderRadius: "1.5rem", overflow: "hidden", boxShadow: "0 20px 60px rgba(45,80,22,0.25)" }}>
           <Image
             src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg"
-            alt="MoldGuard Kenya professional mold remediation services"
+            alt="MoldGuard Kenya professional mould remediation services"
             fill
             style={{ objectFit: "cover" }}
             priority

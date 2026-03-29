@@ -162,7 +162,7 @@ export default function Navbar() {
                 <span style={{ fontWeight: 900, fontSize: "1.2rem", color: "var(--primary)", letterSpacing: "-0.02em" }}>{" Kenya"}</span>
               </div>
               <span style={{ display: "block", fontSize: "clamp(0.6rem, 2.5vw, 0.72rem)", color: "var(--primary-light)", fontStyle: "italic", fontWeight: 500, lineHeight: 1.3, marginTop: "0.15rem", textWrap: "balance" }}>
-                Mold &amp; Damp Removal Experts in Kenya
+                Mould &amp; Damp Removal Experts in Kenya
               </span>
             </div>
           </Link>

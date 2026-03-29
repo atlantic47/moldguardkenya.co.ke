@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
           Why Choose MoldGuard Kenya for Your Remediation Needs
         </h2>
         <p style={{ textAlign: "center", color: "rgba(30,58,15,0.75)", marginBottom: "3rem", maxWidth: "600px", margin: "0 auto 3rem auto" }}>
-          MoldGuard Kenya is the top choice for mold removal in Kenya. We have certified experts and clear prices. Our team is well-trained and follows the best industry standards.
+          MoldGuard Kenya is the top choice for mould removal in Kenya. We have certified experts and clear prices. Our team is well-trained and follows the best industry standards.
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2.5rem", alignItems: "start" }}>
@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
                   Certified Expertise
                 </h3>
                 <p style={{ color: "rgba(30,58,15,0.8)", fontSize: "0.9rem", lineHeight: 1.7 }}>
-                  At MoldGuard Kenya, we&apos;re proud of our certified expertise in mold removal. Our team gets ongoing training and certifications. This keeps them up-to-date with the latest mold removal methods.
+                  At MoldGuard Kenya, we&apos;re proud of our certified expertise in mould removal. Our team gets ongoing training and certifications. This keeps them up-to-date with the latest mould removal methods.
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function WhyChooseUs() {
                   Customer-Centric Service
                 </h3>
                 <p style={{ color: "rgba(30,58,15,0.8)", fontSize: "0.9rem", lineHeight: 1.7 }}>
-                  Dealing with mold can be tough for property owners. That&apos;s why we focus on customer-centric service. We promise clear communication and prices from start to finish.
+                  Dealing with mould can be tough for property owners. That&apos;s why we focus on customer-centric service. We promise clear communication and prices from start to finish.
                 </p>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function WhyChooseUs() {
                   Transparent Pricing
                 </h3>
                 <p style={{ color: "rgba(30,58,15,0.8)", fontSize: "0.9rem", lineHeight: 1.7 }}>
-                  Our prices are clear, with no hidden costs. We aim to build trust with our clients. Your needs are always our main focus. Choosing MoldGuard Kenya means you get effective mold removal.
+                  Our prices are clear, with no hidden costs. We aim to build trust with our clients. Your needs are always our main focus. Choosing MoldGuard Kenya means you get effective mould removal.
                 </p>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function WhyChooseUs() {
             <div style={{ borderRadius: "1rem", overflow: "hidden", height: "160px", position: "relative" }}>
               <Image
                 src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/5b8b2f77-4f18-4ddb-bec8-bce550f34123.jpg"
-                alt="MoldGuard Kenya certified mold remediation"
+                alt="MoldGuard Kenya certified mould remediation"
                 fill
                 style={{ objectFit: "cover" }}
               />

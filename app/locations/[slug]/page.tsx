@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const { data } = getSeoMarkdownFile("locations", slug);
   return {
-    title: data.title || `Mold Removal in ${slug.replace(/-/g, " ")} | MoldGuard Kenya`,
-    description: data.description || `Professional mold removal and inspection services in ${slug.replace(/-/g, " ")}.`,
+    title: data.title || `Mould Removal in ${slug.replace(/-/g, " ")} | MoldGuard Kenya`,
+    description: data.description || `Professional mould removal and inspection services in ${slug.replace(/-/g, " ")}.`,
   };
 }
 
@@ -97,8 +97,8 @@ export default async function LocationPostPage({ params }: Props) {
       <main>
         {/* HERO */}
         <PageHero
-          title={parsed.h1 || `Mold Removal in ${locationName}`}
-          subtitle={data.description || "Certified, rapid-response mold remediation experts serving your area."}
+          title={parsed.h1 || `Mould Removal in ${locationName}`}
+          subtitle={data.description || "Certified, rapid-response mould remediation experts serving your area."}
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Locations", href: "/locations" },
@@ -116,7 +116,7 @@ export default async function LocationPostPage({ params }: Props) {
                   📍 Serving {locationName}
                 </p>
                 <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.2, marginBottom: "1.25rem" }}>
-                  Kenya&apos;s #1 Mold Removal Experts
+                  Kenya&apos;s #1 Mould Removal Experts
                 </h2>
                 <p style={{ fontSize: "1.05rem", color: "var(--text-mid)", lineHeight: 1.8, marginBottom: "1.5rem" }}>
                   {parsed.intro}
@@ -128,7 +128,7 @@ export default async function LocationPostPage({ params }: Props) {
               <div style={{ position: "relative", height: "420px", borderRadius: "1.5rem", overflow: "hidden", boxShadow: "0 20px 60px rgba(45,80,22,0.15)" }}>
                 <Image
                   src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/8e626626-0a65-4016-b728-2abad223b45e.jpg"
-                  alt={`Mold removal experts in ${locationName}`}
+                  alt={`Mould removal experts in ${locationName}`}
                   fill
                   style={{ objectFit: "cover" }}
                 />
@@ -142,9 +142,9 @@ export default async function LocationPostPage({ params }: Props) {
         {problemsSection && problemsSection.items.length > 0 && (
           <section style={{ background: "var(--cream)", padding: "5rem 0" }}>
             <div className="container">
-              <p style={{ textAlign: "center", color: "var(--primary)", fontWeight: 600, fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Why Mold Thrives Here</p>
+              <p style={{ textAlign: "center", color: "var(--primary)", fontWeight: 600, fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>Why Mould Thrives Here</p>
               <h2 className="section-heading" style={{ marginBottom: "0.75rem" }}>{problemsSection.heading}</h2>
-              <p className="section-subheading">{problemsSection.body?.trim() || `Common mold challenges that ${locationName} residents face.`}</p>
+              <p className="section-subheading">{problemsSection.body?.trim() || `Common mould challenges that ${locationName} residents face.`}</p>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem", marginTop: "2rem" }}>
                 {problemsSection.items.map((item, i) => {
                   const [title, ...rest] = item.split(":");
@@ -189,7 +189,7 @@ export default async function LocationPostPage({ params }: Props) {
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
                 {[
-                  { icon: "🔬", title: "Root Cause Diagnosis", desc: "We identify and fix the moisture source, not just the visible mold." },
+                  { icon: "🔬", title: "Root Cause Diagnosis", desc: "We identify and fix the moisture source, not just the visible mould." },
                   { icon: "🧹", title: "Physical Extraction", desc: "Industrial-grade equipment removes every spore from the environment." },
                   { icon: "✅", title: "Post-Remediation Verification", desc: "Third-party air quality testing confirms your space is safe." },
                 ].map((pt) => (
@@ -247,7 +247,7 @@ export default async function LocationPostPage({ params }: Props) {
               Protect Your {locationName} Property Today
             </h2>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "500px" }}>
-              Don&apos;t let mold compromise your family&apos;s health or the value of your investment. Our certified rapid-response team covers all of {locationName}.
+              Don&apos;t let mould compromise your family&apos;s health or the value of your investment. Our certified rapid-response team covers all of {locationName}.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
               <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>

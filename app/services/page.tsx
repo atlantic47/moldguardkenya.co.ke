@@ -21,8 +21,8 @@ import ContactSection from "../components/services/ContactSection";
 import ServicesFAQ from "../components/services/ServicesFAQ";
 
 export const metadata: Metadata = {
-  title: "Our Mold Removal Services | Inspections & Remediation | MoldGuard Kenya",
-  description: "Explore our comprehensive mold remediation services. From thermal moisture mapping and HEPA air filtration to toxic black mold extraction and structural drying across Kenya.",
+  title: "Our Mould Removal Services | Inspections & Remediation | MoldGuard Kenya",
+  description: "Explore our comprehensive mould remediation services. From thermal moisture mapping and HEPA air filtration to toxic black mould extraction and structural drying across Kenya.",
 };
 
 export default function ServicesPage() {
@@ -54,10 +54,10 @@ export default function ServicesPage() {
               Conclusion
             </h2>
             <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-              Mold removal is key to keeping your home or office safe and healthy. At MoldGuard Kenya, we know how important it is to act fast and do it right. We offer everything from checking for mold to stopping it from coming back. We&apos;ve talked about how mold can harm your health and why using advanced tools to find moisture is important. Our team is ready to tackle mold problems in any building. We tailor our solutions to fit your needs.
+              Mould removal is key to keeping your home or office safe and healthy. At MoldGuard Kenya, we know how important it is to act fast and do it right. We offer everything from checking for mould to stopping it from coming back. We&apos;ve talked about how mould can harm your health and why using advanced tools to find moisture is important. Our team is ready to tackle mould problems in any building. We tailor our solutions to fit your needs.
             </p>
             <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-              Choosing MoldGuard Kenya means you&apos;re working with certified pros who care about your safety and property. We handle insurance claims and offer plans to keep mold away for good. Ready for a mold-free space? Call us at 0717140469 for a consultation. Count on MoldGuard Kenya for top-notch mold removal and repair services.
+              Choosing MoldGuard Kenya means you&apos;re working with certified pros who care about your safety and property. We handle insurance claims and offer plans to keep mould away for good. Ready for a mould-free space? Call us at 0717140469 for a consultation. Count on MoldGuard Kenya for top-notch mould removal and repair services.
             </p>
           </div>
         </section>

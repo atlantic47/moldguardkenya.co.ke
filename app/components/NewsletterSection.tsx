@@ -40,7 +40,7 @@ export default function NewsletterSection() {
             Subscribe for Newsletter
           </h2>
           <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem" }}>
-            Get mold prevention tips, industry news, and exclusive offers from MoldGuard Kenya.
+            Get mould prevention tips, industry news, and exclusive offers from MoldGuard Kenya.
           </p>
         </div>
 

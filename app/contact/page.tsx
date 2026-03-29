@@ -6,9 +6,9 @@ import NewsletterSection from "../components/NewsletterSection";
 import PageHero from "../components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Contact MoldGuard Kenya | Free Mold Inspection | Call 0717140369",
+  title: "Contact MoldGuard Kenya | Free Mould Inspection | Call 0717140369",
   description:
-    "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0717140369. Serving Nairobi, Mombasa, Kiambu, Nakuru and across Kenya.",
+    "Contact MoldGuard Kenya for emergency mould removal, free inspections, and expert advice. Call or WhatsApp us on 0717140369. Serving Nairobi, Mombasa, Kiambu, Nakuru and across Kenya.",
 };
 
 const contactMethods = [
@@ -34,7 +34,7 @@ const contactMethods = [
     icon: "💬",
     label: "WhatsApp Chat",
     primary: "Quick Message Us",
-    secondary: "Share photos of your mold problem",
+    secondary: "Share photos of your mould problem",
     href: "https://wa.me/254717140369",
     cta: "Open WhatsApp",
     bg: "#25D366",
@@ -42,9 +42,9 @@ const contactMethods = [
 ];
 
 const faqs = [
-  { q: "How quickly can you respond?", a: "We offer same-day and emergency 24/7 response for severe mold outbreaks. Standard inspections are scheduled within 24–48 hours." },
+  { q: "How quickly can you respond?", a: "We offer same-day and emergency 24/7 response for severe mould outbreaks. Standard inspections are scheduled within 24–48 hours." },
   { q: "Is the inspection free?", a: "We offer free initial consultations for residential properties in our core service areas. Contact us to confirm availability in your location." },
-  { q: "How long does mold removal take?", a: "A standard remediation for a single room takes 1–3 days. Severe whole-house infestations may require 3–7 days depending on scope." },
+  { q: "How long does mould removal take?", a: "A standard remediation for a single room takes 1–3 days. Severe whole-house infestations may require 3–7 days depending on scope." },
   { q: "Do you serve my area?", a: "We cover Nairobi (all suburbs), Mombasa, Kiambu, Nakuru, Eldoret, and surrounding regions. Contact us to confirm your specific location." },
 ];
 
@@ -63,7 +63,7 @@ export default function ContactPage() {
         {/* HERO */}
         <PageHero
           title="Contact MoldGuard Kenya"
-          subtitle="Get rapid, expert mold remediation support. Our certified specialists are ready to respond to your emergency."
+          subtitle="Get rapid, expert mould remediation support. Our certified specialists are ready to respond to your emergency."
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
           bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/36cc170e-3fa1-4ac4-9cf9-7fe0a1fd1a58.jpg"
         />
@@ -177,10 +177,10 @@ export default function ContactPage() {
           <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
             <span style={{ fontSize: "3rem" }}>🚨</span>
             <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, lineHeight: 1.2, maxWidth: "600px" }}>
-              Mold Emergency? Call Now — We Respond 24/7
+              Mould Emergency? Call Now — We Respond 24/7
             </h2>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "500px" }}>
-              Don&apos;t wait. Rapid response stops mold from spreading and saves your property from costly structural damage.
+              Don&apos;t wait. Rapid response stops mould from spreading and saves your property from costly structural damage.
             </p>
             <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1.1rem", padding: "1rem 2.5rem" }}>
               📞 Call 0717 140 369

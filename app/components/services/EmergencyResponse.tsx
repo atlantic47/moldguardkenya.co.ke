@@ -4,8 +4,8 @@ export default function EmergencyResponse() {
   const items = [
     "24/7 Emergency Response Team",
     "Rapid Assessment and Containment",
-    "Advanced Mold Removal Techniques",
-    "State-of-the-Art Equipment for Mold Detection and Removal",
+    "Advanced Mould Removal Techniques",
+    "State-of-the-Art Equipment for Mould Detection and Removal",
   ];
 
   return (
@@ -14,22 +14,22 @@ export default function EmergencyResponse() {
         
         <div>
           <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.2, marginBottom: "1.5rem" }}>
-            Emergency Mold Response Services for Rapid Intervention
+            Emergency Mould Response Services for Rapid Intervention
           </h2>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            When a mold crisis hits, our experts jump into action. At MoldGuard Kenya, we know mold emergencies can be a big problem. They can disrupt your life and pose health risks. Our quick action aims to lessen damage and stop mold from spreading.
+            When a mould crisis hits, our experts jump into action. At MoldGuard Kenya, we know mould emergencies can be a big problem. They can disrupt your life and pose health risks. Our quick action aims to lessen damage and stop mould from spreading.
           </p>
           <div style={{ background: "var(--cream)", padding: "1.5rem", borderRadius: "1rem", borderLeft: "4px solid #ef4444", marginBottom: "1.5rem" }}>
             <p style={{ fontStyle: "italic", fontSize: "0.95rem", color: "var(--text-dark)", marginBottom: "0.5rem" }}>
-              "Mold emergencies need quick action to avoid health risks and damage. Our team is ready to act fast and fix mold problems."
+              "Mould emergencies need quick action to avoid health risks and damage. Our team is ready to act fast and fix mould problems."
             </p>
-            <p style={{ fontSize: "0.85rem", color: "var(--text-mid)", fontWeight: 600 }}>— Mold remediation expert</p>
+            <p style={{ fontSize: "0.85rem", color: "var(--text-mid)", fontWeight: 600 }}>— Mould remediation expert</p>
           </div>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            We don&apos;t just remove mold. We also work to stop it from coming back. Our aim is to make your space safe and healthy again. We tailor our emergency mold services to fit each situation. We use the latest in moisture mapping and <strong>leak detection</strong>. This helps us find and fix the problem source.
+            We don&apos;t just remove mould. We also work to stop it from coming back. Our aim is to make your space safe and healthy again. We tailor our emergency mould services to fit each situation. We use the latest in moisture mapping and <strong>leak detection</strong>. This helps us find and fix the problem source.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7 }}>
-            Choosing MoldGuard Kenya for your mold emergency means you&apos;re in good hands. Our team is committed to quick action and effective solutions for mold emergencies.
+            Choosing MoldGuard Kenya for your mould emergency means you&apos;re in good hands. Our team is committed to quick action and effective solutions for mould emergencies.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function EmergencyResponse() {
           <div style={{ position: "relative", height: "300px", borderRadius: "1.5rem", overflow: "hidden", marginBottom: "2rem", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
             <Image
               src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/a086c29c-0dd7-4e65-90ef-adc8e8280e71.jpg"
-              alt="emergency mold response"
+              alt="emergency mould response"
               fill
               style={{ objectFit: "cover" }}
             />
