@@ -16,7 +16,7 @@ export default function ShopPage() {
   const categoryIcons: Record<string, string> = {
     "Dehumidifiers": "💧",
     "Air Purifiers": "🌬️",
-    "Mould Removal Products": "🧪",
+    "Mold Removal Products": "🧪",
   };
 
   return (
@@ -39,10 +39,10 @@ export default function ShopPage() {
               🛒 MoldGuard Shop
             </p>
             <h1 style={{ color: "white", fontWeight: 900, fontSize: "clamp(2rem, 5vw, 3.25rem)", lineHeight: 1.15, marginBottom: "1.25rem", maxWidth: "700px", margin: "0 auto 1.25rem" }}>
-              Professional Mould & Damp Control Products
+              Professional Mold & Damp Control Products
             </h1>
             <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.1rem", lineHeight: 1.75, maxWidth: "550px", margin: "0 auto 2.5rem" }}>
-              The same professional-grade dehumidifiers, air purifiers, and mould removal products used by our certified technicians — now available for direct purchase.
+              The same professional-grade dehumidifiers, air purifiers, and mold removal products used by our certified technicians — now available for direct purchase.
             </p>
             <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
               {[
@@ -196,11 +196,11 @@ export default function ShopPage() {
               Not Sure Which Product Is Right for You?
             </h2>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.75, marginBottom: "2rem" }}>
-              Our certified mould specialists are happy to advise you on the best products for your specific situation — free of charge.
+              Our certified mold specialists are happy to advise you on the best products for your specific situation — free of charge.
             </p>
             <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
               <a
-                href="https://wa.me/254717140369?text=Hi%20MoldGuard%2C%20I%20need%20help%20choosing%20the%20right%20product%20for%20my%20mould%20problem."
+                href="https://wa.me/254717140369?text=Hi%20MoldGuard%2C%20I%20need%20help%20choosing%20the%20right%20product%20for%20my%20mold%20problem."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold"

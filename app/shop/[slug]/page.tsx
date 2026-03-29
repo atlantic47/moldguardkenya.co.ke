@@ -37,7 +37,7 @@ export async function generateMetadata({
 const categoryIcons: Record<string, string> = {
   Dehumidifiers: "💧",
   "Air Purifiers": "🌬️",
-  "Mould Removal Products": "🧪",
+  "Mold Removal Products": "🧪",
 };
 
 export default async function ProductPage({
@@ -692,7 +692,7 @@ export default async function ProductPage({
                       margin: 0,
                     }}
                   >
-                    💡 <strong>Need help choosing?</strong> Our certified mould
+                    💡 <strong>Need help choosing?</strong> Our certified mold
                     specialists advise on the best product for your specific
                     situation — free via WhatsApp or phone.
                   </p>

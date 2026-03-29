@@ -3,33 +3,33 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Comprehensive Mould Inspection and Assessment Procedures",
-    desc: "Our team uses both visual checks and advanced technology to find mould and check the property's condition.",
+    title: "Comprehensive Mold Inspection and Assessment Procedures",
+    desc: "Our team uses both visual checks and advanced technology to find mold and check the property's condition.",
     img: "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg",
   },
   {
-    title: "Our Specialized Mould Remediation Process",
-    desc: "Our remediation process is key to our service. It ensures mould is removed and your property is restored.",
+    title: "Our Specialized Mold Remediation Process",
+    desc: "Our remediation process is key to our service. It ensures mold is removed and your property is restored.",
     img: "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/5b8b2f77-4f18-4ddb-bec8-bce550f34123.jpg",
   },
   {
     title: "Structural Drying and Moisture Control Solutions",
-    desc: "We fix the mould problem first, then find and fix any water leaks. This stops mould from coming back and keeps your building strong.",
+    desc: "We fix the mold problem first, then find and fix any water leaks. This stops mold from coming back and keeps your building strong.",
     img: "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/fefaad0e-262d-46a7-86ca-9fd206fc233d.jpg",
   },
   {
-    title: "Mould Prevention Strategies for Property Owners",
-    desc: "Stopping mould growth early is key, and our team helps property owners do just that. Good mould prevention keeps buildings strong and people healthy.",
+    title: "Mold Prevention Strategies for Property Owners",
+    desc: "Stopping mold growth early is key, and our team helps property owners do just that. Good mold prevention keeps buildings strong and people healthy.",
     img: "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg",
   },
   {
-    title: "Commercial Mould Remediation for Kenyan Businesses",
-    desc: "Our team is skilled in handling all sizes of mould projects. This ensures businesses can get back to normal quickly.",
+    title: "Commercial Mold Remediation for Kenyan Businesses",
+    desc: "Our team is skilled in handling all sizes of mold projects. This ensures businesses can get back to normal quickly.",
     img: "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/5b8b2f77-4f18-4ddb-bec8-bce550f34123.jpg",
   },
   {
     title: "The Importance of Professional Post-Remediation Verification",
-    desc: "Professional post-remediation verification is key to making sure your property is mould-free and safe.",
+    desc: "Professional post-remediation verification is key to making sure your property is mold-free and safe.",
     img: "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/fefaad0e-262d-46a7-86ca-9fd206fc233d.jpg",
   },
 ];

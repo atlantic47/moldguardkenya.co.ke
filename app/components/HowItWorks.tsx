@@ -3,12 +3,12 @@ export default function HowItWorks() {
     {
       icon: "1",
       title: "Containment Strategies",
-      desc: "We use strict containment strategies to stop mould spores from spreading. This includes physical barriers and negative air pressure systems.",
+      desc: "We use strict containment strategies to stop mold spores from spreading. This includes physical barriers and negative air pressure systems.",
     },
     {
       icon: "2",
       title: "HEPA Filtration",
-      desc: "After we contain the area, we use HEPA filtration and air scrubbing. These methods clean the air of mould spores.",
+      desc: "After we contain the area, we use HEPA filtration and air scrubbing. These methods clean the air of mold spores.",
     },
     {
       icon: "3",
@@ -24,10 +24,10 @@ export default function HowItWorks() {
           Key Takeaways
         </p>
         <h2 className="section-heading" style={{ marginBottom: "0.75rem", color: "var(--primary-dark)" }}>
-          Our Specialized Mould Remediation Process
+          Our Specialized Mold Remediation Process
         </h2>
         <p className="section-subheading">
-          Our remediation process is key to our service. It ensures mould is removed and your property is restored. At MoldGuard Kenya, we tackle mould infestations with a custom approach.
+          Our remediation process is key to our service. It ensures mold is removed and your property is restored. At MoldGuard Kenya, we tackle mold infestations with a custom approach.
         </p>
 
         <div

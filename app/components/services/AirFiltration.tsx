@@ -1,13 +1,13 @@
 export default function AirFiltration() {
   const tableData = [
-    { tech: "HEPA Purification", eff: "99.97% efficient at 0.3 microns", ben: "Captures mould spores, dust, and allergens" },
+    { tech: "HEPA Purification", eff: "99.97% efficient at 0.3 microns", ben: "Captures mold spores, dust, and allergens" },
     { tech: "Industrial-Grade Air Filtration", eff: "High capacity for air processing", ben: "Removes a wide range of airborne contaminants" },
   ];
 
   const benefits = [
-    "They effectively remove mould spores and other airborne pathogens.",
+    "They effectively remove mold spores and other airborne pathogens.",
     "They improve indoor air quality, making it safer for people inside.",
-    "They lower the chance of mould coming back by getting rid of spores that could grow again.",
+    "They lower the chance of mold coming back by getting rid of spores that could grow again.",
   ];
 
   return (
@@ -19,10 +19,10 @@ export default function AirFiltration() {
             Industrial-Grade Air Filtration and HEPA Purification
           </h2>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1rem" }}>
-            We use <strong>industrial-grade air filtration</strong> systems and <strong>HEPA purification</strong> in <strong>mould remediation</strong>. These systems are key in catching mould spores and other airborne pollutants. They greatly enhance the air quality inside.
+            We use <strong>industrial-grade air filtration</strong> systems and <strong>HEPA purification</strong> in <strong>mold remediation</strong>. These systems are key in catching mold spores and other airborne pollutants. They greatly enhance the air quality inside.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
-            <em>HEPA (High Efficiency Particulate Air)</em> filters can catch 99.97% of particles as small as 0.3 microns. This includes mould spores, dust, and allergens. By adding <strong>HEPA purification</strong> to our <strong>mould removal</strong> process, we make sure the air is clean. This reduces the chance of more contamination.
+            <em>HEPA (High Efficiency Particulate Air)</em> filters can catch 99.97% of particles as small as 0.3 microns. This includes mold spores, dust, and allergens. By adding <strong>HEPA purification</strong> to our <strong>mold removal</strong> process, we make sure the air is clean. This reduces the chance of more contamination.
           </p>
           <div style={{ background: "var(--cream)", padding: "1.5rem", borderRadius: "1rem", borderLeft: "4px solid var(--primary)" }}>
             <h4 style={{ fontWeight: 700, color: "var(--text-dark)", marginBottom: "0.75rem" }}>
@@ -65,7 +65,7 @@ export default function AirFiltration() {
             </div>
             <div style={{ background: "var(--cream)", padding: "1.25rem 1.5rem", borderTop: "1px solid var(--border)", textAlign: "center" }}>
               <p style={{ color: "var(--text-mid)", fontSize: "0.85rem", fontStyle: "italic", margin: 0 }}>
-                By using these advanced technologies together, we offer a complete solution for mould removal. It not only fixes the current problem but also helps stop mould from coming back.
+                By using these advanced technologies together, we offer a complete solution for mold removal. It not only fixes the current problem but also helps stop mold from coming back.
               </p>
             </div>
           </div>

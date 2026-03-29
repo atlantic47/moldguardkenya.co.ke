@@ -1,6 +1,6 @@
 export default function Verification() {
   const steps = [
-    "Rigorous visual inspections for signs of mould or moisture",
+    "Rigorous visual inspections for signs of mold or moisture",
     "Advanced air quality testing and surface sampling",
     "Clearance certification upon successful verification"
   ];
@@ -15,13 +15,13 @@ export default function Verification() {
             Post-Remediation Verification and Clearance Testing
           </h2>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            Our <strong>post-remediation verification</strong> and <strong>clearance testing</strong> are key steps. They confirm that mould removal was successful. At MoldGuard Kenya, we&apos;re proud of our detailed work. We make sure the area is not just clean but also safe for people to live in.
+            Our <strong>post-remediation verification</strong> and <strong>clearance testing</strong> are key steps. They confirm that mold removal was successful. At MoldGuard Kenya, we&apos;re proud of our detailed work. We make sure the area is not just clean but also safe for people to live in.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            After we finish removing mould, we do a series of tests. These tests check if the area is safe again. We look for any signs of mould or moisture with <strong>visual inspections</strong>. We also use advanced tech for <em>air quality testing</em> and <em>surface sampling</em>. These help us find any mould spores left behind. These tests are important to show if the removal was successful.
+            After we finish removing mold, we do a series of tests. These tests check if the area is safe again. We look for any signs of mold or moisture with <strong>visual inspections</strong>. We also use advanced tech for <em>air quality testing</em> and <em>surface sampling</em>. These help us find any mold spores left behind. These tests are important to show if the removal was successful.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7 }}>
-            Our <strong>clearance testing</strong> gives our clients the confidence that their property is safe and healthy. We give a <strong>clearance certificate</strong> when our tests show everything is okay. This lets our clients feel at ease. The value of <strong>post-remediation verification</strong> and <strong>clearance testing</strong> is huge. It&apos;s a critical step that makes sure the mould removal was done right. It protects the health and safety of everyone living there.
+            Our <strong>clearance testing</strong> gives our clients the confidence that their property is safe and healthy. We give a <strong>clearance certificate</strong> when our tests show everything is okay. This lets our clients feel at ease. The value of <strong>post-remediation verification</strong> and <strong>clearance testing</strong> is huge. It&apos;s a critical step that makes sure the mold removal was done right. It protects the health and safety of everyone living there.
           </p>
         </div>
 

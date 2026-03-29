@@ -11,8 +11,8 @@ import NewsletterSection from "./components/NewsletterSection";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "MoldGuard Kenya | Professional Mould Removal & Remediation",
-  description: "MoldGuard Kenya is the leading professional mould removal company in Kenya. We provide certified mould inspections, safe black mould eradication, and permanent moisture solutions for homes and businesses.",
+  title: "MoldGuard Kenya | Professional Mold Removal & Remediation",
+  description: "MoldGuard Kenya is the leading professional mold removal company in Kenya. We provide certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses.",
 };
 
 export default function Home() {

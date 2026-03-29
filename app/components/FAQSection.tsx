@@ -5,31 +5,31 @@ import Image from "next/image";
 
 const faqs = [
   {
-    q: "Why is mould growth so prevalent in Kenyan homes and businesses?",
-    a: "Kenya's tropical humidity is perfect for mould to grow. When humidity is over 60%, mould spores can easily grow. High moisture and poor air flow cause big air quality problems. Our climate means we need expert moisture control solutions to stop mould.",
+    q: "Why is mold growth so prevalent in Kenyan homes and businesses?",
+    a: "Kenya's tropical humidity is perfect for mold to grow. When humidity is over 60%, mold spores can easily grow. High moisture and poor air flow cause big air quality problems. Our climate means we need expert moisture control solutions to stop mold.",
   },
   {
-    q: "Can I use household bleach to remove mould myself?",
-    a: "No, don't use bleach for mould removal. Bleach might change mould color but doesn't kill it, and it can make things worse. Our remediation protocols include removing mould and using HEPA filtration to solve the problem at its root.",
+    q: "Can I use household bleach to remove mold myself?",
+    a: "No, don't use bleach for mold removal. Bleach might change mold color but doesn't kill it, and it can make things worse. Our remediation protocols include removing mold and using HEPA filtration to solve the problem at its root.",
   },
   {
-    q: "What are the primary health risks associated with prolonged mould exposure?",
-    a: "Mould can cause serious respiratory issues, allergies, and make asthma worse. We worry about the toxic effects of mycotoxins from mould like Stachybotrys. Our team uses containment strategies to keep these toxins from spreading during remediation.",
+    q: "What are the primary health risks associated with prolonged mold exposure?",
+    a: "Mold can cause serious respiratory issues, allergies, and make asthma worse. We worry about the toxic effects of mycotoxins from mold like Stachybotrys. Our team uses containment strategies to keep these toxins from spreading during remediation.",
   },
   {
-    q: "How do you detect mould that is hidden behind walls or under floors?",
-    a: "We use advanced moisture detection technology and thermal imaging to find hidden dampness. Our mould inspection also includes air quality testing and spore count analysis to find mould not visible to the naked eye.",
+    q: "How do you detect mold that is hidden behind walls or under floors?",
+    a: "We use advanced moisture detection technology and thermal imaging to find hidden dampness. Our mold inspection also includes air quality testing and spore count analysis to find mold not visible to the naked eye.",
   },
   {
     q: "Will your remediation process disrupt my business operations?",
-    a: "MoldGuard Kenya offers flexible schedules and rapid-response teams for commercial mould remediation. We isolate affected areas to keep your staff and customers safe while your business continues to operate.",
+    a: "MoldGuard Kenya offers flexible schedules and rapid-response teams for commercial mold remediation. We isolate affected areas to keep your staff and customers safe while your business continues to operate.",
   },
   {
-    q: "What steps do you take to prevent mould from returning?",
-    a: "We do more than just clean. We dry structures and fix water intrusion points, use dehumidification strategies tailored for Kenya's climate, and ensure good air flow in high-risk areas to stop moisture and mould from coming back.",
+    q: "What steps do you take to prevent mold from returning?",
+    a: "We do more than just clean. We dry structures and fix water intrusion points, use dehumidification strategies tailored for Kenya's climate, and ensure good air flow in high-risk areas to stop moisture and mold from coming back.",
   },
   {
-    q: "How do I know the mould has been successfully removed?",
+    q: "How do I know the mold has been successfully removed?",
     a: "We perform post-remediation verification to make sure clearance levels are safe. We also give you full documentation for insurance and property value purposes — clearance certificates and test results for your peace of mind.",
   },
   {
@@ -154,7 +154,7 @@ export default function FAQSection() {
               Do you have more questions?
             </h3>
             <p style={{ color: "var(--text-mid)", fontSize: "0.85rem", lineHeight: 1.6, marginBottom: "1.25rem" }}>
-              Our expert team is ready to answer all your mould-related questions and schedule a consultation for you.
+              Our expert team is ready to answer all your mold-related questions and schedule a consultation for you.
             </p>
             <a
               href="tel:0717140369"

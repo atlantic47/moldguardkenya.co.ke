@@ -1,30 +1,30 @@
 export default function InspectionProtocols() {
   const protocols = [
-    { component: "Visual Inspection", desc: "Comprehensive examination of the property for signs of mould and water damage", equip: "Moisture meters, thermal imaging cameras" },
-    { component: "Air Sampling", desc: "Assessment of mould spore levels in the air", equip: "Air sampling pumps, spore traps" },
-    { component: "Surface Sampling", desc: "Identification of mould type and extent on surfaces", equip: "Sterile swabs, tape lifts" },
+    { component: "Visual Inspection", desc: "Comprehensive examination of the property for signs of mold and water damage", equip: "Moisture meters, thermal imaging cameras" },
+    { component: "Air Sampling", desc: "Assessment of mold spore levels in the air", equip: "Air sampling pumps, spore traps" },
+    { component: "Surface Sampling", desc: "Identification of mold type and extent on surfaces", equip: "Sterile swabs, tape lifts" },
   ];
 
   return (
     <section style={{ background: "var(--cream)", padding: "5rem 0" }}>
       <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         <h2 className="section-heading" style={{ marginBottom: "1.25rem", textAlign: "center", maxWidth: "800px" }}>
-          Professional Mould Inspection and Assessment Protocols
+          Professional Mold Inspection and Assessment Protocols
         </h2>
         <div style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, textAlign: "center", maxWidth: "800px", marginBottom: "3rem" }}>
           <p style={{ marginBottom: "1rem" }}>
-            Our team at <strong>MoldGuard Kenya</strong> uses strict <strong>mould inspection</strong> and <strong>assessment protocols</strong>. We make sure to find and check mould infestations accurately. We start by carefully looking at the property. We use tools like moisture meters and thermal cameras. These help us find where mould might be growing.
+            Our team at <strong>MoldGuard Kenya</strong> uses strict <strong>mold inspection</strong> and <strong>assessment protocols</strong>. We make sure to find and check mold infestations accurately. We start by carefully looking at the property. We use tools like moisture meters and thermal cameras. These help us find where mold might be growing.
           </p>
           <p style={{ marginBottom: "1rem" }}>
-            We also take air and surface samples. This helps us know the type and how much mould there is. This info is key for fixing the problem. After inspecting and assessing, we make a detailed report. It shows what we found and what to do next.
+            We also take air and surface samples. This helps us know the type and how much mold there is. This info is key for fixing the problem. After inspecting and assessing, we make a detailed report. It shows what we found and what to do next.
           </p>
           <div style={{ background: "white", padding: "1.5rem", borderRadius: "1rem", border: "1px solid var(--border)", display: "inline-block", textAlign: "left", marginBottom: "1rem" }}>
             <h4 style={{ fontWeight: 700, color: "var(--primary-dark)", marginBottom: "0.75rem" }}>Our protocols include:</h4>
             <ul style={{ listStylePosition: "inside", color: "var(--text-dark)", paddingLeft: "1rem" }}>
-              <li style={{ marginBottom: "0.5rem" }}>Looking for mould and water damage signs</li>
+              <li style={{ marginBottom: "0.5rem" }}>Looking for mold and water damage signs</li>
               <li style={{ marginBottom: "0.5rem" }}>Finding hidden moisture with <strong>moisture mapping</strong></li>
-              <li style={{ marginBottom: "0.5rem" }}>Checking air for mould spores</li>
-              <li>Identifying mould types on surfaces</li>
+              <li style={{ marginBottom: "0.5rem" }}>Checking air for mold spores</li>
+              <li>Identifying mold types on surfaces</li>
             </ul>
           </div>
         </div>

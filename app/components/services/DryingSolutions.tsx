@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function DryingSolutions() {
   const tableData = [
-    { srv: "Structural Drying", desc: "Use of specialized equipment to dry building materials and structures.", ben: "Prevents further mould growth, reduces moisture-related damage." },
-    { srv: "Dehumidification", desc: "Control of humidity levels to prevent mould and mildew.", ben: "Creates a healthier indoor environment, minimizes downtime." },
+    { srv: "Structural Drying", desc: "Use of specialized equipment to dry building materials and structures.", ben: "Prevents further mold growth, reduces moisture-related damage." },
+    { srv: "Dehumidification", desc: "Control of humidity levels to prevent mold and mildew.", ben: "Creates a healthier indoor environment, minimizes downtime." },
   ];
 
   const benefits = [
-    "They stop mould from coming back.",
+    "They stop mold from coming back.",
     "They help avoid damage from too much moisture.",
     "They make indoor spaces healthier.",
     "They help properties open up sooner.",
@@ -22,10 +22,10 @@ export default function DryingSolutions() {
             Structural Drying and Dehumidification Solutions
           </h2>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            At MoldGuard Kenya, we know how key <strong>structural drying</strong> and <strong>dehumidification</strong> are. They stop mould from coming back after we fix it. Our solutions make sure places are dry and have no extra moisture. This makes it hard for mould to grow.
+            At MoldGuard Kenya, we know how key <strong>structural drying</strong> and <strong>dehumidification</strong> are. They stop mold from coming back after we fix it. Our solutions make sure places are dry and have no extra moisture. This makes it hard for mold to grow.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7 }}>
-            <strong>Structural drying</strong> uses special tools to get moisture out of buildings. We use the latest methods and tools, like air movers and big dehumidifiers. <strong>Dehumidification</strong> is a big part of our mould fixing work. It keeps humidity levels down, stopping mould and mildew. Our team knows how to check moisture levels and use the right dehumidification methods.
+            <strong>Structural drying</strong> uses special tools to get moisture out of buildings. We use the latest methods and tools, like air movers and big dehumidifiers. <strong>Dehumidification</strong> is a big part of our mold fixing work. It keeps humidity levels down, stopping mold and mildew. Our team knows how to check moisture levels and use the right dehumidification methods.
           </p>
         </div>
 
@@ -60,14 +60,14 @@ export default function DryingSolutions() {
           <div>
             <div style={{ background: "var(--primary-dark)", color: "white", padding: "2rem", borderRadius: "1rem", marginBottom: "2rem" }}>
               <p style={{ fontStyle: "italic", fontSize: "1.1rem", marginBottom: "1rem" }}>
-                "The key to successful mould remediation lies not just in removing the mould, but in addressing the underlying moisture issues that led to its growth."
+                "The key to successful mold remediation lies not just in removing the mold, but in addressing the underlying moisture issues that led to its growth."
               </p>
               <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.7)", margin: 0 }}>
-                — Mould remediation expert
+                — Mold remediation expert
               </p>
               <div style={{ marginTop: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
                  <p style={{ fontSize: "0.95rem", lineHeight: 1.6 }}>
-                   Experts say, "The best way to stop mould is to control moisture." Our focus on <strong>structural drying</strong> and <strong>dehumidification</strong> shows our commitment to top-notch mould fixing.
+                   Experts say, "The best way to stop mold is to control moisture." Our focus on <strong>structural drying</strong> and <strong>dehumidification</strong> shows our commitment to top-notch mold fixing.
                  </p>
               </div>
             </div>

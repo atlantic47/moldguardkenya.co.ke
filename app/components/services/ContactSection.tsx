@@ -15,22 +15,22 @@ export default function ContactSection() {
             How to Reach Our Team at MoldGuard Kenya
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            If you&apos;re facing a mould problem, reaching out to MoldGuard Kenya is the first step. We aim to make your home or workplace healthier. Our team is ready to help you every step of the way.
+            If you&apos;re facing a mold problem, reaching out to MoldGuard Kenya is the first step. We aim to make your home or workplace healthier. Our team is ready to help you every step of the way.
           </p>
           
           <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "1rem" }}>Contacting Our Specialists</h3>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            To talk to our mould experts, just call <strong>0717140469</strong>. We&apos;re here to answer your questions and set up a meeting. We&apos;re quick to respond, so you can start fixing your mould issues fast.
+            To talk to our mold experts, just call <strong>0717140469</strong>. We&apos;re here to answer your questions and set up a meeting. We&apos;re quick to respond, so you can start fixing your mold issues fast.
           </p>
 
           <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "1rem" }}>Scheduling Your Initial Consultation</h3>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1rem" }}>
-            Setting up your first meeting is easy. After you call us, we&apos;ll go over your mould problem. We&apos;ll then send a certified specialist to check it out and plan how to fix it.
+            Setting up your first meeting is easy. After you call us, we&apos;ll go over your mold problem. We&apos;ll then send a certified specialist to check it out and plan how to fix it.
           </p>
 
           <div style={{ background: "rgba(255,255,255,0.1)", padding: "1.5rem", borderRadius: "1rem", borderLeft: "4px solid var(--gold)", marginBottom: "2rem" }}>
             <p style={{ fontStyle: "italic", fontSize: "1rem", color: "white", marginBottom: "0.5rem" }}>
-              "MoldGuard Kenya&apos;s team was professional, efficient, and courteous. They not only removed the mould but also helped us understand how to prevent future occurrences."
+              "MoldGuard Kenya&apos;s team was professional, efficient, and courteous. They not only removed the mold but also helped us understand how to prevent future occurrences."
             </p>
             <p style={{ fontSize: "0.85rem", color: "var(--gold)", margin: 0 }}>— Happy Client</p>
           </div>
@@ -45,7 +45,7 @@ export default function ContactSection() {
             <ul style={{ listStyle: "none", margin: "0 0 2.5rem 0", padding: 0, display: "flex", flexDirection: "column", gap: "1rem" }}>
                {[
                  "A quick reply to your call",
-                 "A detailed check of your mould problem",
+                 "A detailed check of your mold problem",
                  "A plan to fix it that fits your needs",
                  "Professional and friendly service from our certified team",
                ].map((item, i) => (

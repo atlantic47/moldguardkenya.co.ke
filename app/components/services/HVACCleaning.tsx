@@ -1,9 +1,9 @@
 export default function HVACCleaning() {
   const processes = [
-    { title: "Inspection", desc: "We conduct a thorough inspection of the HVAC system and ductwork to identify any mould growth or moisture issues." },
-    { title: "Containment", desc: "We contain the affected area to prevent the spread of mould spores to other parts of the building." },
-    { title: "Cleaning", desc: "Using specialized equipment, we clean the HVAC system and ductwork, ensuring that all mould is removed." },
-    { title: "Verification", desc: "After cleaning, we verify that the system is free from mould to ensure the air quality is safe for occupants." },
+    { title: "Inspection", desc: "We conduct a thorough inspection of the HVAC system and ductwork to identify any mold growth or moisture issues." },
+    { title: "Containment", desc: "We contain the affected area to prevent the spread of mold spores to other parts of the building." },
+    { title: "Cleaning", desc: "Using specialized equipment, we clean the HVAC system and ductwork, ensuring that all mold is removed." },
+    { title: "Verification", desc: "After cleaning, we verify that the system is free from mold to ensure the air quality is safe for occupants." },
   ];
 
   return (
@@ -13,17 +13,17 @@ export default function HVACCleaning() {
         <div>
           <p className="section-label" style={{ marginBottom: "0.5rem" }}>Clear Air Ducts</p>
           <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.25rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.2, marginBottom: "1.25rem" }}>
-            Specialized Mould Cleaning for HVAC Systems and Ductwork
+            Specialized Mold Cleaning for HVAC Systems and Ductwork
           </h2>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            At MoldGuard Kenya, we know mould in HVAC systems and ductwork is a big health risk. Our services aim to reduce these risks. Mould in these areas can spread mould spores, worsening breathing problems and other health issues.
+            At MoldGuard Kenya, we know mold in HVAC systems and ductwork is a big health risk. Our services aim to reduce these risks. Mold in these areas can spread mold spores, worsening breathing problems and other health issues.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            Mould in HVAC systems and ductwork is hard to find because it&apos;s hidden. Our team uses special tools to find where mould might grow. We use <strong>moisture mapping</strong> and <strong>leak detection</strong> to spot mould areas.
+            Mold in HVAC systems and ductwork is hard to find because it&apos;s hidden. Our team uses special tools to find where mold might grow. We use <strong>moisture mapping</strong> and <strong>leak detection</strong> to spot mold areas.
           </p>
           <div style={{ background: "white", padding: "1.5rem", borderRadius: "1rem", borderLeft: "4px solid var(--primary)", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
             <p style={{ fontStyle: "italic", fontSize: "0.95rem", color: "var(--text-dark)", marginBottom: "0.5rem" }}>
-              "Mould contamination in HVAC systems is a serious issue that requires immediate attention. If left unchecked, it can lead to significant health risks for occupants and necessitate costly repairs."
+              "Mold contamination in HVAC systems is a serious issue that requires immediate attention. If left unchecked, it can lead to significant health risks for occupants and necessitate costly repairs."
             </p>
             <p style={{ fontSize: "0.8rem", color: "var(--text-mid)", fontWeight: 600 }}>— Leading expert in indoor air quality</p>
           </div>
@@ -49,7 +49,7 @@ export default function HVACCleaning() {
 
           <div style={{ marginTop: "2rem", background: "var(--primary)", color: "white", padding: "2rem", borderRadius: "1rem" }}>
             <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1rem" }}>
-              Our mould cleaning services for HVAC systems and ductwork aim to remove mould and prevent it from coming back. We make sure these systems are clean and dry. This stops mould from growing again.
+              Our mold cleaning services for HVAC systems and ductwork aim to remove mold and prevent it from coming back. We make sure these systems are clean and dry. This stops mold from growing again.
             </p>
             <p style={{ fontSize: "1rem", lineHeight: 1.7 }}>
               Choosing MoldGuard Kenya for your HVAC and <strong>ductwork cleaning</strong> means you&apos;re getting top-notch service. Our team is committed to better indoor air quality and protecting building occupants&apos; health.

@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { data } = getSeoMarkdownFile("blog", slug);
   return {
     title: data.title || `${slug.replace(/-/g, " ")} | MoldGuard Kenya`,
-    description: data.description || "Professional mould removal and prevention advice.",
+    description: data.description || "Professional mold removal and prevention advice.",
   };
 }
 
@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* HERO */}
         <PageHero
           title={title}
-          subtitle={data.description || "Expert insights from Kenya's leading mould remediation specialists."}
+          subtitle={data.description || "Expert insights from Kenya's leading mold remediation specialists."}
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Blog", href: "/blog" },
@@ -173,10 +173,10 @@ export default async function BlogPostPage({ params }: Props) {
               <div style={{ background: "var(--primary-dark)", borderRadius: "1.5rem", padding: "2rem", color: "white", boxShadow: "0 8px 30px rgba(30,58,15,0.2)" }}>
                 <span style={{ fontSize: "2.5rem" }}>🦠</span>
                 <h3 style={{ fontWeight: 800, fontSize: "1.2rem", margin: "0.75rem 0 0.75rem" }}>
-                  Got a Mould Problem?
+                  Got a Mold Problem?
                 </h3>
                 <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
-                  Don&apos;t wait. Every day mould spreads deeper into your walls. Contact MoldGuard Kenya for certified, rapid-response remediation.
+                  Don&apos;t wait. Every day mold spreads deeper into your walls. Contact MoldGuard Kenya for certified, rapid-response remediation.
                 </p>
                 <a href="tel:0717140369" className="btn-gold" style={{ width: "100%", justifyContent: "center", fontSize: "0.95rem", padding: "0.8rem" }}>
                   📞 Call 0717140369
@@ -193,7 +193,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </h3>
                 <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: "0.85rem" }}>
                   {[
-                    "Mould doubles in size every 24–48 hrs",
+                    "Mold doubles in size every 24–48 hrs",
                     "Spores cause respiratory illness",
                     "Property values drop 10–30%",
                     "DIY solutions don't remove roots",
@@ -225,10 +225,10 @@ export default async function BlogPostPage({ params }: Props) {
         <section style={{ background: "linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%)", padding: "5rem 0", color: "white", textAlign: "center" }}>
           <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
             <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, lineHeight: 1.2, maxWidth: "600px" }}>
-              Ready to Make Your Home Mould-Free?
+              Ready to Make Your Home Mold-Free?
             </h2>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", maxWidth: "500px", lineHeight: 1.7 }}>
-              Our certified team across Kenya is ready to diagnose and permanently eliminate your mould problem.
+              Our certified team across Kenya is ready to diagnose and permanently eliminate your mold problem.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
               <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>

@@ -1,16 +1,16 @@
 export default function CertifiedExperts() {
   const comparison = [
-    { aspect: "Training and Expertise", pro: "Highly trained in mould remediation techniques and safety protocols", con: "Limited or no formal training in mould remediation" },
-    { aspect: "Equipment and Resources", pro: "Access to advanced mould detection and removal equipment", con: "Limited access to specialized equipment" },
+    { aspect: "Training and Expertise", pro: "Highly trained in mold remediation techniques and safety protocols", con: "Limited or no formal training in mold remediation" },
+    { aspect: "Equipment and Resources", pro: "Access to advanced mold detection and removal equipment", con: "Limited access to specialized equipment" },
     { aspect: "Safety Protocols", pro: "Strict adherence to industry safety standards", con: "May not follow industry safety standards" },
-    { aspect: "Outcome", pro: "Effective mould removal and prevention of future growth", con: "Potential for incomplete removal and recurrence" },
+    { aspect: "Outcome", pro: "Effective mold removal and prevention of future growth", con: "Potential for incomplete removal and recurrence" },
   ];
 
   const benefits = [
     "Comprehensive assessment and remediation plans tailored to your specific situation",
-    "Use of advanced equipment for mould detection and removal",
+    "Use of advanced equipment for mold detection and removal",
     "Adherence to industry standards and safety protocols",
-    "Prevention of future mould growth through effective moisture control measures",
+    "Prevention of future mold growth through effective moisture control measures",
   ];
 
   return (
@@ -22,10 +22,10 @@ export default function CertifiedExperts() {
             Why Choosing Certified Experts Matters for Your Safety
           </h2>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            The safety and success of mould removal depend on certified professionals. At MoldGuard Kenya, we know mould removal is more than just getting rid of visible mould. It&apos;s about making sure your environment is safe and healthy.
+            The safety and success of mold removal depend on certified professionals. At MoldGuard Kenya, we know mold removal is more than just getting rid of visible mold. It&apos;s about making sure your environment is safe and healthy.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7 }}>
-            Certified mould removal experts have the skills, tools, and experience needed. They can find the mould&apos;s source, stop it from spreading, and remove it safely. This is key to stopping mould from coming back. Choosing <strong>certified experts</strong> like MoldGuard Kenya ensures your mould problem is handled right. Our team is dedicated to safe and effective mould removal. We aim to not only fix the current problem but also prevent it from happening again.
+            Certified mold removal experts have the skills, tools, and experience needed. They can find the mold&apos;s source, stop it from spreading, and remove it safely. This is key to stopping mold from coming back. Choosing <strong>certified experts</strong> like MoldGuard Kenya ensures your mold problem is handled right. Our team is dedicated to safe and effective mold removal. We aim to not only fix the current problem but also prevent it from happening again.
           </p>
         </div>
 

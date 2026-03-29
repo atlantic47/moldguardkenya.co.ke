@@ -7,9 +7,9 @@ import PageHero from "../components/PageHero";
 import { getAllSeoMetadata } from "@/lib/markdown";
 
 export const metadata: Metadata = {
-  title: "Service Locations | Mould Removal Across Kenya | MoldGuard Kenya",
+  title: "Service Locations | Mold Removal Across Kenya | MoldGuard Kenya",
   description:
-    "Find professional mould removal and remediation services near you. MoldGuard Kenya serves Nairobi, Mombasa, Kiambu, Nakuru, Eldoret and surrounding areas.",
+    "Find professional mold removal and remediation services near you. MoldGuard Kenya serves Nairobi, Mombasa, Kiambu, Nakuru, Eldoret and surrounding areas.",
 };
 
 const regions = [
@@ -25,7 +25,7 @@ const regions = [
     name: "Mombasa",
     slug: "mombasa",
     icon: "🌊",
-    desc: "Coastal high-humidity mould remediation specialists",
+    desc: "Coastal high-humidity mold remediation specialists",
     suburbs: ["Nyali", "Kizingo", "Bamburi", "Likoni", "Diani"],
     slugs: ["nyali", "kizingo", "bamburi", "likoni", "diani"],
   },
@@ -63,7 +63,7 @@ export default function LocationsListingPage() {
         {/* HERO */}
         <PageHero
           title="Our Service Locations"
-          subtitle="MoldGuard Kenya dispatches certified mould remediation specialists across all major cities and suburbs in Kenya."
+          subtitle="MoldGuard Kenya dispatches certified mold remediation specialists across all major cities and suburbs in Kenya."
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Locations" }]}
           bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/3ca97677-789a-4c22-b92c-639a0abfe6ad.jpg"
         />

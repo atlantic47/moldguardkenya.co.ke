@@ -1,10 +1,10 @@
 export default function ServicesList() {
   const servicesList = [
-    "Mould inspection and assessment",
+    "Mold inspection and assessment",
     "Customized remediation plans",
     "State-of-the-art equipment and techniques",
     "Environmentally friendly products",
-    "Prevention services to avoid future mould growth",
+    "Prevention services to avoid future mold growth",
   ];
 
   return (
@@ -13,16 +13,16 @@ export default function ServicesList() {
         
         <div>
           <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, marginBottom: "1.25rem", color: "var(--primary-dark)" }}>
-            Different services we provide as Mould removal company - MoldGuard Kenya
+            Different services we provide as Mold removal company - MoldGuard Kenya
           </h2>
           <p style={{ marginBottom: "1.25rem", lineHeight: 1.7, fontSize: "0.95rem", color: "rgba(30,58,15,0.8)" }}>
-            At <strong>MoldGuard Kenya</strong>, we&apos;re proud to offer a wide range of <strong>mould removal services</strong>. Our team works hard to provide top-quality services. We aim to make sure our clients have a safe and healthy place to live.
+            At <strong>MoldGuard Kenya</strong>, we&apos;re proud to offer a wide range of <strong>mold removal services</strong>. Our team works hard to provide top-quality services. We aim to make sure our clients have a safe and healthy place to live.
           </p>
           <p style={{ marginBottom: "1.25rem", lineHeight: 1.7, fontSize: "0.95rem", color: "rgba(30,58,15,0.8)" }}>
-            Our <strong>MoldGuard Kenya services</strong> start with detailed mould inspections. We find out how much mould there is and what to do next. We use the latest tools and methods to spot mould in hard-to-reach places like behind walls and under floors. After we finish the inspection, we create a plan to get rid of the mould. We use <em>state-of-the-art equipment</em> and safe products. This way, we make sure the job is done right and safely.
+            Our <strong>MoldGuard Kenya services</strong> start with detailed mold inspections. We find out how much mold there is and what to do next. We use the latest tools and methods to spot mold in hard-to-reach places like behind walls and under floors. After we finish the inspection, we create a plan to get rid of the mold. We use <em>state-of-the-art equipment</em> and safe products. This way, we make sure the job is done right and safely.
           </p>
           <p style={{ lineHeight: 1.7, fontSize: "0.95rem", color: "rgba(30,58,15,0.8)" }}>
-            We also help prevent mould from coming back. We find and fix the problems that cause mould, like leaks and bad air flow. This helps keep your place mould-free in the future. We take a complete approach to <strong>mould removal</strong> and prevention. This means our clients get the best service possible. We&apos;re all about giving great results and making our clients happy.
+            We also help prevent mold from coming back. We find and fix the problems that cause mold, like leaks and bad air flow. This helps keep your place mold-free in the future. We take a complete approach to <strong>mold removal</strong> and prevention. This means our clients get the best service possible. We&apos;re all about giving great results and making our clients happy.
           </p>
         </div>
 

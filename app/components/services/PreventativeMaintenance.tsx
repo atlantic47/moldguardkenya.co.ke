@@ -1,12 +1,12 @@
 export default function PreventativeMaintenance() {
   const tableData = [
-    { measure: "Regular Inspections", desc: "Spotting mould early", ben: "Reduces costs of fixing it" },
+    { measure: "Regular Inspections", desc: "Spotting mold early", ben: "Reduces costs of fixing it" },
     { measure: "Moisture Mapping", desc: "Finding hidden water leaks", ben: "Prevents damage to your building" },
     { measure: "HVAC System Checks", desc: "Making sure air is filtered right", ben: "Improves air quality inside" },
   ];
 
   const plans = [
-    "Regular mould inspections to spot mould early",
+    "Regular mold inspections to spot mold early",
     "Moisture mapping to find hidden leaks or water damage",
     "HVAC system checks to make sure air is clean and flows well",
     "Dehumidification solutions for areas with too much humidity",
@@ -18,17 +18,17 @@ export default function PreventativeMaintenance() {
         
         <div>
           <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, color: "var(--gold)", lineHeight: 1.2, marginBottom: "1.5rem" }}>
-            Preventative Maintenance Plans to Stop Future Mould Recurrence
+            Preventative Maintenance Plans to Stop Future Mold Recurrence
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            <strong>Mould prevention</strong> is more than just removing it. It&apos;s about keeping your environment healthy with the right steps. At MoldGuard Kenya, we think being proactive is the best way to stop mould problems.
+            <strong>Mold prevention</strong> is more than just removing it. It&apos;s about keeping your environment healthy with the right steps. At MoldGuard Kenya, we think being proactive is the best way to stop mold problems.
           </p>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.25rem" }}>
             Our plans aim to find and fix issues before they get big. We check places where moisture often builds up, like basements and attics. We also look at areas around plumbing.
           </p>
           <div style={{ background: "rgba(255,255,255,0.1)", padding: "1.5rem", borderRadius: "1rem", borderLeft: "4px solid var(--gold)" }}>
              <p style={{ fontStyle: "italic", fontSize: "1.05rem", color: "white", marginBottom: "0.25rem" }}>
-               "Prevention is always better than cure, when it comes to mould growth"
+               "Prevention is always better than cure, when it comes to mold growth"
              </p>
              <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.6)" }}>— Experts</p>
           </div>

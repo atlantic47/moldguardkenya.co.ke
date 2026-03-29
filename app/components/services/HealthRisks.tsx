@@ -1,8 +1,8 @@
 export default function HealthRisks() {
   const risks = [
-    { issue: "Respiratory Problems", desc: "Coughing, wheezing, and difficulty breathing due to mould spores irritating the lungs.", group: "Individuals with asthma or other respiratory conditions" },
-    { issue: "Allergic Reactions", desc: "Sneezing, runny nose, and skin irritation caused by mould allergens.", group: "People with allergies" },
-    { issue: "Infections", desc: "In rare cases, mould can cause infections in people with severely weakened immune systems.", group: "Individuals undergoing chemotherapy, with HIV/AIDS, or taking immunosuppressive drugs" },
+    { issue: "Respiratory Problems", desc: "Coughing, wheezing, and difficulty breathing due to mold spores irritating the lungs.", group: "Individuals with asthma or other respiratory conditions" },
+    { issue: "Allergic Reactions", desc: "Sneezing, runny nose, and skin irritation caused by mold allergens.", group: "People with allergies" },
+    { issue: "Infections", desc: "In rare cases, mold can cause infections in people with severely weakened immune systems.", group: "Individuals undergoing chemotherapy, with HIV/AIDS, or taking immunosuppressive drugs" },
   ];
 
   const commonRisksList = [
@@ -16,21 +16,21 @@ export default function HealthRisks() {
     <section style={{ background: "white", padding: "5rem 0" }}>
       <div className="container">
         <h2 className="section-heading" style={{ marginBottom: "1rem" }}>
-          Understanding the Health Risks of Indoor Mould Growth
+          Understanding the Health Risks of Indoor Mold Growth
         </h2>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center", marginBottom: "3rem" }}>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1rem" }}>
-            It&apos;s important to know how indoor mould affects our health. Mould can cause mild allergies to serious breathing problems. This is why keeping our homes mould-free is key.
+            It&apos;s important to know how indoor mold affects our health. Mold can cause mild allergies to serious breathing problems. This is why keeping our homes mold-free is key.
           </p>
           <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7 }}>
-            Mould can harm people in different ways. Those with weak immune systems, asthma, or allergies are at higher risk. It&apos;s vital to be aware of these risks. Quick action is needed to stop mould growth. Regular checks and fast cleanup are essential for a healthy home. Knowing the risks of indoor mould helps us act early. We can prevent mould and keep our homes safe and healthy.
+            Mold can harm people in different ways. Those with weak immune systems, asthma, or allergies are at higher risk. It&apos;s vital to be aware of these risks. Quick action is needed to stop mold growth. Regular checks and fast cleanup are essential for a healthy home. Knowing the risks of indoor mold helps us act early. We can prevent mold and keep our homes safe and healthy.
           </p>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "3rem", alignItems: "start" }}>
           <div style={{ background: "var(--cream)", padding: "2rem", borderRadius: "1rem", border: "1px solid var(--border)" }}>
             <h3 style={{ fontWeight: 700, color: "var(--primary-dark)", marginBottom: "1.25rem" }}>
-              Common Health Risks Associated with Indoor Mould Exposure:
+              Common Health Risks Associated with Indoor Mold Exposure:
             </h3>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "1rem" }}>
               {commonRisksList.map((item, idx) => (
@@ -43,7 +43,7 @@ export default function HealthRisks() {
           </div>
 
           <div>
-            <h3 style={{ fontWeight: 700, color: "var(--primary-dark)", marginBottom: "1.25rem" }}>The dangers of indoor mould are real. Here&apos;s why:</h3>
+            <h3 style={{ fontWeight: 700, color: "var(--primary-dark)", marginBottom: "1.25rem" }}>The dangers of indoor mold are real. Here&apos;s why:</h3>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", border: "1px solid var(--border)", borderRadius: "0.5rem", overflow: "hidden" }}>
                 <thead>
