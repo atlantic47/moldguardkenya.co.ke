@@ -29,6 +29,7 @@ export default function RootLayout({
       "@type": "PostalAddress",
       "streetAddress": "Development House, Moi Avenue",
       "addressLocality": "Nairobi",
+      "postalCode": "00100",
       "addressCountry": "KE"
     },
     "geo": {

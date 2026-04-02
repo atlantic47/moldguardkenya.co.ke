@@ -71,6 +71,7 @@ export default function ContactPage() {
         "@type": "PostalAddress",
         "streetAddress": "Development House, Moi Avenue",
         "addressLocality": "Nairobi",
+        "postalCode": "00100",
         "addressCountry": "KE"
       },
       "contactPoint": [
