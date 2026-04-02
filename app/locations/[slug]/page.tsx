@@ -93,7 +93,7 @@ export default async function LocationPostPage({ params }: Props) {
 
   const locationSchema = {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
+    "@type": "LocalBusiness",
     "name": `Mold Removal & Inspection in ${locationName}`,
     "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/3ca97677-789a-4c22-b92c-639a0abfe6ad.jpg",
     "telephone": "+254717140369",

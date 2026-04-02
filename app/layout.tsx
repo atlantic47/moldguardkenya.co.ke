@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@type": "LocalBusiness",
     "name": "MoldGuard Kenya",
     "description": "MoldGuard Kenya is a trusted specialist in professional mold removal, mold inspection, and complete mold remediation services in Nairobi and surrounding areas. We focus on identifying, treating, and preventing mold problems in homes and commercial properties to ensure safe and healthy indoor environments. Our team uses advanced detection methods and proven techniques to remove mold at the source, including black mold, damp walls, and hidden growth behind ceilings and flooring. We deliver reliable solutions with minimal disruption and long term prevention. Contact MoldGuard Kenya today for expert mold inspection and removal services you can trust.",
     "url": "https://moldguardkenya.co.ke/",

@@ -29,6 +29,7 @@ export default function ServicesPage() {
   const serviceSchema = {
     "@context": "https://schema.org/",
     "@type": "Service",
+    "name": "Mold Removal & Water Damage Restoration",
     "serviceType": "Water damage restoration service",
     "provider": {
       "@type": "LocalBusiness",

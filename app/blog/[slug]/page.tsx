@@ -35,7 +35,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const blogSchema = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": `https://moldguardkenya.co.ke/blog/${slug}`
