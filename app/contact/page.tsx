@@ -56,10 +56,43 @@ const processSteps = [
 ];
 
 export default function ContactPage() {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact MoldGuard Kenya",
+    "description": "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0717140369.",
+    "url": "https://moldguardkenya.co.ke/contact",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "MoldGuard Kenya",
+      "telephone": "+254717140369",
+      "email": "info@moldguardkenya.co.ke",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Development House, Moi Avenue",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+254717140369",
+          "contactType": "customer service",
+          "availableLanguage": ["English", "Swahili"],
+          "areaServed": "KE"
+        }
+      ]
+    }
+  };
+
   return (
     <>
       <Navbar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+        />
         {/* HERO */}
         <PageHero
           title="Contact MoldGuard Kenya"

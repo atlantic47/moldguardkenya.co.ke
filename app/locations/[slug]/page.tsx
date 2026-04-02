@@ -91,10 +91,33 @@ export default async function LocationPostPage({ params }: Props) {
     (s) => s.heading.toLowerCase().includes("service") || s.heading.toLowerCase().includes("offer") || s.heading.toLowerCase().includes("include")
   );
 
+  const locationSchema = {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": `Mold Removal & Inspection in ${locationName}`,
+    "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/3ca97677-789a-4c22-b92c-639a0abfe6ad.jpg",
+    "telephone": "+254717140369",
+    "url": `https://moldguardkenya.co.ke/locations/${slug}`,
+    "areaServed": {
+      "@type": "City",
+      "name": locationName,
+      "addressCountry": "KE"
+    },
+    "parentOrganization": {
+      "@type": "LocalBusiness",
+      "name": "MoldGuard Kenya",
+      "url": "https://moldguardkenya.co.ke/"
+    }
+  };
+
   return (
     <>
       <Navbar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+        />
         {/* HERO */}
         <PageHero
           title={parsed.h1 || `Mold Removal in ${locationName}`}

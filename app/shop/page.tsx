@@ -19,10 +19,32 @@ export default function ShopPage() {
     "Mold Removal Products": "🧪",
   };
 
+  const shopSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "MoldGuard Shop - Professional Mold & Damp Control Products",
+    "description": "Professional-grade dehumidifiers, air purifiers, and mold removal products available in Kenya.",
+    "itemListElement": products.map((product, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Product",
+        "name": product.name,
+        "url": `https://moldguardkenya.co.ke/shop/${product.slug}`,
+        "description": product.shortDescription,
+        "category": product.category
+      }
+    }))
+  };
+
   return (
     <>
       <Navbar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(shopSchema) }}
+        />
         {/* HERO */}
         <section style={{
           background: "linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%)",

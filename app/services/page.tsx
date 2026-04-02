@@ -26,10 +26,60 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Service",
+    "serviceType": "Water damage restoration service",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "MoldGuard Kenya",
+      "telephone": "+254717140369",
+      "url": "https://moldguardkenya.co.ke/"
+    },
+    "description": "Comprehensive mold remediation services including thermal moisture mapping, HEPA air filtration, toxic black mold extraction, and structural drying.",
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Kenya"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Mold Remediation Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mold Inspection"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Air Quality Testing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mold Removal & Remediation"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <>
       <Navbar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
         <ServicesHero />
         <HealthRisks />
         <ServicesList />

@@ -33,10 +33,41 @@ export default async function BlogPostPage({ params }: Props) {
   // Strip frontmatter before passing to ReactMarkdown
   const body = content.replace(/^---[\s\S]+?---\n?/, "").trim();
 
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://moldguardkenya.co.ke/blog/${slug}`
+    },
+    "headline": title,
+    "description": data.description || "Expert insights from Kenya's leading mold remediation specialists.",
+    "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/8e626626-0a65-4016-b728-2abad223b45e.jpg",  
+    "author": {
+      "@type": "Organization",
+      "name": "MoldGuard Kenya",
+      "url": "https://moldguardkenya.co.ke/"
+    },  
+    "publisher": {
+      "@type": "Organization",
+      "name": "MoldGuard Kenya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://moldguardkenya.co.ke/icon.tsx"
+      }
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": new Date().toISOString().split('T')[0]
+  };
+
   return (
     <>
       <Navbar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+        />
         {/* HERO */}
         <PageHero
           title={title}
