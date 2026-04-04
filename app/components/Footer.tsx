@@ -55,13 +55,19 @@ export default function Footer() {
         <div>
           <h4 style={{ color: "white", fontWeight: 700, marginBottom: "1.25rem", fontSize: "0.95rem" }}>Quick Links</h4>
           <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-            {["Home", "About Us", "Services", "Gallery", "Contact"].map((item) => (
-              <li key={item}>
+            {[
+              { label: "Home", href: "/" },
+              { label: "About Us", href: "/about" },
+              { label: "Services", href: "/services" },
+              { label: "Blog", href: "/blog" },
+              { label: "Contact", href: "/contact" },
+            ].map((item) => (
+              <li key={item.label}>
                 <Link
-                  href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
+                  href={item.href}
                   style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
                 >
-                  {item}
+                  {item.label}
                 </Link>
               </li>
             ))}
