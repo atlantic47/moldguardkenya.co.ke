@@ -36,6 +36,11 @@ const faqs = [
     q: "What areas do you serve and how quickly can you respond?",
     a: "We cover Nairobi and nearby areas including Westlands, Kilimani, Karen, Langata, Kiambu, Ruiru, Limuru, and Thika. Our rapid response teams are available for emergencies. Call 0717140369 to schedule your first assessment.",
   },
+  {
+    q: "Do you handle mold caused by fire suppression or sprinkler system discharge?",
+    html: `Yes. Water released during fire suppression system activations can saturate walls, flooring, and ceilings within minutes, creating ideal mold conditions. We work closely with <a href="https://naibunisystems.co.ke/" target="_blank" rel="noopener noreferrer" style="color:var(--primary);font-weight:600;text-decoration:underline">Naibuni Systems</a> — Kenya's specialists in fire extinguishers and suppression equipment — to offer a complete post-fire water damage and mold remediation service. You can browse their range of <a href="https://naibunisystems.co.ke/shop/" target="_blank" rel="noopener noreferrer" style="color:var(--primary);font-weight:600;text-decoration:underline">fire safety equipment at the Naibuni Systems shop</a>.`,
+    a: "",
+  },
 ];
 
 export default function FAQSection() {
@@ -115,7 +120,11 @@ export default function FAQSection() {
                 </button>
                 {openIndex === i && (
                   <div style={{ padding: "0 1.25rem 1rem 1.25rem" }}>
-                    <p style={{ color: "var(--text-mid)", fontSize: "0.875rem", lineHeight: 1.7 }}>{faq.a}</p>
+                    {(faq as { q: string; a?: string; html?: string }).html ? (
+                      <p style={{ color: "var(--text-mid)", fontSize: "0.875rem", lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: (faq as { q: string; a?: string; html?: string }).html! }} />
+                    ) : (
+                      <p style={{ color: "var(--text-mid)", fontSize: "0.875rem", lineHeight: 1.7 }}>{faq.a}</p>
+                    )}
                   </div>
                 )}
               </div>

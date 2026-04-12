@@ -20,6 +20,7 @@ The most prominent factor driving costs is the square footage of the contaminate
 Mold removal is useless if you do not fix the water source. The cost of the remediation project often depends heavily on how the water is entering the home:
 - Drying out a bathroom that simply lacks a ventilation fan is relatively inexpensive.
 - Repairing a damaged roof, replacing severely leaking internal plumbing, or excavating a foundation to fix rising damp will add significantly to the overall project cost.
+- In commercial properties, accidental discharge from [fire suppression systems](https://naibunisystems.co.ke/product-category/fire-suppression-systems/) can flood entire floors — creating one of the most costly mold scenarios we handle. We work with [Naibuni Systems](https://naibunisystems.co.ke/) to coordinate simultaneous suppression system inspection and mold remediation in these cases.
 
 ### 3. The Type of Surface Material Compressed
 Mold grows differently on different materials.

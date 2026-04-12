@@ -53,6 +53,9 @@ export default function WhyChooseUs() {
                 <p style={{ color: "rgba(30,58,15,0.8)", fontSize: "0.9rem", lineHeight: 1.7 }}>
                   At MoldGuard Kenya, we&apos;re proud of our certified expertise in mold removal. Our team gets ongoing training and certifications. This keeps them up-to-date with the latest mold removal methods.
                 </p>
+                <p style={{ color: "rgba(30,58,15,0.8)", fontSize: "0.9rem", lineHeight: 1.7, marginTop: "0.5rem" }}>
+                  We also partner with <a href="https://naibunisystems.co.ke/product-category/fire-suppression-systems/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary-dark)", textDecoration: "underline", fontWeight: 700 }}>Naibuni Systems</a> to handle mold remediation following fire suppression system activations in commercial properties across Kenya.
+                </p>
               </div>
             </div>
 

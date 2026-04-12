@@ -7,7 +7,7 @@ description: "Flooding in Kenya can devastate a property. Learn why structural d
 
 In Kenya, intense weather patterns, heavy seasonal rains, and overloaded drainage infrastructure frequently lead to flash flooding. Whether your property is submerged by an overflowed river in the Rift Valley or severely saturated due to a burst internal pipe in a Nairobi high-rise, the immediate aftermath of flooding is chaotic. 
 
-While removing the standing water is the obvious first step, many property owners do not realize that the real disaster begins *after* the water is pumped out. At **MoldGuard Kenya**, we know that when it comes to preventing devastating mold infestations following a flood, the clock is ticking.
+While removing the standing water is the obvious first step, many property owners do not realize that the real disaster begins *after* the water is pumped out. At **MoldGuard Kenya**, we know that when it comes to preventing devastating mold infestations following a flood, the clock is ticking. We also work with [Naibuni Systems](https://naibunisystems.co.ke/) — Kenya's leading fire suppression and safety equipment specialists — because sprinkler and suppression system discharges are among the most sudden and damaging sources of indoor flooding we encounter.
 
 ## The 48-Hour Rule
 Scientific studies and industry standards dictate that mold spores can begin to germinate and colonize wet building materials within **24 to 48 hours**. 
@@ -20,7 +20,7 @@ The most common mistake property owners make after a flood is relying on natural
 Water behaves aggressively. It wicks up into drywall via capillary action. It seeps under floorboards and soaks into the concrete subfloor. It saturates the wooden studs framing your house. While the surface might feel dry to the touch, the structural core of the building remains completely waterlogged. This hidden moisture will slowly evaporate into the wall cavities over the coming weeks, creating the perfect dark, humid incubator for toxic black mold.
 
 ## The Professional Structural Drying Process
-To beat the 48-hour clock, you must utilize physics to force the water out of the building materials faster than it can naturally evaporate. This is known as **Structural Drying**. At **MoldGuard Kenya**, our emergency flood response teams rely on specialized geometry and heavy-duty machinery.
+To beat the 48-hour clock, you must utilize physics to force the water out of the building materials faster than it can naturally evaporate. This is known as **Structural Drying**. At **MoldGuard Kenya**, our emergency flood response teams rely on specialized geometry and heavy-duty machinery. Whether the water source is a burst pipe, seasonal flooding, or an activated [fire suppression system](https://naibunisystems.co.ke/product-category/fire-suppression-systems/), the drying protocol is the same.
 
 ### 1. Advanced Moisture Mapping
 Before we deploy any equipment, our technicians use deep-penetrating moisture meters and thermal imaging cameras to map exactly how far the water has migrated behind your walls and under your floors. 
