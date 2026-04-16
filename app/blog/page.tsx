@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Mold Removal Blog | Expert Advice & Guides | MoldGuard Kenya",
   description:
     "Read the latest tips, guides, and expert advice on mold removal, prevention, and indoor air quality in Kenya from MoldGuard Kenya's certified specialists.",
+  alternates: { canonical: "https://moldguardkenya.co.ke/blog" },
 };
 
 const BLOG_ICONS = ["🌧️", "🦠", "🏠", "💰", "💧", "☔", "⚠️", "📋", "🔬", "🌊"];

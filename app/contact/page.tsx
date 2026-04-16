@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Contact MoldGuard Kenya | Free Mold Inspection | Call 0717140369",
   description:
     "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0717140369. Serving Nairobi, Mombasa, Kiambu, Nakuru and across Kenya.",
+  alternates: { canonical: "https://moldguardkenya.co.ke/contact" },
 };
 
 const contactMethods = [

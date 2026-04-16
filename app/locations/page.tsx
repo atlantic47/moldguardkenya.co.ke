@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Service Locations | Mold Removal Across Kenya | MoldGuard Kenya",
   description:
     "Find professional mold removal and remediation services near you. MoldGuard Kenya serves Nairobi, Mombasa, Kiambu, Nakuru, Eldoret and surrounding areas.",
+  alternates: { canonical: "https://moldguardkenya.co.ke/locations" },
 };
 
 const regions = [

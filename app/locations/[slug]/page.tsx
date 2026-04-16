@@ -4,7 +4,7 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import NewsletterSection from "../../components/NewsletterSection";
-import { getSeoMarkdownFile, getAllSeoSlugs } from "@/lib/markdown";
+import { getSeoMarkdownFile, getAllSeoSlugs, getAllSeoMetadata } from "@/lib/markdown";
 import PageHero from "../../components/PageHero";
 
 interface Props {
@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: data.title || `Mold Removal in ${slug.replace(/-/g, " ")} | MoldGuard Kenya`,
     description: data.description || `Professional mold removal and inspection services in ${slug.replace(/-/g, " ")}.`,
+    alternates: { canonical: `https://moldguardkenya.co.ke/locations/${slug}` },
   };
 }
 
@@ -90,6 +91,17 @@ export default async function LocationPostPage({ params }: Props) {
   const servicesSection = parsed.sections.find(
     (s) => s.heading.toLowerCase().includes("service") || s.heading.toLowerCase().includes("offer") || s.heading.toLowerCase().includes("include")
   );
+
+  // Nearby locations: all slugs except current, take 6
+  const allLocationSlugs = getAllSeoSlugs("locations");
+  const nearbyLocationSlugs = allLocationSlugs.filter((s) => s !== slug).slice(0, 6);
+  const nearbyLocations = nearbyLocationSlugs.map((s) => ({
+    slug: s,
+    name: s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+  }));
+
+  // Top blog posts for resource strip
+  const blogPosts = getAllSeoMetadata("blog").slice(0, 3);
 
   const locationSchema = {
     "@context": "https://schema.org",
@@ -261,6 +273,53 @@ export default async function LocationPostPage({ params }: Props) {
             </div>
           </section>
         )}
+
+        {/* ── NEARBY LOCATIONS ── */}
+        <section style={{ background: "white", padding: "3.5rem 0", borderTop: "1px solid var(--border)" }}>
+          <div className="container">
+            <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.4rem" }}>Also Serving</p>
+            <h2 style={{ fontWeight: 800, fontSize: "1.25rem", color: "var(--primary-dark)", marginBottom: "1.25rem" }}>Mold Removal in Nearby Areas</h2>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem", marginBottom: "1.25rem" }}>
+              {nearbyLocations.map((loc) => (
+                <Link
+                  key={loc.slug}
+                  href={`/locations/${loc.slug}`}
+                  style={{ background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "999px", padding: "0.45rem 1.1rem", fontSize: "0.82rem", fontWeight: 600, color: "var(--text-dark)", textDecoration: "none", transition: "all 0.15s" }}
+                  className="nearby-pill"
+                >
+                  📍 {loc.name}
+                </Link>
+              ))}
+              <Link href="/locations" style={{ background: "var(--primary)", color: "white", border: "1px solid var(--primary)", borderRadius: "999px", padding: "0.45rem 1.1rem", fontSize: "0.82rem", fontWeight: 700, textDecoration: "none" }}>
+                View All Locations →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ── BLOG RESOURCES ── */}
+        <section style={{ background: "var(--cream)", padding: "3.5rem 0" }}>
+          <div className="container">
+            <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.4rem" }}>Learn More</p>
+            <h2 style={{ fontWeight: 800, fontSize: "1.25rem", color: "var(--primary-dark)", marginBottom: "1.25rem" }}>Mold Prevention & Removal Guides</h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1rem" }}>
+              {blogPosts.map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
+                  <div style={{ background: "white", borderRadius: "1rem", border: "1px solid var(--border)", padding: "1.25rem", display: "flex", flexDirection: "column", gap: "0.5rem", height: "100%", transition: "box-shadow 0.2s" }} className="blog-resource-card">
+                    <span style={{ fontSize: "1.25rem" }}>📘</span>
+                    <p style={{ fontWeight: 700, fontSize: "0.875rem", color: "var(--text-dark)", margin: 0, lineHeight: 1.4 }}>{post.data.title || post.slug.replace(/-/g, " ")}</p>
+                    <span style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.78rem", marginTop: "auto" }}>Read Guide →</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <style>{`
+          .nearby-pill:hover { background: var(--primary) !important; color: white !important; border-color: var(--primary) !important; }
+          .blog-resource-card:hover { box-shadow: 0 6px 20px rgba(45,80,22,0.1); }
+        `}</style>
 
         {/* CTA BANNER */}
         <section style={{ background: "linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%)", padding: "5rem 0", color: "white", textAlign: "center" }}>

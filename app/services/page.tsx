@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { getAllSeoMetadata } from "@/lib/markdown";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import NewsletterSection from "../components/NewsletterSection";
@@ -23,9 +25,11 @@ import ServicesFAQ from "../components/services/ServicesFAQ";
 export const metadata: Metadata = {
   title: "Our Mold Removal Services | Inspections & Remediation | MoldGuard Kenya",
   description: "Explore our comprehensive mold remediation services. From thermal moisture mapping and HEPA air filtration to toxic black mold extraction and structural drying across Kenya.",
+  alternates: { canonical: "https://moldguardkenya.co.ke/services" },
 };
 
 export default function ServicesPage() {
+  const blogPosts = getAllSeoMetadata("blog").slice(0, 4);
   const serviceSchema = {
     "@context": "https://schema.org/",
     "@type": "Service",
@@ -114,6 +118,27 @@ export default function ServicesPage() {
         </section>
 
         <ServicesFAQ />
+
+        {/* ── BLOG RESOURCES ── */}
+        <section style={{ background: "var(--cream)", padding: "4rem 0", borderTop: "1px solid var(--border)" }}>
+          <div className="container">
+            <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.4rem" }}>Useful Resources</p>
+            <h2 style={{ fontWeight: 800, fontSize: "1.35rem", color: "var(--primary-dark)", marginBottom: "1.5rem" }}>Expert Mold Removal Guides for Kenyan Property Owners</h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "1rem" }}>
+              {blogPosts.map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
+                  <div style={{ background: "white", borderRadius: "1rem", border: "1px solid var(--border)", padding: "1.25rem", display: "flex", flexDirection: "column", gap: "0.5rem", height: "100%", boxShadow: "0 2px 8px rgba(0,0,0,0.04)", transition: "box-shadow 0.2s, transform 0.2s" }} className="svc-blog-card">
+                    <span style={{ fontSize: "1.2rem" }}>📖</span>
+                    <p style={{ fontWeight: 700, fontSize: "0.875rem", color: "var(--text-dark)", margin: 0, lineHeight: 1.4 }}>{post.data.title || post.slug.replace(/-/g, " ")}</p>
+                    <p style={{ color: "var(--text-mid)", fontSize: "0.8rem", lineHeight: 1.5, margin: 0, flex: 1 }}>{(post.data.description || "").slice(0, 90)}{post.data.description?.length > 90 ? "..." : ""}</p>
+                    <span style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.78rem" }}>Read Guide →</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+        <style>{`.svc-blog-card:hover { box-shadow: 0 8px 24px rgba(45,80,22,0.1) !important; transform: translateY(-2px); }`}</style>
       </main>
       <NewsletterSection />
       <Footer />

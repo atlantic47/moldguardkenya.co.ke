@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import NewsletterSection from "../../components/NewsletterSection";
-import { getSeoMarkdownFile, getAllSeoSlugs } from "@/lib/markdown";
+import { getSeoMarkdownFile, getAllSeoSlugs, getAllSeoMetadata } from "@/lib/markdown";
 import PageHero from "../../components/PageHero";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: data.title || `${slug.replace(/-/g, " ")} | MoldGuard Kenya`,
     description: data.description || "Professional mold removal and prevention advice.",
+    alternates: { canonical: `https://moldguardkenya.co.ke/blog/${slug}` },
   };
 }
 
@@ -29,6 +30,10 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const { content, data } = getSeoMarkdownFile("blog", slug);
   const title = data.title || slug.replace(/-/g, " ");
+
+  // Related posts: all except current, take first 3
+  const allPosts = getAllSeoMetadata("blog");
+  const relatedPosts = allPosts.filter((p) => p.slug !== slug).slice(0, 3);
 
   // Strip frontmatter before passing to ReactMarkdown
   const body = content.replace(/^---[\s\S]+?---\n?/, "").trim();
@@ -206,6 +211,41 @@ export default async function BlogPostPage({ params }: Props) {
         .blog-article tbody td strong { color: var(--primary-dark); }
       `}</style>
 
+        {/* ── RELATED ARTICLES ── */}
+        <section style={{ background: "var(--cream)", padding: "4rem 0" }}>
+          <div className="container">
+            <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Continue Reading</p>
+            <h2 style={{ fontWeight: 800, fontSize: "1.5rem", color: "var(--primary-dark)", marginBottom: "2rem" }}>Related Articles You May Find Helpful</h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1.25rem" }}>
+              {relatedPosts.map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
+                  <article style={{ background: "white", borderRadius: "1.25rem", border: "1px solid var(--border)", padding: "1.5rem", height: "100%", display: "flex", flexDirection: "column", gap: "0.75rem", boxShadow: "0 2px 8px rgba(0,0,0,0.05)", transition: "box-shadow 0.2s, transform 0.2s" }} className="related-card">
+                    <div style={{ width: "40px", height: "40px", background: "var(--primary)", borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontSize: "1.1rem" }}>📖</div>
+                    <h3 style={{ fontWeight: 700, fontSize: "0.95rem", color: "var(--text-dark)", lineHeight: 1.4, margin: 0 }}>{post.data.title || post.slug.replace(/-/g, " ")}</h3>
+                    <p style={{ color: "var(--text-mid)", fontSize: "0.82rem", lineHeight: 1.6, margin: 0, flex: 1 }}>{post.data.description || "Expert mold remediation advice for Kenyan property owners."}</p>
+                    <span style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.82rem" }}>Read Article →</span>
+                  </article>
+                </Link>
+              ))}
+            </div>
+
+            {/* Services CTA */}
+            <div style={{ marginTop: "2.5rem", background: "linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%)", borderRadius: "1.25rem", padding: "2rem 2.5rem", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1.5rem" }}>
+              <div>
+                <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "0.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "0.4rem" }}>Need Professional Help?</p>
+                <h3 style={{ color: "white", fontWeight: 800, fontSize: "1.1rem", margin: 0 }}>See All Our Mold Removal & Remediation Services</h3>
+              </div>
+              <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+                <Link href="/services" style={{ background: "var(--gold)", color: "var(--primary-dark)", borderRadius: "999px", padding: "0.65rem 1.5rem", fontWeight: 700, fontSize: "0.875rem", textDecoration: "none" }}>View Services →</Link>
+                <Link href="/locations" style={{ background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", color: "white", borderRadius: "999px", padding: "0.65rem 1.5rem", fontWeight: 700, fontSize: "0.875rem", textDecoration: "none" }}>Find Local Experts →</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <style>{`
+        .related-card:hover { box-shadow: 0 8px 24px rgba(45,80,22,0.12) !important; transform: translateY(-2px); }
+      `}</style>
       <NewsletterSection />
       <Footer />
     </>
