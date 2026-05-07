@@ -1,21 +1,16 @@
 import Link from "next/link";
 import { getAllSeoMetadata, getAllSeoSlugs } from "@/lib/markdown";
 
-const TOP_LOCATIONS = [
-  { slug: "nairobi", name: "Nairobi" },
-  { slug: "westlands", name: "Westlands" },
-  { slug: "kilimani", name: "Kilimani" },
-  { slug: "karen", name: "Karen" },
-  { slug: "mombasa", name: "Mombasa" },
-  { slug: "kiambu", name: "Kiambu" },
-  { slug: "nakuru", name: "Nakuru" },
-  { slug: "runda", name: "Runda" },
-  { slug: "lavington", name: "Lavington" },
-  { slug: "embakasi", name: "Embakasi" },
-];
-
 export default function HomepageDeepLinks() {
   const blogPosts = getAllSeoMetadata("blog").slice(0, 6);
+  const locationSlugs = getAllSeoSlugs("locations");
+
+  const formatLocationName = (slug: string) => {
+    return slug
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  };
 
   return (
     <section style={{ background: "white", padding: "5rem 0", borderTop: "1px solid var(--border)" }}>
@@ -58,14 +53,15 @@ export default function HomepageDeepLinks() {
             </Link>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem" }}>
-            {TOP_LOCATIONS.map((loc) => (
+            {locationSlugs.map((slug) => (
               <Link
-                key={loc.slug}
-                href={`/locations/${loc.slug}`}
+                key={slug}
+                href={`/locations/${slug}`}
+                title={`Mold removal and remediation in ${formatLocationName(slug)}`}
                 style={{ background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "999px", padding: "0.5rem 1.15rem", fontSize: "0.85rem", fontWeight: 600, color: "var(--text-dark)", textDecoration: "none", transition: "all 0.15s" }}
                 className="hp-loc-pill"
               >
-                📍 Mold Removal in {loc.name}
+                📍 Mold Removal in {formatLocationName(slug)}
               </Link>
             ))}
           </div>

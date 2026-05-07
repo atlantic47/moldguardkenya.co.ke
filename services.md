@@ -6,7 +6,7 @@ Discovering mold in your home is stressful. _Your health and property safety are
 
 Effective **mold removal** needs precision and the right tools. We begin with a detailed **mold inspection** to find hidden moisture. This ensures we tackle every spore.
 
-Our experts use top techniques to remove all contamination. If you smell musty or see mold, don't delay. Call **MoldGuard Kenya** at 0717140469 for a professional check. Let us make your home clean and healthy again.
+Our experts use top techniques to remove all contamination. If you smell musty or see mold, don't delay. Call **[MoldGuard Kenya](/about)** at [0717140469](/contact) for a professional check. Let us make your home clean and healthy again.
 
 ### Key Takeaways
 
@@ -316,7 +316,7 @@ If you're facing a mold problem, reaching out to MoldGuard Kenya is the first st
 
 ### Contacting Our Specialists at 0717140469
 
-To talk to our mold experts, just call **0717140469**. We're here to answer your questions and set up a meeting. We're quick to respond, so you can start fixing your mold issues fast.
+To talk to our mold experts, just call **[0717140469](/contact)**. We're here to answer your questions and set up a meeting. We're quick to respond, so you can start fixing your mold issues fast.
 
 ### Scheduling Your Initial Consultation
 

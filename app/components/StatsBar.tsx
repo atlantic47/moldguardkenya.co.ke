@@ -1,7 +1,7 @@
 export default function StatsBar() {
   const stats = [
-    { value: "1M+", label: "Happy Clients" },
-    { value: "30K+", label: "5 Star Reviews" },
+    { value: "2000+", label: "Happy Clients" },
+    { value: "300+", label: "5 Star Reviews" },
     { value: "99.97%", label: "HEPA Filtration Rate" },
     { value: "24/7", label: "Emergency Response" },
   ];

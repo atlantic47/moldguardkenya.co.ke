@@ -120,7 +120,7 @@ export default function HeroSection() {
             }}
           >
             <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--primary)" }}>4.9★</div>
-            <div style={{ fontSize: "0.7rem", color: "var(--text-mid)" }}>1,200+ Reviews</div>
+            <div style={{ fontSize: "0.7rem", color: "var(--text-mid)" }}>300+ Reviews</div>
           </div>
         </div>
       </div>

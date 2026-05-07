@@ -7,7 +7,7 @@ MoldKill Max Mold Killer Spray Kenya | Safe for Homes & FamilieMoldKill Max Mold
 KSh 4,500.00
 
 In Stock
-MoldKill Max is Kenya’s most effective mold remover and prevention spray. Kills mold spores on contact and prevents regrowth for up to 6 months. Safe for children and pets, works on all surfaces including bathrooms, walls, tiles, and fabrics. Perfect for Kenya’s humid climate in Mombasa, Nairobi, Kisumu. Available in 500ml, 750ml, 1L & 5L sizes.
+MoldKill Max is Kenya’s most effective mold remover and prevention spray. Kills mold spores on contact and prevents regrowth for up to 6 months. Safe for children and pets, works on all surfaces including bathrooms, walls, tiles, and fabrics. Perfect for Kenya’s humid climate in [Mombasa](/locations/mombasa), [Nairobi](/locations/nairobi), Kisumu. Available in 500ml, 750ml, 1L & 5L sizes.
 
 MoldKill Max - Best Mold Remover & Prevention Spray in Kenya quantity
 1
@@ -25,7 +25,7 @@ Description
 Reviews (31)
 MoldKill Max – Kenya’s Most Effective Mold Remover and Prevention Spray for Lasting Protection
 
-Eliminate stubborn mold and prevent its return with MoldKill Max, Kenya’s trusted professional-grade mold remover and prevention spray designed specifically for our humid climate. Whether you’re battling persistent bathroom mold in Mombasa’s coastal humidity, fighting black mold on walls in Nairobi, or dealing with musty odors in Kisumu, MoldKill Max delivers comprehensive mold control that lasts up to 6 months.
+Eliminate stubborn mold and prevent its return with MoldKill Max, Kenya’s trusted professional-grade mold remover and prevention spray designed specifically for our humid climate. Whether you’re battling persistent bathroom mold in [Mombasa’s](/locations/mombasa) coastal humidity, fighting black mold on walls in [Nairobi](/locations/nairobi), or dealing with musty odors in Kisumu, MoldKill Max delivers comprehensive mold control that lasts up to 6 months.
 
 Why Kenya’s Homes Need MoldKill Max
 
