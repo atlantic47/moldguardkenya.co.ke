@@ -102,6 +102,7 @@ export default function HeroSection() {
             src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg"
             alt="MoldGuard Kenya professional mold remediation services"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             style={{ objectFit: "cover" }}
             priority
           />

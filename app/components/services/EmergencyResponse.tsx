@@ -39,6 +39,7 @@ export default function EmergencyResponse() {
               src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/a086c29c-0dd7-4e65-90ef-adc8e8280e71.jpg"
               alt="emergency mold response"
               fill
+              sizes="(max-width: 900px) 100vw, 50vw"
               style={{ objectFit: "cover" }}
             />
           </div>

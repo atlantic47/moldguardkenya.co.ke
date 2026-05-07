@@ -66,7 +66,7 @@ export default function LocationsListingPage() {
           title="Our Service Locations"
           subtitle="MoldGuard Kenya dispatches certified mold remediation specialists across all major cities and suburbs in Kenya."
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Locations" }]}
-          bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/3ca97677-789a-4c22-b92c-639a0abfe6ad.jpg"
+          bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg"
         />
 
         {/* INTRO STRIP */}

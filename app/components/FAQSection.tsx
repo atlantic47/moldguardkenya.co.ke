@@ -5,36 +5,44 @@ import Image from "next/image";
 
 const faqs = [
   {
-    q: "Why is mold growth so prevalent in Kenyan homes and businesses?",
-    a: "Kenya's tropical humidity is perfect for mold to grow. When humidity is over 60%, mold spores can easily grow. High moisture and poor air flow cause big air quality problems. Our climate means we need expert moisture control solutions to stop mold.",
+    q: "Why is mold so common in Kenyan homes and offices?",
+    a: "Kenya's climate is one of the biggest culprits. During both the long and short rains, humidity levels rise sharply, and most buildings were not designed with moisture control in mind. Poorly ventilated bathrooms, flat concrete roofs that trap moisture, leaking gutters, and water-damaged walls all create the perfect conditions for mold to take hold and spread quickly. In cities like Nairobi, Mombasa, Kisumu, and Nakuru, we see mold problems year-round.",
   },
   {
-    q: "Can I use household bleach to remove mold myself?",
-    a: "No, don't use bleach for mold removal. Bleach might change mold color but doesn't kill it, and it can make things worse. Our remediation protocols include removing mold and using HEPA filtration to solve the problem at its root.",
+    q: "How do I know if I have a mold problem in my house?",
+    a: "The most obvious sign is dark or black patches on walls, ceilings, or around window frames. But mold does not always show itself right away. A persistent musty smell in a room, peeling paint or wallpaper, chronic condensation on windows, or unexplained sneezing and coughing among your family members are all strong indicators. If you suspect mold, do not wait for it to become visible, because by the time you can see it clearly, it has usually already spread behind surfaces.",
   },
   {
-    q: "What are the primary health risks associated with prolonged mold exposure?",
-    a: "Mold can cause serious respiratory issues, allergies, and make asthma worse. We worry about the toxic effects of mycotoxins from mold like Stachybotrys. Our team uses containment strategies to keep these toxins from spreading during remediation.",
+    q: "Is mold actually dangerous to my family's health?",
+    a: "Yes, and this is not something to downplay. Mold releases spores into the air that, when inhaled regularly, can trigger asthma, persistent coughs, skin rashes, eye irritation, and allergic reactions. Certain mold types, particularly black mold, also produce mycotoxins that pose serious risks, especially to children, the elderly, pregnant women, and anyone with a compromised immune system. If anyone in your household has been experiencing unexplained respiratory symptoms, mold could be the cause.",
   },
   {
-    q: "How do you detect mold that is hidden behind walls or under floors?",
-    a: "We use advanced moisture detection technology and thermal imaging to find hidden dampness. Our mold inspection also includes air quality testing and spore count analysis to find mold not visible to the naked eye.",
+    q: "What is the difference between mold removal and mold remediation?",
+    a: "Mold removal refers to physically eliminating the visible mold you can see on surfaces. Mold remediation goes much deeper. It involves identifying the root cause of the moisture that allowed mold to grow, treating affected areas including those you cannot see, applying protective coatings to prevent regrowth, and restoring the environment to a safe and healthy standard. At MoldGuard Kenya, we always remediate, not just remove, because removal alone rarely solves the problem permanently.",
   },
   {
-    q: "Will your remediation process disrupt my business operations?",
-    a: "MoldGuard Kenya offers flexible schedules and rapid-response teams for commercial mold remediation. We isolate affected areas to keep your staff and customers safe while your business continues to operate.",
+    q: "Can you remove black mold, and is it more dangerous than other types?",
+    a: "Black mold, scientifically known as Stachybotrys chartarum, is one of the most toxic mold species and should only ever be handled by trained professionals. It thrives in areas with persistent moisture, such as behind walls with slow leaks or beneath water-damaged ceilings, and it spreads aggressively. At MoldGuard Kenya, we are fully equipped to identify, contain, and safely eliminate black mold without spreading spores to other parts of your property during the removal process.",
   },
   {
-    q: "What steps do you take to prevent mold from returning?",
-    a: "We do more than just clean. We dry structures and fix water intrusion points, use dehumidification strategies tailored for Kenya's climate, and ensure good air flow in high-risk areas to stop moisture and mold from coming back.",
+    q: "Is mold remediation safe for children and pets?",
+    a: "The treatments we use at MoldGuard Kenya are certified, eco-friendly, and low-toxicity, making them safe for indoor environments where children and pets live. For larger or more severe infestations, we may recommend temporary relocation during treatment as a precaution. We will always let you know in advance if that is necessary. Once treatment is complete and the space has been properly ventilated, it is fully safe to return to.",
   },
   {
-    q: "How do I know the mold has been successfully removed?",
-    a: "We perform post-remediation verification to make sure clearance levels are safe. We also give you full documentation for insurance and property value purposes — clearance certificates and test results for your peace of mind.",
+    q: "Will mold come back after you remove it?",
+    a: "Mold will return if the underlying moisture problem is not dealt with. That is why MoldGuard Kenya takes a root-cause approach. We do not just treat the surface — we identify where the moisture is coming from, whether it is a leaking pipe, poor roof drainage, inadequate ventilation, or rising damp, and we address it as part of our service. We also apply protective anti-mold coatings and provide you with a clear prevention plan. Follow-up inspections are available for ongoing peace of mind.",
   },
   {
-    q: "What areas do you serve and how quickly can you respond?",
-    a: "We cover Nairobi and nearby areas including Westlands, Kilimani, Karen, Langata, Kiambu, Ruiru, Limuru, and Thika. Our rapid response teams are available for emergencies. Call 0717140369 to schedule your first assessment.",
+    q: "Can mold cause structural damage to my building?",
+    a: "Absolutely, and this is something many property owners in Kenya underestimate. Mold feeds on organic materials, including the timber framing, ceiling boards, drywall, and even some types of concrete render used in Kenyan construction. Over time it can weaken walls, cause ceilings to sag, and compromise load-bearing structures. Treating mold early is significantly cheaper than repairing or replacing structural elements that have been eaten through.",
+  },
+  {
+    q: "Do you work with landlords and rental properties across Kenya?",
+    a: "Yes, and this is a significant part of our work. Mold in rental properties is one of the most common and contentious disputes between landlords and tenants in Kenya. We regularly partner with property managers, landlords, and real estate agents across Nairobi and other counties. After every job we provide a detailed written report with photographic evidence, which is useful for lease agreements, property handovers, insurance documentation, and any disputes that may arise.",
+  },
+  {
+    q: "How long does mold removal take and how much does it cost in Kenya?",
+    a: "Timelines and costs vary depending on the size of the affected area and the severity of the infestation. A single room can often be treated within a few hours, while a whole-property remediation or a severe commercial infestation may take one to three days. MoldGuard Kenya offers a free initial assessment and transparent, itemised pricing with no hidden charges. We cover Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika, and across all 47 counties. Reach out to us for a custom quote.",
   },
   {
     q: "Do you handle mold caused by fire suppression or sprinkler system discharge?",

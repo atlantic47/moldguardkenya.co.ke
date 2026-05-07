@@ -38,6 +38,7 @@ export default function DryingSolutions() {
                 src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/bdc0a608-b645-429e-bd9b-0d82d8168f34.jpg"
                 alt="structural drying and dehumidification"
                 fill
+                sizes="(max-width: 900px) 100vw, 50vw"
                 style={{ objectFit: "cover" }}
               />
             </div>

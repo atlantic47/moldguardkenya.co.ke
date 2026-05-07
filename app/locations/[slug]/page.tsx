@@ -107,7 +107,7 @@ export default async function LocationPostPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": `Mold Removal & Inspection in ${locationName}`,
-    "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/3ca97677-789a-4c22-b92c-639a0abfe6ad.jpg",
+    "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg",
     "telephone": "+254717140369",
     "url": `https://moldguardkenya.co.ke/locations/${slug}`,
     "areaServed": {
@@ -139,7 +139,7 @@ export default async function LocationPostPage({ params }: Props) {
             { label: "Locations", href: "/locations" },
             { label: locationName },
           ]}
-          bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/3ca97677-789a-4c22-b92c-639a0abfe6ad.jpg"
+          bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg"
         />
 
         {/* INTRO */}
@@ -165,6 +165,7 @@ export default async function LocationPostPage({ params }: Props) {
                   src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/8e626626-0a65-4016-b728-2abad223b45e.jpg"
                   alt={`Mold removal experts in ${locationName}`}
                   fill
+                  sizes="(max-width: 900px) 100vw, 50vw"
                   style={{ objectFit: "cover" }}
                 />
               </div>
