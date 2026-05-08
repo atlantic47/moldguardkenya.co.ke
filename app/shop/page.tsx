@@ -32,7 +32,21 @@ export default function ShopPage() {
         "name": product.name,
         "url": `https://moldguardkenya.co.ke/shop/${product.slug}`,
         "description": product.shortDescription,
-        "category": product.category
+        "category": product.category,
+        "offers": {
+          "@type": "Offer",
+          "price": product.price,
+          "priceCurrency": product.currency,
+          "availability": product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+          "url": `https://moldguardkenya.co.ke/shop/${product.slug}`
+        },
+        "aggregateRating": product.reviews.length > 0 ? {
+          "@type": "AggregateRating",
+          "ratingValue": product.rating.toFixed(1),
+          "reviewCount": product.reviews.length,
+          "bestRating": "5",
+          "worstRating": "1"
+        } : undefined
       }
     }))
   };
