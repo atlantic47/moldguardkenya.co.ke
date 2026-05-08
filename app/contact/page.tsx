@@ -6,9 +6,9 @@ import NewsletterSection from "../components/NewsletterSection";
 import PageHero from "../components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Contact MoldGuard Kenya | Free Mold Inspection | Call 0717140369",
+  title: "Contact MoldGuard Kenya | Free Mold Inspection | Call 0710907628",
   description:
-    "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0717140369. Serving Nairobi, Mombasa, Kiambu, Nakuru and across Kenya.",
+    "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0710907628. Serving Nairobi, Mombasa, Kiambu, Nakuru and across Kenya.",
   alternates: { canonical: "https://moldguardkenya.co.ke/contact" },
 };
 
@@ -18,7 +18,7 @@ const contactMethods = [
     label: "Phone & WhatsApp",
     primary: "0717 140 369",
     secondary: "Available 24/7 for emergencies",
-    href: "tel:0717140369",
+    href: "tel:0710907628",
     cta: "Call Now",
     bg: "var(--primary-dark)",
   },
@@ -36,7 +36,7 @@ const contactMethods = [
     label: "WhatsApp Chat",
     primary: "Quick Message Us",
     secondary: "Share photos of your mold problem",
-    href: "https://wa.me/254717140369",
+    href: "https://wa.me/254710907628",
     cta: "Open WhatsApp",
     bg: "#25D366",
   },
@@ -61,12 +61,12 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact MoldGuard Kenya",
-    "description": "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0717140369.",
+    "description": "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0710907628.",
     "url": "https://moldguardkenya.co.ke/contact",
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": "MoldGuard Kenya",
-      "telephone": "+254717140369",
+      "telephone": "+254710907628",
       "email": "info@moldguardkenya.co.ke",
       "address": {
         "@type": "PostalAddress",
@@ -78,7 +78,7 @@ export default function ContactPage() {
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "+254717140369",
+          "telephone": "+254710907628",
           "contactType": "customer service",
           "availableLanguage": ["English", "Swahili"],
           "areaServed": "KE"
@@ -217,7 +217,7 @@ export default function ContactPage() {
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "500px" }}>
               Don&apos;t wait. Rapid response stops mold from spreading and saves your property from costly structural damage.
             </p>
-            <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1.1rem", padding: "1rem 2.5rem" }}>
+            <a href="tel:0710907628" className="btn-gold" style={{ fontSize: "1.1rem", padding: "1rem 2.5rem" }}>
               📞 Call 0717 140 369
             </a>
           </div>

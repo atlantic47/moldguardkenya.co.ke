@@ -39,7 +39,7 @@ export default function WhoWeAre() {
           </p>
 
           <div style={{ display: "flex", gap: "1rem" }}>
-            <a href="tel:0717140369" className="btn-primary">
+            <a href="tel:0710907628" className="btn-primary">
               Book Consultation
             </a>
           </div>

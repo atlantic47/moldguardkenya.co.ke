@@ -222,7 +222,7 @@ export default function ShopPage() {
             </p>
             <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
               <a
-                href="https://wa.me/254717140369?text=Hi%20MoldGuard%2C%20I%20need%20help%20choosing%20the%20right%20product%20for%20my%20mold%20problem."
+                href="https://wa.me/254710907628?text=Hi%20MoldGuard%2C%20I%20need%20help%20choosing%20the%20right%20product%20for%20my%20mold%20problem."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gold"
@@ -230,8 +230,8 @@ export default function ShopPage() {
               >
                 💬 WhatsApp Us
               </a>
-              <a href="tel:0717140369" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.5)", fontSize: "0.95rem", padding: "0.85rem 1.75rem" }}>
-                📞 Call 0717140369
+              <a href="tel:0710907628" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.5)", fontSize: "0.95rem", padding: "0.85rem 1.75rem" }}>
+                📞 Call 0710907628
               </a>
             </div>
           </div>

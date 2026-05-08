@@ -103,7 +103,7 @@ export default function Footer() {
           <h4 style={{ color: "white", fontWeight: 700, marginBottom: "1.25rem", fontSize: "0.95rem" }}>Contact</h4>
           <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
             <li style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)" }}>
-              📞 <a href="tel:0717140369" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>0717140369</a>
+              📞 <a href="tel:0710907628" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>0710907628</a>
             </li>
             <li style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)" }}>
               📍 Development House, Moi Ave, Nairobi

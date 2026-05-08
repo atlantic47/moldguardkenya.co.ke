@@ -38,7 +38,7 @@ export default function ServicesPage() {
     "provider": {
       "@type": "LocalBusiness",
       "name": "MoldGuard Kenya",
-      "telephone": "+254717140369",
+      "telephone": "+254710907628",
       "url": "https://moldguardkenya.co.ke/"
     },
     "description": "Comprehensive mold remediation services including thermal moisture mapping, HEPA air filtration, toxic black mold extraction, and structural drying.",

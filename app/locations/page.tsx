@@ -80,7 +80,7 @@ export default function LocationsListingPage() {
                 Certified rapid-response teams serving homes and businesses nationwide.
               </p>
             </div>
-            <a href="tel:0717140369" className="btn-primary" style={{ fontSize: "0.875rem", padding: "0.65rem 1.4rem" }}>
+            <a href="tel:0710907628" className="btn-primary" style={{ fontSize: "0.875rem", padding: "0.65rem 1.4rem" }}>
               📞 Call for Your Area
             </a>
           </div>
@@ -149,8 +149,8 @@ export default function LocationsListingPage() {
               We expand our coverage regularly. Call us and we&apos;ll confirm if we can serve your specific location — often we can!
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
-              <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>
-                📞 Call 0717140369
+              <a href="tel:0710907628" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>
+                📞 Call 0710907628
               </a>
               <Link href="/contact" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.6)", fontSize: "1rem", padding: "0.85rem 2rem" }}>
                 WhatsApp Us →

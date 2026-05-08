@@ -174,11 +174,11 @@ export default function FAQSection() {
               Our expert team is ready to answer all your mold-related questions and schedule a consultation for you.
             </p>
             <a
-              href="tel:0717140369"
+              href="tel:0710907628"
               className="btn-gold"
               style={{ justifyContent: "center", width: "100%" }}
             >
-              📞 Call 0717140369
+              📞 Call 0710907628
             </a>
           </div>
         </div>

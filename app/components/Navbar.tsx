@@ -303,11 +303,11 @@ export default function Navbar() {
           {/* CTA + Mobile Toggle */}
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
             <a
-              href="tel:0717140369"
+              href="tel:0710907628"
               className="btn-primary desktop-nav"
               style={{ fontSize: "0.82rem", padding: "0.55rem 1.2rem" }}
             >
-              📞 0717140369
+              📞 0710907628
             </a>
 
             <button
@@ -348,11 +348,11 @@ export default function Navbar() {
           <div style={{ padding: "1.5rem", display: "flex", flexDirection: "column", gap: "0" }}>
             <div style={{ paddingBottom: "1.5rem", borderBottom: "1px solid var(--border)", marginBottom: "0.5rem" }}>
               <a
-                href="tel:0717140369"
+                href="tel:0710907628"
                 className="btn-primary"
                 style={{ width: "100%", justifyContent: "center", fontSize: "0.95rem", padding: "0.85rem" }}
               >
-                📞 Call 0717140369
+                📞 Call 0710907628
               </a>
             </div>
 
@@ -484,8 +484,8 @@ export default function Navbar() {
             </div>
 
             <div style={{ padding: "1.5rem 1rem" }}>
-              <a href="tel:0717140369" className="btn-primary" style={{ width: "100%", justifyContent: "center", fontSize: "1.05rem", padding: "0.9rem 1.5rem" }}>
-                📞 Call 0717140369
+              <a href="tel:0710907628" className="btn-primary" style={{ width: "100%", justifyContent: "center", fontSize: "1.05rem", padding: "0.9rem 1.5rem" }}>
+                📞 Call 0710907628
               </a>
             </div>
 

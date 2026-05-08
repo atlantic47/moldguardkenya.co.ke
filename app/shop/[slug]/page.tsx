@@ -56,7 +56,7 @@ export default async function ProductPage({
   const whatsappMsg = encodeURIComponent(
     `Hi MoldGuard Kenya, I'd like to order the *${product.name}* priced at ${product.priceDisplay}. Please advise on availability and delivery.`
   );
-  const whatsappUrl = `https://wa.me/254717140369?text=${whatsappMsg}`;
+  const whatsappUrl = `https://wa.me/254710907628?text=${whatsappMsg}`;
 
   const avgRating =
     product.reviews.length > 0
@@ -438,7 +438,7 @@ export default async function ProductPage({
                   <span>💬</span> Order via WhatsApp
                 </a>
                 <a
-                  href="tel:0717140369"
+                  href="tel:0710907628"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -453,7 +453,7 @@ export default async function ProductPage({
                     textDecoration: "none",
                   }}
                 >
-                  <span>📞</span> Call to Order — 0717140369
+                  <span>📞</span> Call to Order — 0710907628
                 </a>
                 <Link
                   href="/contact"

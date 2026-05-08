@@ -188,7 +188,7 @@ export default function AboutPage() {
               Don&apos;t let mold dictate your indoor air quality. Reach out to Kenya&apos;s most trusted mold remediation specialists today.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
-              <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>📞 Call 0717140369</a>
+              <a href="tel:0710907628" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>📞 Call 0710907628</a>
               <Link href="/contact" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.6)", fontSize: "1rem", padding: "0.85rem 2rem" }}>WhatsApp Us →</Link>
             </div>
           </div>

@@ -108,7 +108,7 @@ export default async function LocationPostPage({ params }: Props) {
     "@type": "LocalBusiness",
     "name": `Mold Removal & Inspection in ${locationName}`,
     "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg",
-    "telephone": "+254717140369",
+    "telephone": "+254710907628",
     "url": `https://moldguardkenya.co.ke/locations/${slug}`,
     "areaServed": {
       "@type": "City",
@@ -156,7 +156,7 @@ export default async function LocationPostPage({ params }: Props) {
                 <p style={{ fontSize: "1.05rem", color: "var(--text-mid)", lineHeight: 1.8, marginBottom: "1.5rem" }}>
                   {parsed.intro}
                 </p>
-                <a href="tel:0717140369" className="btn-primary">
+                <a href="tel:0710907628" className="btn-primary">
                   📞 Get a Free Inspection
                 </a>
               </div>
@@ -333,8 +333,8 @@ export default async function LocationPostPage({ params }: Props) {
               Don&apos;t let mold compromise your family&apos;s health or the value of your investment. Our certified rapid-response team covers all of {locationName}.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
-              <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>
-                📞 Call 0717140369
+              <a href="tel:0710907628" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>
+                📞 Call 0710907628
               </a>
               <Link href="/contact" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.6)", fontSize: "1rem", padding: "0.85rem 2rem" }}>
                 WhatsApp Us →

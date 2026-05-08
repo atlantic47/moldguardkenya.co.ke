@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Mold Removal & Remediation Services in Kenya | MoldGuard Kenya",
   description:
-    "MoldGuard Kenya offers expert mold removal and remediation services across Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mold and improve your indoor air quality. Call 0717140369.",
+    "MoldGuard Kenya offers expert mold removal and remediation services across Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mold and improve your indoor air quality. Call 0710907628.",
   keywords:
     "mold removal Kenya, mold remediation Nairobi, indoor air quality, moisture detection, HEPA filtration, mold inspection Kenya",
 };
@@ -22,7 +22,7 @@ export default function RootLayout({
     "url": "https://moldguardkenya.co.ke/",
     "logo": "https://moldguardkenya.co.ke/icon",
     "image": "https://moldguardkenya.co.ke/icon",
-    "telephone": "+254717140369",
+    "telephone": "+254710907628",
     "email": "info@moldguardkenya.co.ke",
     "foundingDate": "2015-08-22",
     "address": {
@@ -51,7 +51,7 @@ export default function RootLayout({
       "Mombasa"
     ],
     "sameAs": [
-      "https://wa.me/254717140369",
+      "https://wa.me/254710907628",
       "https://web.facebook.com/moldguardKenya"
     ]
   };

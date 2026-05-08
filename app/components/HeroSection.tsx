@@ -53,13 +53,13 @@ export default function HeroSection() {
               We use the latest technology to find and remove hidden moisture and mold spores. By choosing our <strong>mold remediation services</strong>, you&apos;re choosing a healthier place to live or work. We act fast to stop mold from spreading and damaging your space.
             </p>
             <p>
-              Our technicians work hard to give you lasting results all over Kenya. We know the climate challenges in <strong>Kenya</strong> are unique. Call us at 0717140369 for quick help and to book your first meeting today.
+              Our technicians work hard to give you lasting results all over Kenya. We know the climate challenges in <strong>Kenya</strong> are unique. Call us at 0710907628 for quick help and to book your first meeting today.
             </p>
           </div>
 
           {/* CTAs */}
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "2.5rem" }}>
-            <a href="tel:0717140369" className="btn-primary">
+            <a href="tel:0710907628" className="btn-primary">
               Get Started
             </a>
             <Link href="/services" className="btn-outline">

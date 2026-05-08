@@ -116,8 +116,8 @@ export default async function BlogPostPage({ params }: Props) {
                 <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
                   Don&apos;t wait. Every day mold spreads deeper into your walls. Contact MoldGuard Kenya for certified, rapid-response remediation.
                 </p>
-                <a href="tel:0717140369" className="btn-gold" style={{ width: "100%", justifyContent: "center", fontSize: "0.95rem", padding: "0.8rem" }}>
-                  📞 Call 0717140369
+                <a href="tel:0710907628" className="btn-gold" style={{ width: "100%", justifyContent: "center", fontSize: "0.95rem", padding: "0.8rem" }}>
+                  📞 Call 0710907628
                 </a>
                 <Link href="/contact" style={{ display: "block", textAlign: "center", marginTop: "0.75rem", color: "rgba(255,255,255,0.7)", fontSize: "0.875rem", textDecoration: "underline" }}>
                   Send a WhatsApp message →
@@ -169,8 +169,8 @@ export default async function BlogPostPage({ params }: Props) {
               Our certified team across Kenya is ready to diagnose and permanently eliminate your mold problem.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
-              <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>
-                📞 Call Now — 0717140369
+              <a href="tel:0710907628" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>
+                📞 Call Now — 0710907628
               </a>
               <Link href="/locations" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.6)", fontSize: "1rem", padding: "0.85rem 2rem" }}>
                 Browse All Locations →

@@ -23,7 +23,7 @@ const testimonials = [
   {
     name: "David Ochieng",
     role: "Tenant, Ruiru",
-    text: "Called them at 0717140369 after a roof leak caused mold growth. They responded within hours, contained the area immediately and the job was done in two days. Exceptional rapid response!",
+    text: "Called them at 0710907628 after a roof leak caused mold growth. They responded within hours, contained the area immediately and the job was done in two days. Exceptional rapid response!",
     rating: 5,
     avatar: "DO",
   },

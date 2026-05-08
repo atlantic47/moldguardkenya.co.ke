@@ -6,7 +6,7 @@ We use the latest technology to find and remove hidden moisture and mold spores.
 
 ![Mold Removal & Remediation Services in Kenya | MoldGuard Kenya](https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg)
 
-Our technicians work hard to give you lasting results all over Kenya. We know the climate challenges in **Kenya** are unique. Call us at [0717140369](/contact) for quick help and to book your first meeting today.
+Our technicians work hard to give you lasting results all over Kenya. We know the climate challenges in **Kenya** are unique. Call us at [0710907628](/contact) for quick help and to book your first meeting today.
 
 ### Key Takeaways
 
@@ -14,7 +14,7 @@ Our technicians work hard to give you lasting results all over Kenya.
 *   Our team uses cutting-edge equipment to ensure thorough cleaning and safety.
 *   We focus on both immediate elimination and long-term prevention strategies.
 *   Rapid response times help minimize property damage and **health risks**.
-*   You can reach our experts directly at 0717140369 for a consultation.
+*   You can reach our experts directly at 0710907628 for a consultation.
 
 ## Understanding the Mold Crisis in Kenyan Homes and Businesses
 
@@ -332,17 +332,17 @@ Our team is equipped to handle mold remediation with precision and care. We are 
 
 To initiate the **mold remediation process**, simply schedule an **initial consultation** with our experts. This step is critical in assessing the extent of the mold infestation. It helps us devise a tailored remediation plan.
 
-You can easily book your consultation by calling our **support line** at **[0717140369](/contact)** or by reaching out through our website. Our team is available to answer your queries and guide you through the process.
+You can easily book your consultation by calling our **support line** at **[0710907628](/contact)** or by reaching out through our website. Our team is available to answer your queries and guide you through the process.
 
-### Reaching Out to Our Support Line at 0717140369
+### Reaching Out to Our Support Line at 0710907628
 
-For immediate assistance, dial **0717140369**. Our **support line** is manned by professionals who are ready to address your concerns. They provide the necessary support.
+For immediate assistance, dial **0710907628**. Our **support line** is manned by professionals who are ready to address your concerns. They provide the necessary support.
 
 We have compiled a quick reference guide to help you understand the process and what to expect when you contact us:
 
 | Step | Description | Contact Method |
 | --- | --- | --- |
-| 1\. Initial Contact | Reach out to us via phone or website | Phone: 0717140369, Website Form |
+| 1\. Initial Contact | Reach out to us via phone or website | Phone: 0710907628, Website Form |
 | 2\. Consultation | Schedule a consultation for mold assessment | Phone or Email |
 | 3\. Remediation | Our team carries out the remediation process | On-site visit |
 | 4\. Follow-up | Verification of clearance and follow-up support | Phone or On-site visit |
@@ -357,7 +357,7 @@ Our [services](/services) are all-inclusive, from finding moisture to using HEPA
 
 Choosing our certified team means property owners in Kenya can rely on us. We work with care and precision, cutting down on downtime and meeting health standards.
 
-If you have questions or want to book a consultation, call us at [0717140369](/contact). Start your journey to a mold-free, healthier space today.
+If you have questions or want to book a consultation, call us at [0710907628](/contact). Start your journey to a mold-free, healthier space today.
 
 ## FAQ
 

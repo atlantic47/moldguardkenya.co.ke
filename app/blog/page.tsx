@@ -41,7 +41,7 @@ export default function BlogListingPage() {
                 Written by Kenya&apos;s leading certified mold remediation specialists.
               </p>
             </div>
-            <a href="tel:0717140369" className="btn-primary" style={{ fontSize: "0.875rem", padding: "0.65rem 1.4rem" }}>
+            <a href="tel:0710907628" className="btn-primary" style={{ fontSize: "0.875rem", padding: "0.65rem 1.4rem" }}>
               📞 Need Help Now?
             </a>
           </div>
@@ -133,8 +133,8 @@ export default function BlogListingPage() {
               Don&apos;t wait — contact Kenya&apos;s certified rapid-response mold specialists today.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
-              <a href="tel:0717140369" className="btn-gold" style={{ fontSize: "0.95rem", padding: "0.8rem 1.75rem" }}>
-                📞 Call 0717140369
+              <a href="tel:0710907628" className="btn-gold" style={{ fontSize: "0.95rem", padding: "0.8rem 1.75rem" }}>
+                📞 Call 0710907628
               </a>
               <Link href="/locations" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.6)", fontSize: "0.95rem", padding: "0.8rem 1.75rem" }}>
                 Find Local Experts →
