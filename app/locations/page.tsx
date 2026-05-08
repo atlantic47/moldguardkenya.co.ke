@@ -57,10 +57,34 @@ const regions = [
 ];
 
 export default function LocationsListingPage() {
+  const locationsSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Service Locations | Mold Removal Across Kenya",
+    "description": "Find professional mold removal and remediation services near you. MoldGuard Kenya serves Nairobi, Mombasa, Kiambu, Nakuru, Eldoret and surrounding areas.",
+    "url": "https://moldguardkenya.co.ke/locations",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": regions.map((region, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "LocalBusiness",
+          "name": `Mold Removal & Inspection in ${region.name}`,
+          "url": `https://moldguardkenya.co.ke/locations/${region.slug}`
+        }
+      }))
+    }
+  };
+
   return (
     <>
       <Navbar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(locationsSchema) }}
+        />
         {/* HERO */}
         <PageHero
           title="Our Service Locations"

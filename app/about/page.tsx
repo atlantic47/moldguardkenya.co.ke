@@ -60,10 +60,27 @@ const values = [
 ];
 
 export default function AboutPage() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About MoldGuard Kenya",
+    "description": "Learn about MoldGuard Kenya, the leading professional mold removal experts in Kenya. Discover our mission, our certified processes, and why we are trusted.",
+    "url": "https://moldguardkenya.co.ke/about",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MoldGuard Kenya",
+      "url": "https://moldguardkenya.co.ke/"
+    }
+  };
+
   return (
     <>
       <Navbar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+        />
         {/* HERO */}
         <PageHero
           title="About MoldGuard Kenya"

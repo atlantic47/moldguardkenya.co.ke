@@ -1,6 +1,6 @@
 ---
 title: "Contact Us | Mold Removal Services in Kenya"
-description: "Contact MoldGuard Kenya for professional mold remediation and removal. Call or WhatsApp 0717140469 to schedule your free inspection today."
+description: "Contact MoldGuard Kenya for professional mold remediation and removal. Call or WhatsApp 0710907628 to schedule your free inspection today."
 ---
 
 # Contact MoldGuard Kenya
@@ -12,7 +12,7 @@ Whether you need emergency mold response after a water leak or are looking to sc
 
 ### How to Reach Us
 
-- **Phone & WhatsApp:** 0717 140 469
+- **Phone & WhatsApp:** 0710 907 628
 - **Email:** info@moldguardkenya.co.ke
 
 ### Our Service Areas 
@@ -29,4 +29,4 @@ Don't wait for mold to spread and cause further structural damage or health comp
 ### Schedule Your Inspection
 Take action before mold takes over. Contact us now to secure a fresh, sparkling, and mold-free environment.
 
-**[Get a Free Mold Inspection - Click Here to WhatsApp Us](https://wa.me/254717140469)**
+**[Get a Free Mold Inspection - Click Here to WhatsApp Us](https://wa.me/254710907628)**

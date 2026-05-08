@@ -16,7 +16,7 @@ const contactMethods = [
   {
     icon: "📞",
     label: "Phone & WhatsApp",
-    primary: "0717 140 369",
+    primary: "0710 907 628",
     secondary: "Available 24/7 for emergencies",
     href: "tel:0710907628",
     cta: "Call Now",
@@ -218,7 +218,7 @@ export default function ContactPage() {
               Don&apos;t wait. Rapid response stops mold from spreading and saves your property from costly structural damage.
             </p>
             <a href="tel:0710907628" className="btn-gold" style={{ fontSize: "1.1rem", padding: "1rem 2.5rem" }}>
-              📞 Call 0717 140 369
+              📞 Call 0710 907 628
             </a>
           </div>
         </section>

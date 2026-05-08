@@ -33,19 +33,30 @@ export default function ServicesPage() {
   const serviceSchema = {
     "@context": "https://schema.org/",
     "@type": "Service",
-    "name": "Mold Removal & Water Damage Restoration",
-    "serviceType": "Water damage restoration service",
+    "name": "Mold Removal & Remediation Services",
+    "serviceType": "Mold Remediation, Inspection, and Water Damage Restoration",
     "provider": {
       "@type": "LocalBusiness",
       "name": "MoldGuard Kenya",
       "telephone": "+254710907628",
-      "url": "https://moldguardkenya.co.ke/"
+      "url": "https://moldguardkenya.co.ke/",
+      "image": "https://moldguardkenya.co.ke/icon"
     },
-    "description": "Comprehensive mold remediation services including thermal moisture mapping, HEPA air filtration, toxic black mold extraction, and structural drying.",
+    "description": "Comprehensive mold remediation services including thermal moisture mapping, HEPA air filtration, toxic black mold extraction, and structural drying across Kenya.",
+    "url": "https://moldguardkenya.co.ke/services",
+    "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg",
     "areaServed": [
       {
         "@type": "Country",
         "name": "Kenya"
+      },
+      {
+        "@type": "City",
+        "name": "Nairobi"
+      },
+      {
+        "@type": "City",
+        "name": "Mombasa"
       }
     ],
     "hasOfferCatalog": {
@@ -56,21 +67,28 @@ export default function ServicesPage() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Mold Inspection"
+            "name": "Mold Inspection & Moisture Mapping"
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Air Quality Testing"
+            "name": "Air Quality Testing & Spore Analysis"
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Mold Removal & Remediation"
+            "name": "Toxic Black Mold Removal"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Structural Drying & Dehumidification"
           }
         }
       ]
@@ -112,7 +130,7 @@ export default function ServicesPage() {
               Mold removal is key to keeping your home or office safe and healthy. At MoldGuard Kenya, we know how important it is to act fast and do it right. We offer everything from checking for mold to stopping it from coming back. We&apos;ve talked about how mold can harm your health and why using advanced tools to find moisture is important. Our team is ready to tackle mold problems in any building. We tailor our solutions to fit your needs.
             </p>
             <p style={{ color: "var(--text-mid)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-              Choosing MoldGuard Kenya means you&apos;re working with certified pros who care about your safety and property. We handle insurance claims and offer plans to keep mold away for good. Ready for a mold-free space? Call us at 0717140469 for a consultation. Count on MoldGuard Kenya for top-notch mold removal and repair services.
+              Choosing MoldGuard Kenya means you&apos;re working with certified pros who care about your safety and property. We handle insurance claims and offer plans to keep mold away for good. Ready for a mold-free space? Call us at 0710907628 for a consultation. Count on MoldGuard Kenya for top-notch mold removal and repair services.
             </p>
           </div>
         </section>

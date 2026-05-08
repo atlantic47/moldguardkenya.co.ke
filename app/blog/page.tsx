@@ -18,10 +18,32 @@ const BLOG_ICONS = ["🌧️", "🦠", "🏠", "💰", "💧", "☔", "⚠️", 
 export default function BlogListingPage() {
   const posts = getAllSeoMetadata("blog");
 
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "MoldGuard Kenya Blog",
+    "description": "Read the latest tips, guides, and expert advice on mold removal, prevention, and indoor air quality in Kenya.",
+    "url": "https://moldguardkenya.co.ke/blog",
+    "blogPost": posts.slice(0, 5).map((post) => ({
+      "@type": "BlogPosting",
+      "headline": post.data.title || post.slug.replace(/-/g, " "),
+      "description": post.data.description,
+      "url": `https://moldguardkenya.co.ke/blog/${post.slug}`,
+      "author": {
+        "@type": "Organization",
+        "name": "MoldGuard Kenya"
+      }
+    }))
+  };
+
   return (
     <>
       <Navbar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+        />
         {/* HERO */}
         <PageHero
           title="MoldGuard Expert Blog"
