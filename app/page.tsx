@@ -11,7 +11,7 @@ import MarkdownRenderer from "./components/MarkdownRenderer";
 import { getRawMarkdownFile } from "@/lib/markdown";
 
 export const metadata: Metadata = {
-  title: "MoldGuard Kenya | Professional Mold Removal & Remediation",
+  title: "MoldGuard Kenya | Professional Mold Removal, Remediation and Treatment Services in Nairobi, Kenya",
   description: "MoldGuard Kenya is the leading professional mold removal company in Kenya. We provide certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses.",
   alternates: { canonical: "https://moldguardkenya.co.ke" },
 };
@@ -22,7 +22,7 @@ function generateFAQSchema(content: string) {
 
   const faqs = [];
   const parts = faqSection.split("### ").slice(1);
-  
+
   for (const part of parts) {
     const lines = part.split("\n");
     const question = lines[0].trim();
@@ -73,7 +73,7 @@ export default async function Home() {
         <HeroSection />
         <StatsBar />
         <ServicesSection />
-        
+
         {/* We render the core markdown content here. This replaces the hardcoded WhoWeAre, HowItWorks, and WhyChooseUs summary components to ensure NO repetition, while maintaining the full 2500-word SEO value exactly as requested. */}
         <section className="container py-12" style={{ maxWidth: '900px', margin: '0 auto' }}>
           <MarkdownRenderer content={mainContent} />
