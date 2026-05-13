@@ -63,7 +63,7 @@ export default function HeroSection() {
               Get Started
             </a>
             <Link href="/services" className="btn-outline">
-              Learn More
+              View Our Mold Remediation Services
             </Link>
           </div>
 

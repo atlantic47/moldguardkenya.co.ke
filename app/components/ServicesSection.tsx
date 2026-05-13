@@ -81,7 +81,7 @@ export default function ServicesSection() {
                   className="btn-primary"
                   style={{ fontSize: "0.8rem", padding: "0.5rem 1.25rem", width: "100%", justifyContent: "center" }}
                 >
-                  ▶ Learn More
+                  ▶ View {service.title}
                 </Link>
               </div>
             </div>

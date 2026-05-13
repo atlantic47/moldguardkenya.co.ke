@@ -301,7 +301,7 @@ export default async function LocationPostPage({ params }: Props) {
         {/* ── BLOG RESOURCES ── */}
         <section style={{ background: "var(--cream)", padding: "3.5rem 0" }}>
           <div className="container">
-            <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.4rem" }}>Learn More</p>
+            <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.78rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.4rem" }}>Mold Removal Guides</p>
             <h2 style={{ fontWeight: 800, fontSize: "1.25rem", color: "var(--primary-dark)", marginBottom: "1.25rem" }}>Mold Prevention & Removal Guides</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1rem" }}>
               {blogPosts.map((post) => (
