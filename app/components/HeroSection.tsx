@@ -32,7 +32,7 @@ export default function HeroSection() {
               marginBottom: "1.25rem",
             }}
           >
-            Mold Removal &amp; Remediation Services in Kenya | MoldGuard Kenya
+            Mold Removal Company in Kenya | Remediation &amp; Treatment Services | MoldGuard Kenya
           </h1>
           <div
             style={{
@@ -47,7 +47,7 @@ export default function HeroSection() {
             }}
           >
             <p>
-              Discovering mold in your home can be very stressful. At <strong>MoldGuard</strong>, we offer expert solutions to improve your <strong>indoor air quality</strong>. Our team is skilled in professional <em>mold removal Kenya</em> projects, making sure your space is safe.
+              Discovering mold in your home can be very stressful. At <strong>MoldGuard</strong> &mdash; Kenya&apos;s trusted mold removal company &mdash; we offer expert solutions to improve your <strong>indoor air quality</strong>. Our team is skilled in professional <em>mold removal Kenya</em> projects, making sure your space is safe.
             </p>
             <p>
               We use the latest technology to find and remove hidden moisture and mold spores. By choosing our <strong>mold remediation services</strong>, you&apos;re choosing a healthier place to live or work. We act fast to stop mold from spreading and damaging your space.
