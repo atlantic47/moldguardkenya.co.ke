@@ -11,7 +11,7 @@ import MarkdownRenderer from "./components/MarkdownRenderer";
 import { getRawMarkdownFile } from "@/lib/markdown";
 
 export const metadata: Metadata = {
-  title: "MoldGuard Kenya | Professional Mold Removal, Remediation and Treatment Services in Nairobi, Kenya",
+  title: "MoldGuard Kenya | Professional Mold Removal, Remediation and Treatment Services Company in Nairobi, Kenya",
   description: "MoldGuard Kenya is the leading professional mold removal company in Kenya. We provide certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses.",
   alternates: { canonical: "https://moldguardkenya.co.ke" },
 };
