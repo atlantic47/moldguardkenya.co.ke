@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -96,15 +95,16 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right: Image */}
+        {/* Right: Hero Video */}
         <div style={{ position: "relative", height: "460px", borderRadius: "1.5rem", overflow: "hidden", boxShadow: "0 20px 60px rgba(45,80,22,0.25)" }}>
-          <Image
-            src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg"
-            alt="MoldGuard Kenya professional mold remediation services"
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            style={{ objectFit: "cover" }}
-            priority
+          <video
+            src="/Mold removal service in Nairobi.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            aria-label="MoldGuard Kenya certified technician performing professional mold removal service in Nairobi"
           />
           {/* Rating badge */}
           <div

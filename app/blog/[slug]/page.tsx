@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     "headline": title,
     "description": data.description || "Expert insights from Kenya's leading mold remediation specialists.",
-    "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/8e626626-0a65-4016-b728-2abad223b45e.jpg",  
+    "image": "https://moldguardkenya.co.ke/Mold removal-muthaiga.jpg",  
     "author": {
       "@type": "Organization",
       "name": "MoldGuard Kenya",

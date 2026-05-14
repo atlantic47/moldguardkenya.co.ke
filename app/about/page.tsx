@@ -86,7 +86,7 @@ export default function AboutPage() {
           title="About MoldGuard Kenya"
           subtitle="We are Kenya's leading certified mold remediation company — protecting families and properties with science-backed solutions."
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
-          bgImage="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/5b8b2f77-4f18-4ddb-bec8-bce550f34123.jpg"
+          bgImage="/Mold removal-muthaiga.jpg"
         />
 
         {/* WHO WE ARE */}
@@ -95,8 +95,8 @@ export default function AboutPage() {
             <div style={{ position: "relative" }}>
               <div style={{ position: "relative", height: "480px", borderRadius: "1.5rem", overflow: "hidden", boxShadow: "0 24px 64px rgba(45,80,22,0.18)" }}>
                 <Image
-                  src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/8e626626-0a65-4016-b728-2abad223b45e.jpg"
-                  alt="MoldGuard Kenya certified mold remediation team"
+                  src="/Moldguard services.jpg"
+                  alt="MoldGuard Kenya certified mold remediation team at work"
                   fill
                   style={{ objectFit: "cover" }}
                 />

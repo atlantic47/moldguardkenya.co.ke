@@ -152,8 +152,8 @@ export default function FAQSection() {
             }}
           >
             <Image
-              src="https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/fefaad0e-262d-46a7-86ca-9fd206fc233d.jpg"
-              alt="MoldGuard Kenya team ready to help"
+              src="/Mold removal Eastleigh.jpg"
+              alt="MoldGuard Kenya team treating mold in Eastleigh Nairobi"
               fill
               style={{ objectFit: "cover" }}
             />

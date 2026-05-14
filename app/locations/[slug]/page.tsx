@@ -107,7 +107,7 @@ export default async function LocationPostPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": `Mold Removal & Inspection in ${locationName}`,
-    "image": "https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg",
+    "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
     "telephone": "+254710907628",
     "url": `https://moldguardkenya.co.ke/locations/${slug}`,
     "areaServed": {
