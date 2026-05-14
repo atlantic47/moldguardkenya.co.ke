@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "About MoldGuard Kenya | Certified Mold Remediation Experts",
   description:
     "Learn about MoldGuard Kenya, the leading professional mold removal experts in Kenya. Discover our mission, our certified processes, and why we are trusted.",
+  alternates: { canonical: "https://moldguardkenya.co.ke/about" },
 };
 
 const process = [
