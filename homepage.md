@@ -4,7 +4,7 @@ Discovering mold in your home can be very stressful. At **MoldGuard** — Kenya'
 
 We use the latest technology to find and remove hidden moisture and mold spores. By choosing our **[mold remediation services](/services)**, you're choosing a healthier place to live or work. We act fast to stop mold from spreading and damaging your space.
 
-![Mold Removal & Remediation Services in Kenya | MoldGuard Kenya](https://storage.googleapis.com/48877118-7272-4a4d-b302-0465d8aa4548/417cdae0-103b-4ab8-8f34-fa52d18e1e0f/dea2f413-d0d2-44f8-9a49-6a3ad43cdddd.jpg)
+![MoldGuard Kenya certified technician performing professional mold removal and remediation in Nairobi](/Moldguard services.jpg)
 
 Our technicians work hard to give you lasting results all over Kenya. We know the climate challenges in **Kenya** are unique. Call us at [0710907628](/contact) for quick help and to book your first meeting today.
 
