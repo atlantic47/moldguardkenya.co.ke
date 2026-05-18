@@ -76,7 +76,7 @@ export default function WorkGallery() {
                 src={video.src}
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 onPlay={() => handlePlay(i)}
                 style={{ width: "100%", display: "block", aspectRatio: "9/16", objectFit: "cover", background: "#000" }}
                 aria-label={`MoldGuard Kenya mold removal job in ${video.area}`}

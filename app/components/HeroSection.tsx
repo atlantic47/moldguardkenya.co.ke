@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -95,16 +96,27 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right: Hero Video */}
+        {/* Right: Hero — Image for instant LCP, Video overlay once loaded */}
         <div style={{ position: "relative", height: "460px", borderRadius: "1.5rem", overflow: "hidden", boxShadow: "0 20px 60px rgba(45,80,22,0.25)" }}>
+          {/* Fast-loading image — this is what Google measures for LCP */}
+          <Image
+            src="/Moldguard services.jpg"
+            alt="MoldGuard Kenya certified technician performing professional mold removal in Nairobi"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            style={{ objectFit: "cover" }}
+            priority
+          />
+          {/* Video layers on top — preload=none means ZERO network cost on page load */}
           <video
             src="/Mold removal service in Nairobi.mp4"
             autoPlay
             muted
             loop
             playsInline
-            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-            aria-label="MoldGuard Kenya certified technician performing professional mold removal service in Nairobi"
+            preload="none"
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+            aria-label="MoldGuard Kenya mold removal service in Nairobi"
           />
           {/* Rating badge */}
           <div
@@ -118,6 +130,7 @@ export default function HeroSection() {
               boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
               textAlign: "center",
               minWidth: "100px",
+              zIndex: 2,
             }}
           >
             <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--primary)" }}>4.9★</div>
