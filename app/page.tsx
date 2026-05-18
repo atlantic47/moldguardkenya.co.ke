@@ -34,7 +34,7 @@ const heroVideoSchema = {
   "description": "Watch MoldGuard Kenya certified technicians perform a full professional mold removal and remediation job in Nairobi. Includes HEPA filtration, containment barriers, and advanced moisture detection.",
   "thumbnailUrl": THUMB,
   "contentUrl": `${BASE}/Mold removal service in Nairobi.mp4`,
-  "uploadDate": "2024-06-01",
+  "uploadDate": "2024-06-01T00:00:00+03:00",
   "duration": "PT3M",
   "publisher": {
     "@type": "Organization",
@@ -58,7 +58,7 @@ const galleryVideosSchema = {
         "description": "Professional mold removal job by MoldGuard Kenya in Nairobi CBD, Kenya.",
         "thumbnailUrl": THUMB,
         "contentUrl": `${BASE}/Mold removal service in Nairobi.mp4`,
-        "uploadDate": "2024-06-01", "duration": "PT3M"
+        "uploadDate": "2024-06-01T00:00:00+03:00", "duration": "PT3M"
       }
     },
     {
@@ -69,7 +69,7 @@ const galleryVideosSchema = {
         "description": "MoldGuard Kenya mold remediation job in Eastleigh, Nairobi.",
         "thumbnailUrl": THUMB_EASTLEIGH,
         "contentUrl": `${BASE}/Mold removal eastleigh.mp4`,
-        "uploadDate": "2024-07-01", "duration": "PT2M"
+        "uploadDate": "2024-07-01T00:00:00+03:00", "duration": "PT2M"
       }
     },
     {
@@ -80,7 +80,7 @@ const galleryVideosSchema = {
         "description": "Professional mold removal and treatment job by MoldGuard Kenya in Karen, Nairobi.",
         "thumbnailUrl": THUMB,
         "contentUrl": `${BASE}/mold removal karen.mp4`,
-        "uploadDate": "2024-08-01", "duration": "PT2M"
+        "uploadDate": "2024-08-01T00:00:00+03:00", "duration": "PT2M"
       }
     },
     {
@@ -91,7 +91,7 @@ const galleryVideosSchema = {
         "description": "MoldGuard Kenya mold remediation job in Muthaiga, Nairobi.",
         "thumbnailUrl": THUMB_MUTHAIGA,
         "contentUrl": `${BASE}/mold removal muthaiga.mp4`,
-        "uploadDate": "2024-08-15", "duration": "PT2M"
+        "uploadDate": "2024-08-15T00:00:00+03:00", "duration": "PT2M"
       }
     },
     {
@@ -102,7 +102,7 @@ const galleryVideosSchema = {
         "description": "Professional mold treatment by MoldGuard Kenya in Loresho, Nairobi.",
         "thumbnailUrl": THUMB,
         "contentUrl": `${BASE}/Mold -removal-loresho.mp4`,
-        "uploadDate": "2024-09-01", "duration": "PT4M"
+        "uploadDate": "2024-09-01T00:00:00+03:00", "duration": "PT4M"
       }
     },
     {
@@ -113,7 +113,7 @@ const galleryVideosSchema = {
         "description": "MoldGuard Kenya mold remediation and structural drying job in Lavington, Nairobi.",
         "thumbnailUrl": THUMB,
         "contentUrl": `${BASE}/mold-removal-lavington.mp4`,
-        "uploadDate": "2024-09-15", "duration": "PT2M"
+        "uploadDate": "2024-09-15T00:00:00+03:00", "duration": "PT2M"
       }
     },
     {
@@ -124,7 +124,7 @@ const galleryVideosSchema = {
         "description": "Extensive mold removal and remediation by MoldGuard Kenya in Kitisuru, Nairobi.",
         "thumbnailUrl": THUMB,
         "contentUrl": `${BASE}/mold-removal-kitisuru.mp4`,
-        "uploadDate": "2024-10-01", "duration": "PT6M"
+        "uploadDate": "2024-10-01T00:00:00+03:00", "duration": "PT6M"
       }
     },
     {
@@ -135,7 +135,7 @@ const galleryVideosSchema = {
         "description": "MoldGuard Kenya mold removal job in Langata, Nairobi.",
         "thumbnailUrl": THUMB,
         "contentUrl": `${BASE}/mold removal kenya-langata.mp4`,
-        "uploadDate": "2024-10-15", "duration": "PT2M"
+        "uploadDate": "2024-10-15T00:00:00+03:00", "duration": "PT2M"
       }
     },
     {
@@ -146,7 +146,7 @@ const galleryVideosSchema = {
         "description": "MoldGuard Kenya mold cleaning and remediation in Garden Estate, Nairobi.",
         "thumbnailUrl": THUMB,
         "contentUrl": `${BASE}/Mold cleaning Garden estate.mp4`,
-        "uploadDate": "2024-11-01", "duration": "PT1M"
+        "uploadDate": "2024-11-01T00:00:00+03:00", "duration": "PT1M"
       }
     },
     {
@@ -157,7 +157,7 @@ const galleryVideosSchema = {
         "description": "Professional mold removal and treatment by MoldGuard Kenya in Mombasa, Kenya.",
         "thumbnailUrl": THUMB,
         "contentUrl": `${BASE}/mold-removal-mombasa.mp4`,
-        "uploadDate": "2024-11-15", "duration": "PT3M"
+        "uploadDate": "2024-11-15T00:00:00+03:00", "duration": "PT3M"
       }
     },
     {
@@ -168,7 +168,7 @@ const galleryVideosSchema = {
         "description": "Full mold removal and remediation service job video by MoldGuard Kenya across Nairobi.",
         "thumbnailUrl": THUMB_MUTHAIGA,
         "contentUrl": `${BASE}/Mold removal services in Nairobi Kenya.mp4`,
-        "uploadDate": "2024-12-01", "duration": "PT8M"
+        "uploadDate": "2024-12-01T00:00:00+03:00", "duration": "PT8M"
       }
     }
   ]
