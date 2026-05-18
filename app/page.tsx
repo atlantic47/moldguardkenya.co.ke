@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import StatsBar from "./components/StatsBar";
 import ServicesSection from "./components/ServicesSection";
-import FAQSection from "./components/FAQSection";
-import NewsletterSection from "./components/NewsletterSection";
-import Footer from "./components/Footer";
-import HomepageDeepLinks from "./components/HomepageDeepLinks";
 import MarkdownRenderer from "./components/MarkdownRenderer";
 import { getRawMarkdownFile } from "@/lib/markdown";
-import WorkGallery from "./components/WorkGallery";
+
+// Below-fold components — dynamically imported to reduce initial JS bundle size
+// This directly improves Time to Interactive (TTI) and INP scores
+const WorkGallery     = dynamic(() => import("./components/WorkGallery"),     { ssr: true });
+const FAQSection      = dynamic(() => import("./components/FAQSection"),      { ssr: true });
+const HomepageDeepLinks = dynamic(() => import("./components/HomepageDeepLinks"), { ssr: true });
+const NewsletterSection = dynamic(() => import("./components/NewsletterSection"), { ssr: true });
+const Footer          = dynamic(() => import("./components/Footer"),          { ssr: true });
 
 export const metadata: Metadata = {
   title: "MoldGuard Kenya | Professional Mold Removal, Remediation and Treatment Services Company in Nairobi, Kenya",
