@@ -174,7 +174,63 @@ const galleryVideosSchema = {
   ]
 };
 
+// ── Organization — tells Google who MoldGuard Kenya IS as an entity ──────────
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MoldGuard Kenya",
+  "alternateName": ["Mold Guard Kenya", "MoldGuard"],
+  "url": "https://moldguardkenya.co.ke",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://moldguardkenya.co.ke/Moldguard services.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
+  "description": "MoldGuard Kenya is Kenya's leading certified mold removal and remediation company, serving Nairobi, Mombasa, and all major towns since 2015.",
+  "telephone": "+254710907628",
+  "email": "info@moldguardkenya.co.ke",
+  "foundingDate": "2015",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Development House, Moi Avenue",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+254710907628",
+    "contactType": "customer service",
+    "areaServed": "KE",
+    "availableLanguage": ["English", "Swahili"]
+  },
+  "sameAs": [
+    "https://web.facebook.com/moldguardKenya",
+    "https://wa.me/254710907628"
+  ]
+};
+
+// ── WebSite — enables Sitelinks Searchbox on brand name SERP ─────────────────
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "MoldGuard Kenya",
+  "url": "https://moldguardkenya.co.ke",
+  "description": "Professional mold removal, remediation and treatment services in Kenya.",
+  "inLanguage": "en-KE",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://moldguardkenya.co.ke/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+
 function generateFAQSchema(content: string) {
+
   const faqSection = content.split("## FAQ")[1];
   if (!faqSection) return null;
 
@@ -227,6 +283,16 @@ export default async function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(galleryVideosSchema) }}
+      />
+      {/* Organization — entity recognition, brand name search, Knowledge Panel */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      {/* WebSite — Sitelinks Searchbox on brand name SERP */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
       />
       {faqSchema && (
         <script

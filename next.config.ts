@@ -2,9 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    // Serve local /public images as WebP/AVIF automatically
+    // Auto-serve local images as AVIF/WebP
     formats: ["image/avif", "image/webp"],
-    // Remote patterns for external images still needed
     remotePatterns: [
       {
         protocol: "https",
@@ -17,65 +16,78 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
-    // Aggressive caching — images don't change often
-    minimumCacheTTL: 31536000, // 1 year in seconds
+    minimumCacheTTL: 86400, // 24 hours — safe for images
   },
 
-  // Add security + performance HTTP headers globally
   async headers() {
     return [
+      // ── HTML pages — NEVER cache. Google must be able to re-crawl freely. ──
       {
-        source: "/(.*)",
+        source: "/((?!_next/static|_next/image|favicon.ico).*)",
         headers: [
-          // Tell browsers to aggressively cache static assets
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            // no-cache means "revalidate with server before using cached copy"
+            // This keeps pages fresh for Google without disabling caching entirely
+            value: "public, no-cache, must-revalidate",
           },
-          // Security headers that Google also considers as quality signals
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          // Allow video autoplay (needed for muted hero video on iOS)
           {
             key: "Permissions-Policy",
             value: "autoplay=(self), camera=(), microphone=()",
           },
         ],
       },
-      // Videos — long cache TTL, correct MIME type
+      // ── Next.js static chunks — safe to cache forever (content-hashed filenames) ──
       {
-        source: "/:path*.mp4",
+        source: "/_next/static/(.*)",
         headers: [
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
+        ],
+      },
+      // ── Optimised images from Next.js Image — cache 24h ──
+      {
+        source: "/_next/image(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=86400, stale-while-revalidate=86400",
+          },
+        ],
+      },
+      // ── Videos — long cache, correct MIME, seekable ──
+      {
+        source: "/:path*.mp4",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=604800, stale-while-revalidate=86400",
+          },
           { key: "Content-Type", value: "video/mp4" },
-          // Allow range requests so browsers can seek without re-downloading
           { key: "Accept-Ranges", value: "bytes" },
         ],
       },
-      // Images — long cache + correct MIME
+      // ── Static images in /public ──
       {
         source: "/:path*.jpg",
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: "public, max-age=604800, stale-while-revalidate=86400",
           },
         ],
       },
     ];
   },
 
-  // Compress all responses
   compress: true,
 
-  // Experimental: enable partial prerendering for even faster FCP
-  experimental: {
-    optimizeCss: true,
-  },
+  // experimental.optimizeCss removed — causes build failures on Vercel with Next.js 16
 };
 
 export default nextConfig;
