@@ -5,19 +5,19 @@ import { products } from "@/lib/data/products";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://moldguardkenya.co.ke";
 
-  // 1. Base static routes — use real publish/update dates (NOT new Date() which changes on every build)
+  // 1. Base static routes — use real publish/update dates
   const staticRoutes = [
-    { route: "",           date: "2024-01-01", priority: 1.0 },
-    { route: "/about",     date: "2024-03-01", priority: 0.8 },
-    { route: "/services",  date: "2024-03-01", priority: 0.9 },
-    { route: "/shop",      date: "2024-06-01", priority: 0.9 },
-    { route: "/blog",      date: "2024-04-01", priority: 0.8 },
-    { route: "/locations", date: "2024-04-01", priority: 0.8 },
-    { route: "/contact",   date: "2024-03-01", priority: 0.7 },
-  ].map(({ route, date, priority }) => ({
+    { route: "",           date: "2026-05-21", changeFrequency: "weekly" as const, priority: 1.0 }, // Updated today!
+    { route: "/about",     date: "2024-03-01", changeFrequency: "monthly" as const, priority: 0.8 },
+    { route: "/services",  date: "2026-05-21", changeFrequency: "weekly" as const, priority: 0.9 },  // Updated today!
+    { route: "/shop",      date: "2024-06-01", changeFrequency: "monthly" as const, priority: 0.9 },
+    { route: "/blog",      date: "2024-04-01", changeFrequency: "monthly" as const, priority: 0.8 },
+    { route: "/locations", date: "2024-04-01", changeFrequency: "monthly" as const, priority: 0.8 },
+    { route: "/contact",   date: "2024-03-01", changeFrequency: "monthly" as const, priority: 0.7 },
+  ].map(({ route, date, changeFrequency, priority }) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(date),
-    changeFrequency: "monthly" as const,
+    changeFrequency,
     priority,
   }));
 
