@@ -39,7 +39,7 @@ export default function MarkdownRenderer({ content, className }: MarkdownRendere
                 }}
               >
                 <Image
-                  src={props.src!}
+                  src={typeof props.src === 'string' ? props.src : ''}
                   alt={props.alt || "MoldGuard Kenya mold remediation services"}
                   fill
                   style={{ objectFit: 'cover' }}
