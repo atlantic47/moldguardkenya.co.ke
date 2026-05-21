@@ -26,10 +26,18 @@ export default function Footer() {
             Expert mold removal and remediation services across Kenya. Protecting your health and property with professional, eco-friendly solutions.
           </p>
           <div style={{ display: "flex", gap: "0.75rem" }}>
-            {["f", "t", "in", "ig"].map((icon) => (
+            {[
+              { key: "facebook", icon: "f", label: "MoldGuard Kenya Facebook Page", href: "https://web.facebook.com/moldguardKenya" },
+              { key: "twitter", icon: "t", label: "MoldGuard Kenya Twitter Page", href: "https://x.com/moldguardkenya" },
+              { key: "linkedin", icon: "in", label: "MoldGuard Kenya LinkedIn Page", href: "https://linkedin.com/company/moldguardkenya" },
+              { key: "instagram", icon: "ig", label: "MoldGuard Kenya Instagram Page", href: "https://instagram.com/moldguardkenya" },
+            ].map((social) => (
               <a
-                key={icon}
-                href="#"
+                key={social.key}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
                 style={{
                   width: "36px",
                   height: "36px",
@@ -45,7 +53,7 @@ export default function Footer() {
                   transition: "background 0.2s",
                 }}
               >
-                {icon}
+                {social.icon}
               </a>
             ))}
           </div>
@@ -150,14 +158,17 @@ export default function Footer() {
             © {new Date().getFullYear()} MoldGuard Kenya. All rights reserved.
           </p>
           <div style={{ display: "flex", gap: "1.5rem" }}>
-            {["Privacy Policy", "Terms of Service"].map((item) => (
-              <a
-                key={item}
-                href="#"
+            {[
+              { label: "Privacy Policy", href: "/privacy" },
+              { label: "Terms of Service", href: "/terms" },
+            ].map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
                 style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.45)", textDecoration: "none" }}
               >
-                {item}
-              </a>
+                {item.label}
+              </Link>
             ))}
           </div>
         </div>

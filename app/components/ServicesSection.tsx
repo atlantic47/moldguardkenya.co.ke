@@ -64,7 +64,7 @@ export default function ServicesSection() {
                   src={service.img}
                   alt={service.title}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  sizes="(max-width: 480px) 380px, (max-width: 1024px) 50vw, 280px"
                   style={{ objectFit: "cover" }}
                 />
               </div>

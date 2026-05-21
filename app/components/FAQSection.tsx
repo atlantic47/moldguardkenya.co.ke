@@ -155,6 +155,7 @@ export default function FAQSection() {
               src="/Mold removal Eastleigh.jpg"
               alt="MoldGuard Kenya team treating mold in Eastleigh Nairobi"
               fill
+              sizes="(max-width: 1024px) 100vw, 400px"
               style={{ objectFit: "cover" }}
             />
           </div>

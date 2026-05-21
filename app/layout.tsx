@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "MoldGuard Kenya offers expert mold removal and remediation services across Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mold and improve your indoor air quality. Call 0710907628.",
   keywords:
     "mold removal Kenya, mold remediation Nairobi, indoor air quality, moisture detection, HEPA filtration, mold inspection Kenya",
+  alternates: { canonical: "https://moldguardkenya.co.ke" }
 };
 
 export default function RootLayout({
@@ -69,12 +70,7 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <head>
         {/* Preconnect — cuts DNS + TLS handshake time for external resources */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://storage.googleapis.com" />
-        {/* DNS prefetch fallback for browsers that don't support preconnect */}
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         {/* Viewport — interactive-widget stops mobile keyboard resize from triggering CLS */}
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
         <script
