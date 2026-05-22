@@ -9,15 +9,15 @@ import { getRawMarkdownFile } from "@/lib/markdown";
 
 // Below-fold components — dynamically imported to reduce initial JS bundle size
 // This directly improves Time to Interactive (TTI) and INP scores
-const WorkGallery     = dynamic(() => import("./components/WorkGallery"),     { ssr: true });
-const FAQSection      = dynamic(() => import("./components/FAQSection"),      { ssr: true });
+const WorkGallery = dynamic(() => import("./components/WorkGallery"), { ssr: true });
+const FAQSection = dynamic(() => import("./components/FAQSection"), { ssr: true });
 const HomepageDeepLinks = dynamic(() => import("./components/HomepageDeepLinks"), { ssr: true });
 const NewsletterSection = dynamic(() => import("./components/NewsletterSection"), { ssr: true });
-const Footer          = dynamic(() => import("./components/Footer"),          { ssr: true });
+const Footer = dynamic(() => import("./components/Footer"), { ssr: true });
 
 export const metadata: Metadata = {
   title: "MoldGuard Kenya | Professional Mold Removal, Remediation and Treatment Services Company in Nairobi, Kenya",
-  description: "MoldGuard Kenya is the leading professional mold removal company in Kenya. We provide certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses.",
+  description: "MoldGuard Kenya is the leading professional mold removal services company in Kenya. We provide IICRC-certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses.",
   alternates: { canonical: "https://moldguardkenya.co.ke" },
 };
 
