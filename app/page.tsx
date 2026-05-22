@@ -28,8 +28,8 @@ const THUMB_EASTLEIGH = `${BASE}/Mold removal Eastleigh.jpg`;
 
 // ── Hero video schema — Google Video Rich Result eligibility ────────────────
 const heroVideoSchema = {
-  "@context": "https://schema.org",
   "@type": "VideoObject",
+  "@id": "https://moldguardkenya.co.ke/#herovideo",
   "name": "Professional Mold Removal Service in Nairobi, Kenya — MoldGuard Kenya",
   "description": "Watch MoldGuard Kenya certified technicians perform a full professional mold removal and remediation job in Nairobi. Includes HEPA filtration, containment barriers, and advanced moisture detection.",
   "thumbnailUrl": THUMB,
@@ -43,10 +43,10 @@ const heroVideoSchema = {
   }
 };
 
-// ── Gallery videos — ItemList of VideoObject for all 11 real job videos ─────
+// ── Gallery videos — ItemList of VideoObject for all 11 real job jobs ────────
 const galleryVideosSchema = {
-  "@context": "https://schema.org",
   "@type": "ItemList",
+  "@id": "https://moldguardkenya.co.ke/#videogallery",
   "name": "MoldGuard Kenya — Real Mold Removal Jobs Across Kenya",
   "description": "Real mold removal and remediation job videos by MoldGuard Kenya across Nairobi and Mombasa.",
   "itemListElement": [
@@ -176,8 +176,8 @@ const galleryVideosSchema = {
 
 // ── Organization — tells Google who MoldGuard Kenya IS as an entity ──────────
 const organizationSchema = {
-  "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://moldguardkenya.co.ke/#organization",
   "name": "MoldGuard Kenya",
   "alternateName": ["Mold Guard Kenya", "MoldGuard"],
   "url": "https://moldguardkenya.co.ke",
@@ -213,12 +213,15 @@ const organizationSchema = {
 
 // ── WebSite — enables Sitelinks Searchbox on brand name SERP ─────────────────
 const webSiteSchema = {
-  "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://moldguardkenya.co.ke/#website",
   "name": "MoldGuard Kenya",
   "url": "https://moldguardkenya.co.ke",
   "description": "Professional mold removal, remediation and treatment services in Kenya.",
   "inLanguage": "en-KE",
+  "publisher": {
+    "@id": "https://moldguardkenya.co.ke/#organization"
+  },
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
@@ -229,8 +232,53 @@ const webSiteSchema = {
   }
 };
 
-function generateFAQSchema(content: string) {
+// ── LocalBusiness — unified mapping of regional business presence ───────────
+const localBusinessSchema = {
+  "@type": "LocalBusiness",
+  "@id": "https://moldguardkenya.co.ke/#localbusiness",
+  "name": "MoldGuard Kenya",
+  "description": "MoldGuard Kenya is a trusted specialist in professional mold removal, mold inspection, and complete mold remediation services in Nairobi and surrounding areas. We focus on identifying, treating, and preventing mold problems in homes and commercial properties to ensure safe and healthy indoor environments. Our team uses advanced detection methods and proven techniques to remove mold at the source, including black mold, damp walls, and hidden growth behind ceilings and flooring. We deliver reliable solutions with minimal disruption and long term prevention. Contact MoldGuard Kenya today for expert mold inspection and removal services you can trust.",
+  "url": "https://moldguardkenya.co.ke",
+  "logo": "https://moldguardkenya.co.ke/Moldguard services.jpg",
+  "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
+  "telephone": "+254710907628",
+  "email": "info@moldguardkenya.co.ke",
+  "foundingDate": "2015-08-22",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Development House, Moi Avenue",
+    "addressLocality": "Nairobi",
+    "postalCode": "00100",
+    "addressCountry": "KE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-1.2825",
+    "longitude": "36.8229"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    "Kenya",
+    "Nairobi",
+    "Mombasa"
+  ],
+  "sameAs": [
+    "https://wa.me/254710907628",
+    "https://web.facebook.com/moldguardKenya"
+  ],
+  "parentOrganization": {
+    "@id": "https://moldguardkenya.co.ke/#organization"
+  }
+};
 
+function generateFAQSchema(content: string) {
   const faqSection = content.split("## FAQ")[1];
   if (!faqSection) return null;
 
@@ -254,8 +302,8 @@ function generateFAQSchema(content: string) {
   }
 
   return {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://moldguardkenya.co.ke/#faq",
     "mainEntity": faqs
   };
 }
@@ -272,34 +320,26 @@ export default async function Home() {
     mainContent = mainContent.substring(0, faqIndex);
   }
 
+  // Compile all individual schemas into a single optimized @graph schema
+  const graphSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      organizationSchema,
+      webSiteSchema,
+      localBusinessSchema,
+      heroVideoSchema,
+      galleryVideosSchema,
+      ...(faqSchema ? [faqSchema] : [])
+    ]
+  };
+
   return (
     <>
-      {/* Hero VideoObject — enables Google Video Rich Result for the hero video */}
+      {/* Consolidated Schema Graph — unifies entities, resolves duplicate FAQPage, and trailing slash conflicts */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(heroVideoSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(graphSchema) }}
       />
-      {/* Gallery — ItemList of VideoObjects for all 11 real job videos */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(galleryVideosSchema) }}
-      />
-      {/* Organization — entity recognition, brand name search, Knowledge Panel */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      {/* WebSite — Sitelinks Searchbox on brand name SERP */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
       <Navbar />
       <main>
         <HeroSection />
