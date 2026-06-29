@@ -274,7 +274,7 @@ export const products: Product[] = [
       { label: "Shelf Life", value: "3 years (sealed)" },
       { label: "Delivery", value: "Nationwide — same-day in Nairobi for orders before 2pm" },
     ],
-    image: "https://kilimokona.co.ke/wp-content/uploads/2025/11/moldkill-max.jpg",
+    image: "/moldkill-max.jpg",
     inStock: true,
     rating: 4.9,
     reviews: [
