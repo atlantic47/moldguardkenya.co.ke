@@ -26,7 +26,9 @@ const shopSchema = {
       "url": `https://moldguardkenya.co.ke/shop/${product.slug}`,
       "description": product.shortDescription,
       "category": product.category,
-      "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
+      "image": product.image.startsWith("/")
+          ? `https://moldguardkenya.co.ke${product.image}`
+          : product.image,
       "offers": {
         "@type": "Offer",
         "price": product.price,

@@ -168,12 +168,52 @@ export default async function ProductPage({
                     {product.badge}
                   </div>
                 )}
-                <span
-                  style={{ fontSize: "8rem", opacity: 0.35 }}
-                >
-                  {categoryIcons[product.category]}
-                </span>
+                {product.image ? (
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                      objectPosition: "center",
+                      padding: "1.5rem",
+                    }}
+                  />
+                ) : (
+                  <span style={{ fontSize: "8rem", opacity: 0.35 }}>
+                    {categoryIcons[product.category]}
+                  </span>
+                )}
               </div>
+
+              {/* Multi-image thumbnail strip (for 20L dehumidifier etc.) */}
+              {product.images && product.images.length > 1 && (
+                <div style={{ display: "flex", gap: "0.75rem", marginTop: "1rem", overflowX: "auto" }}>
+                  {product.images.map((src, i) => (
+                    <div
+                      key={i}
+                      style={{
+                        width: "80px",
+                        height: "80px",
+                        flexShrink: 0,
+                        borderRadius: "0.75rem",
+                        border: i === 0 ? "2px solid var(--primary)" : "2px solid var(--border)",
+                        overflow: "hidden",
+                        background: "#f0f7ec",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <img
+                        src={src}
+                        alt={`${product.name} view ${i + 1}`}
+                        style={{ width: "100%", height: "100%", objectFit: "contain", padding: "4px" }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+
 
               {/* Stock + Rating row */}
               <div

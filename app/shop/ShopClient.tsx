@@ -90,7 +90,7 @@ export default function ShopClient() {
                           display: "flex",
                           flexDirection: "column",
                         }} className="product-card">
-                          {/* Product Image placeholder */}
+                          {/* Product Image */}
                           <div style={{ position: "relative", background: "var(--cream)", height: "220px", overflow: "hidden" }}>
                             <div style={{ position: "absolute", top: "1rem", left: "1rem", background: "var(--primary)", color: "white", borderRadius: "999px", padding: "0.25rem 0.75rem", fontSize: "0.7rem", fontWeight: 700, zIndex: 2 }}>
                               {categoryIcons[product.category]} {product.category}
@@ -100,9 +100,18 @@ export default function ShopClient() {
                                 {product.badge}
                               </div>
                             )}
-                            <div style={{ width: "100%", height: "100%", background: "linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 50%, #a5d6a7 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                              <span style={{ fontSize: "4rem", opacity: 0.5 }}>{categoryIcons[product.category]}</span>
-                            </div>
+                            {product.image ? (
+                              <img
+                                src={product.image}
+                                alt={product.name}
+                                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", transition: "transform 0.35s" }}
+                                className="product-card-img"
+                              />
+                            ) : (
+                              <div style={{ width: "100%", height: "100%", background: "linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 50%, #a5d6a7 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                <span style={{ fontSize: "4rem", opacity: 0.5 }}>{categoryIcons[product.category]}</span>
+                              </div>
+                            )}
                           </div>
 
                           {/* Product Info */}
@@ -156,6 +165,9 @@ export default function ShopClient() {
         .product-card:hover {
           box-shadow: 0 12px 40px rgba(45,80,22,0.15) !important;
           transform: translateY(-4px);
+        }
+        .product-card:hover .product-card-img {
+          transform: scale(1.06);
         }
         @media (max-width: 1024px) {
           .shop-grid { grid-template-columns: repeat(2, 1fr); }

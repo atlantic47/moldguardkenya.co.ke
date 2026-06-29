@@ -24,6 +24,7 @@ export interface Product {
   features: string[];
   specifications: { label: string; value: string }[];
   image: string;
+  images?: string[];
   inStock: boolean;
   rating: number;
   reviews: ProductReview[];
@@ -139,7 +140,7 @@ export const products: Product[] = [
       { label: "Design", value: "Reusable & Recyclable — no replacement refills" },
       { label: "Care", value: "Place upright in enclosed space; monitor drying indicator" },
     ],
-    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80",
+    image: "/deerma-cs50mw-mini-dehumidifier.webp",
     inStock: true,
     rating: 4.7,
     reviews: [
@@ -207,7 +208,7 @@ export const products: Product[] = [
       { label: "Tank Type", value: "Clear removable tank" },
       { label: "Ideal For", value: "Bedrooms, bathrooms, closets, small offices" },
     ],
-    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80",
+    image: "/900ml-portable-dehumidifier.jpeg",
     inStock: true,
     rating: 4.7,
     reviews: [
@@ -320,6 +321,60 @@ export const products: Product[] = [
       { author: "Faith Achieng", location: "Kisumu West, Kisumu", rating: 5, date: "2026-03-29", body: "I bought two 750ml bottles from MoldGuard Kenya — one for the bathroom and one for the kitchen area near the sink. Both areas remain completely clean 3 months later. The price is very fair considering I was spending similar amounts on cheaper products every 3-4 weeks. MoldKill Max is a genuine long-term investment." },
     ],
   },
+  // ─── PRODUCT 5: 20L Compressor Dehumidifier ──────────────────────────────
+  {
+    slug: "20l-compressor-dehumidifier",
+    name: "20L Compressor Dehumidifier — Large Rooms & Whole House",
+    brand: "MoldGuard Kenya",
+    category: "Dehumidifiers",
+    price: 45000,
+    priceDisplay: "Ksh 45,000",
+    originalPrice: 52000,
+    originalPriceDisplay: "Ksh 52,000",
+    currency: "KES",
+    badge: "Professional Grade",
+    shortDescription:
+      "High-capacity 20L electric compressor dehumidifier. Removes up to 20 litres of moisture daily. Perfect for large living rooms, basements, offices, and whole-house damp control up to 50 m².",
+    fullDescription:
+      "Protect your home or office from severe dampness, musty smells, and toxic black mold with our premium 20L Compressor Dehumidifier. This high-capacity unit extracts up to 20 litres of moisture daily, making it the perfect solution for large living rooms, basements, commercial spaces, and ground-floor apartments with persistent humidity issues. Equipped with a digital humidity display, auto-shutoff when the water tank is full, and continuous drainage option, this device operates automatically to maintain a healthy humidity level. Safe, robust, and highly efficient.",
+    features: [
+      "Compressor technology — high-efficiency moisture removal for large areas",
+      "Extracts up to 20 litres of moisture per day",
+      "Digital LED display — monitors real-time humidity levels and settings",
+      "Auto shut-off when tank is full, with continuous drainage hose option",
+      "Built-in wheels and handle — easily move from room to room",
+      "Intelligent humidity control — set your target relative humidity",
+      "24-hour timer function for energy efficiency",
+      "Removable wash filter for clean, healthy air",
+      "Ideal for rooms up to 50 m²",
+    ],
+    specifications: [
+      { label: "Daily Moisture Removal", value: "20 Litres" },
+      { label: "Tank Capacity", value: "4.5 Litres (with continuous drainage option)" },
+      { label: "Technology", value: "Rotary Compressor" },
+      { label: "Suitable Room Size", value: "Up to 50 m²" },
+      { label: "Auto Shut-off", value: "Yes — when tank is full" },
+      { label: "Voltage", value: "220–240V / 50Hz" },
+      { label: "Power Consumption", value: "320W" },
+      { label: "Refrigerant", value: "R290 (Eco-Friendly)" },
+      { label: "Weight", value: "12 kg" },
+      { label: "Ideal For", value: "Large living rooms, basements, whole houses, commercial offices" },
+    ],
+    image: "/dehumidifier-20L-510x510.jpg",
+    images: [
+      "/dehumidifier-20L-510x510.jpg",
+      "/dehumidifier-20L-front-510x510.jpg",
+      "/dehumidifier-20L-side-510x510.jpg"
+    ],
+    inStock: true,
+    rating: 4.9,
+    reviews: [
+      { author: "Harrison Kilonzo", location: "Kileleshwa, Nairobi", rating: 5, date: "2026-01-15", body: "We had a severe dampness problem on the ground floor of our town house. Water was literally seeping through the walls, and the mold smell was unbearable. After MoldGuard treated the mold, we started running this 20L unit. The amount of water it extracts is incredible! Our humidity dropped from 85% to 50% in just two days." },
+      { author: "Mercy Mwende", location: "Nyali, Mombasa", rating: 5, date: "2026-02-10", body: "This 20L machine is a beast. In Mombasa's extreme humidity, small dehumidifiers didn't make a dent. This compressor model keeps our entire living room and kitchen dry. Very easy to move around because of the wheels. The continuous drain feature is also great so we don't have to keep emptying the tank." },
+      { author: "George Ondieki", location: "Runda, Nairobi", rating: 5, date: "2026-02-28", body: "Excellent build quality. It is a bit heavier than smaller units but the handle and wheels make it very portable. It is surprisingly quiet for a compressor dehumidifier of this capacity. The digital display is very clear and the auto shutoff works perfectly. Highly recommended." },
+      { author: "Faith Chepkemoi", location: "Kericho Town, Kericho", rating: 4, date: "2026-03-12", body: "Works very well in our highland house where mist and dampness are constant. The basement dry room no longer smells musty and our clothes are protected from mold. The power usage is very reasonable for a unit of this capacity." }
+    ]
+  },
 ];
 
 
@@ -338,6 +393,10 @@ export function getRelatedProducts(slug: string, category: ProductCategory): Pro
 }
 
 export function buildProductSchema(product: Product, pageUrl: string) {
+  const baseUrl = "https://moldguardkenya.co.ke";
+  const resolveImg = (src: string) =>
+    src.startsWith("/") ? `${baseUrl}${src}` : src;
+
   const aggregateRating =
     product.reviews.length > 0
       ? {
@@ -354,6 +413,9 @@ export function buildProductSchema(product: Product, pageUrl: string) {
     "@type": "Product",
     name: product.name,
     description: product.shortDescription,
+    image: product.images && product.images.length > 1
+      ? product.images.map(resolveImg)
+      : resolveImg(product.image),
     brand: { "@type": "Brand", name: product.brand },
     offers: {
       "@type": "Offer",
