@@ -749,9 +749,9 @@ export const products: Product[] = [
 
 
 export const categories: ProductCategory[] = [
+  "Mold Removal Products",
   "Dehumidifiers",
   "Air Purifiers",
-  "Mold Removal Products",
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {
