@@ -6,7 +6,7 @@ import ShopClient from "./ShopClient";
 import { products } from "@/lib/data/products";
 
 export const metadata: Metadata = {
-  title: "Shop Dehumidifiers, Air Purifiers & Mold Products | MoldGuard Kenya",
+  title: "Shop Dehumidifiers, Air Purifiers & Mold Remediation Products | MoldGuard Kenya",
   description: "Buy high-quality dehumidifiers, air purifiers, and mold removal products in Kenya. Protect your home and health with professional-grade air quality solutions. Fast delivery.",
   alternates: { canonical: "https://moldguardkenya.co.ke/shop" },
 };
