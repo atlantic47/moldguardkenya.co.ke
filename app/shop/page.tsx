@@ -77,7 +77,7 @@ export default function ShopPage() {
               🛒 MoldGuard Shop
             </p>
             <h1 style={{ color: "white", fontWeight: 900, fontSize: "clamp(2rem, 5vw, 3.25rem)", lineHeight: 1.15, marginBottom: "1.25rem", maxWidth: "700px", margin: "0 auto 1.25rem" }}>
-              Professional Mold &amp; Damp Control Products in Kenya
+              Shop Dehumidifiers, Air Purifiers &amp; Mold Remediation Products
             </h1>
             <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "1.1rem", lineHeight: 1.75, maxWidth: "550px", margin: "0 auto 2.5rem" }}>
               The same professional-grade dehumidifiers, air purifiers, and mold removal products used by our certified technicians — now available for direct purchase.
