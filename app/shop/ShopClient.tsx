@@ -27,29 +27,40 @@ export default function ShopClient({ initialCategory = "All" }: ShopClientProps)
       <section style={{ background: "white", borderBottom: "1px solid var(--border)", position: "sticky", top: "0", zIndex: 10 }}>
         <div className="container" style={{ display: "flex", alignItems: "center", gap: "0.75rem", padding: "1rem 1.5rem", overflowX: "auto" }}>
           <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "var(--text-light)", letterSpacing: "0.08em", textTransform: "uppercase", flexShrink: 0 }}>Filter:</span>
-          {(["All", ...categories] as const).map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              style={{
-                padding: "0.5rem 1.25rem",
-                borderRadius: "999px",
-                border: activeCategory === cat ? "2px solid var(--primary)" : "2px solid var(--border)",
-                background: activeCategory === cat ? "var(--primary)" : "white",
-                color: activeCategory === cat ? "white" : "var(--text-dark)",
-                fontSize: "0.85rem",
-                fontWeight: 700,
-                cursor: "pointer",
-                transition: "all 0.2s",
-                flexShrink: 0,
-                display: "flex",
-                alignItems: "center",
-                gap: "0.4rem",
-              }}
-            >
-              {cat !== "All" && categoryIcons[cat]} {cat}
-            </button>
-          ))}
+          {(["All", ...categories] as const).map((cat) => {
+            const href = cat === "All"
+              ? "/shop"
+              : cat === "Dehumidifiers"
+              ? "/shop/dehumidifiers"
+              : cat === "Air Purifiers"
+              ? "/shop/air-purifiers"
+              : "/shop/mold-removal-products";
+
+            return (
+              <Link
+                key={cat}
+                href={href}
+                style={{
+                  padding: "0.5rem 1.25rem",
+                  borderRadius: "999px",
+                  border: activeCategory === cat ? "2px solid var(--primary)" : "2px solid var(--border)",
+                  background: activeCategory === cat ? "var(--primary)" : "white",
+                  color: activeCategory === cat ? "white" : "var(--text-dark)",
+                  fontSize: "0.85rem",
+                  fontWeight: 700,
+                  cursor: "pointer",
+                  transition: "all 0.2s",
+                  flexShrink: 0,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.4rem",
+                  textDecoration: "none",
+                }}
+              >
+                {cat !== "All" && categoryIcons[cat]} {cat}
+              </Link>
+            );
+          })}
           <span style={{ marginLeft: "auto", fontSize: "0.8rem", color: "var(--text-light)", flexShrink: 0 }}>
             {filtered.length} product{filtered.length !== 1 ? "s" : ""}
           </span>

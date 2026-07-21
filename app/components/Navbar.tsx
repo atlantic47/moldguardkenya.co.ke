@@ -142,6 +142,42 @@ export default function Navbar() {
           letter-spacing: 0.04em;
           margin-bottom: 0.5rem;
         }
+        .nav-shop-dropdown {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-8px);
+          width: 260px;
+          background: white;
+          border-top: 3px solid var(--primary);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+          border-radius: 0 0 8px 8px;
+          z-index: 99;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+          padding: 0.75rem 0;
+        }
+        .nav-shop-trigger:hover .nav-shop-dropdown,
+        .nav-shop-dropdown:hover {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(-50%) translateY(0);
+        }
+        .nav-shop-dropdown a {
+          display: block;
+          padding: 0.6rem 1.25rem;
+          color: var(--text-dark);
+          font-size: 0.85rem;
+          font-weight: 600;
+          text-decoration: none;
+          transition: background 0.15s, color 0.15s;
+          text-align: left;
+        }
+        .nav-shop-dropdown a:hover {
+          background: var(--cream);
+          color: var(--primary);
+        }
         .desktop-nav { display: flex; }
         .mobile-nav-toggle { display: none; }
         @media (max-width: 1024px) {
@@ -216,12 +252,35 @@ export default function Navbar() {
             </li>
 
             {/* SHOP */}
-            <li>
+            <li className="nav-shop-trigger" style={{ position: "relative" }}>
               <Link
                 href="/shop"
-                style={{ display: "block", padding: "0.6rem 0.85rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname.startsWith('/shop') ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease" }}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "4px",
+                  padding: "0.6rem 0.85rem",
+                  fontSize: "0.8rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.04em",
+                  textDecoration: "none",
+                  color: pathname.startsWith('/shop') ? "var(--primary)" : "var(--text-dark)",
+                  borderRadius: "6px",
+                  transition: "color 0.15s ease, background 0.15s ease",
+                }}
                 className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
-              >SHOP</Link>
+              >
+                SHOP
+                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ flexShrink: 0 }}>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+              <div className="nav-shop-dropdown">
+                <Link href="/shop">All Products</Link>
+                <Link href="/shop/mold-removal-products">🧪 Mold Removal Sprays</Link>
+                <Link href="/shop/dehumidifiers">💧 Compressor Dehumidifiers</Link>
+                <Link href="/shop/air-purifiers">🌬️ HEPA Air Purifiers</Link>
+              </div>
             </li>
 
             {/* Locations mega-menu */}
@@ -359,7 +418,6 @@ export default function Navbar() {
             {[
               { label: "HOME", href: "/" },
               { label: "SERVICES", href: "/services" },
-              { label: "SHOP", href: "/shop" },
               { label: "BLOG", href: "/blog" },
               { label: "ABOUT US", href: "/about" },
               { label: "CONTACT", href: "/contact" },
@@ -382,6 +440,74 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
+
+            {/* SHOP Accordion */}
+            <div style={{ borderBottom: "1px solid var(--border)" }}>
+              <button
+                onClick={() => toggleAccordion("shop")}
+                style={{
+                  width: "100%",
+                  padding: "1rem",
+                  fontSize: "1rem",
+                  fontWeight: 700,
+                  color: "var(--text-dark)",
+                  background: "none",
+                  border: "none",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  letterSpacing: "0.04em",
+                }}
+              >
+                SHOP
+                <svg
+                  width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  style={{ transform: openMobileAccordion === "shop" ? "rotate(180deg)" : "rotate(0)", transition: "transform 0.2s" }}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div
+                style={{
+                  overflow: "hidden",
+                  maxHeight: openMobileAccordion === "shop" ? "300px" : "0",
+                  transition: "max-height 0.35s ease",
+                }}
+              >
+                <div style={{ background: "var(--cream)", padding: "0.75rem 1.1rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                  <Link
+                    href="/shop"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    All Products →
+                  </Link>
+                  <Link
+                    href="/shop/mold-removal-products"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    🧪 Mold Removal Sprays
+                  </Link>
+                  <Link
+                    href="/shop/dehumidifiers"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    💧 Compressor Dehumidifiers
+                  </Link>
+                  <Link
+                    href="/shop/air-purifiers"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    🌬️ HEPA Air Purifiers
+                  </Link>
+                </div>
+              </div>
+            </div>
 
             {/* Locations Accordion */}
             <div style={{ borderBottom: "1px solid var(--border)" }}>
