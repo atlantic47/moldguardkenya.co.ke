@@ -10,8 +10,12 @@ const categoryIcons: Record<string, string> = {
   "Mold Removal Products": "🧪",
 };
 
-export default function ShopClient() {
-  const [activeCategory, setActiveCategory] = useState<ProductCategory | "All">("All");
+interface ShopClientProps {
+  initialCategory?: ProductCategory | "All";
+}
+
+export default function ShopClient({ initialCategory = "All" }: ShopClientProps) {
+  const [activeCategory, setActiveCategory] = useState<ProductCategory | "All">(initialCategory);
 
   const filtered = activeCategory === "All"
     ? products
