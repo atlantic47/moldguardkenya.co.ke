@@ -23,8 +23,8 @@ import ContactSection from "../components/services/ContactSection";
 import ServicesFAQ from "../components/services/ServicesFAQ";
 
 export const metadata: Metadata = {
-  title: "Our Mold Removal Services | Inspections & Remediation | MoldGuard Kenya",
-  description: "Explore our comprehensive mold remediation services. From thermal moisture mapping and HEPA air filtration to toxic black mold extraction and structural drying across Kenya.",
+  title: "Mold Remediation Services in Kenya | MoldGuard",
+  description: "Professional mold remediation services by MoldGuard Kenya. Learn about our mold containment, certified black mold extraction, and preventative drying treatments.",
   alternates: { canonical: "https://moldguardkenya.co.ke/services" },
 };
 

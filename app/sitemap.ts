@@ -27,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: "",           file: "homepage.md",           fallback: "2024-01-01", changeFrequency: "weekly" as const, priority: 1.0 },
     { route: "/about",     file: "app/about/page.tsx",    fallback: "2024-03-01", changeFrequency: "monthly" as const, priority: 0.8 },
     { route: "/services",  file: "services.md",           fallback: "2024-03-01", changeFrequency: "weekly" as const, priority: 0.9 },
+    { route: "/services/air-scrubbing", file: "app/services/air-scrubbing/page.tsx", fallback: "2026-07-28", changeFrequency: "weekly" as const, priority: 0.8 },
+    { route: "/services/indoor-air-quality", file: "app/services/indoor-air-quality/page.tsx", fallback: "2026-07-28", changeFrequency: "weekly" as const, priority: 0.8 },
     { route: "/shop",      file: "app/shop/page.tsx",     fallback: "2024-06-01", changeFrequency: "monthly" as const, priority: 0.9 },
     { route: "/shop/dehumidifiers", file: "app/shop/dehumidifiers/page.tsx", fallback: "2026-07-20", changeFrequency: "weekly" as const, priority: 0.9 },
     { route: "/shop/air-purifiers", file: "app/shop/air-purifiers/page.tsx", fallback: "2026-07-20", changeFrequency: "weekly" as const, priority: 0.9 },

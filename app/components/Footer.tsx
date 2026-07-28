@@ -87,19 +87,17 @@ export default function Footer() {
           <h4 style={{ color: "white", fontWeight: 700, marginBottom: "1.25rem", fontSize: "0.95rem" }}>Services</h4>
           <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
             {[
-              "Mold Inspection",
-              "Air Quality Testing",
-              "HEPA Filtration",
-              "Structural Drying",
-              "Commercial Remediation",
-              "Post-Remediation Verification",
+              { label: "🛡️ Mold Remediation Services", href: "/services" },
+              { label: "🌬️ Air Scrubbing & Spore Control", href: "/services/air-scrubbing" },
+              { label: "🌱 Indoor Air Quality Improvement", href: "/services/indoor-air-quality" },
+              { label: "🔬 Moisture Mapping & Inspection", href: "/services" },
             ].map((s) => (
-              <li key={s}>
+              <li key={s.label}>
                 <Link
-                  href="/services"
+                  href={s.href}
                   style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
                 >
-                  {s}
+                  {s.label}
                 </Link>
               </li>
             ))}

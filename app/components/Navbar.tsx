@@ -142,12 +142,13 @@ export default function Navbar() {
           letter-spacing: 0.04em;
           margin-bottom: 0.5rem;
         }
-        .nav-shop-dropdown {
+        .nav-shop-dropdown,
+        .nav-services-dropdown {
           position: absolute;
           top: 100%;
           left: 50%;
           transform: translateX(-50%) translateY(-8px);
-          width: 260px;
+          width: 320px;
           background: white;
           border-top: 3px solid var(--primary);
           box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -159,12 +160,15 @@ export default function Navbar() {
           padding: 0.75rem 0;
         }
         .nav-shop-trigger:hover .nav-shop-dropdown,
-        .nav-shop-dropdown:hover {
+        .nav-shop-dropdown:hover,
+        .nav-services-trigger:hover .nav-services-dropdown,
+        .nav-services-dropdown:hover {
           opacity: 1;
           visibility: visible;
           transform: translateX(-50%) translateY(0);
         }
-        .nav-shop-dropdown a {
+        .nav-shop-dropdown a,
+        .nav-services-dropdown a {
           display: block;
           padding: 0.6rem 1.25rem;
           color: var(--text-dark);
@@ -174,7 +178,8 @@ export default function Navbar() {
           transition: background 0.15s, color 0.15s;
           text-align: left;
         }
-        .nav-shop-dropdown a:hover {
+        .nav-shop-dropdown a:hover,
+        .nav-services-dropdown a:hover {
           background: var(--cream);
           color: var(--primary);
         }
@@ -230,12 +235,14 @@ export default function Navbar() {
               </li>
             ))}
 
-            {/* Services — direct link, no sublinks */}
-            <li>
+            {/* Services Dropdown */}
+            <li className="nav-services-trigger" style={{ position: "relative" }}>
               <Link
                 href="/services"
                 style={{
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "4px",
                   padding: "0.6rem 0.85rem",
                   fontSize: "0.8rem",
                   fontWeight: 600,
@@ -248,7 +255,15 @@ export default function Navbar() {
                 className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
               >
                 SERVICES
+                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ flexShrink: 0 }}>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
               </Link>
+              <div className="nav-services-dropdown">
+                <Link href="/services">🛡️ Mold Remediation Services</Link>
+                <Link href="/services/air-scrubbing">🌬️ Air Scrubbing &amp; Spore Control</Link>
+                <Link href="/services/indoor-air-quality">🌱 Indoor Air Quality Improvement</Link>
+              </div>
             </li>
 
             {/* SHOP */}
@@ -417,7 +432,6 @@ export default function Navbar() {
 
             {[
               { label: "HOME", href: "/" },
-              { label: "SERVICES", href: "/services" },
               { label: "BLOG", href: "/blog" },
               { label: "ABOUT US", href: "/about" },
               { label: "CONTACT", href: "/contact" },
@@ -440,6 +454,67 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
+
+            {/* SERVICES Accordion */}
+            <div style={{ borderBottom: "1px solid var(--border)" }}>
+              <button
+                onClick={() => toggleAccordion("services")}
+                style={{
+                  width: "100%",
+                  padding: "1rem",
+                  fontSize: "1rem",
+                  fontWeight: 700,
+                  color: "var(--text-dark)",
+                  background: "none",
+                  border: "none",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  letterSpacing: "0.04em",
+                }}
+              >
+                SERVICES
+                <svg
+                  width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  style={{ transform: openMobileAccordion === "services" ? "rotate(180deg)" : "rotate(0)", transition: "transform 0.2s" }}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div
+                style={{
+                  overflow: "hidden",
+                  maxHeight: openMobileAccordion === "services" ? "300px" : "0",
+                  transition: "max-height 0.35s ease",
+                }}
+              >
+                <div style={{ background: "var(--cream)", padding: "0.75rem 1.1rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                  <Link
+                    href="/services"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    🛡️ Mold Remediation Services →
+                  </Link>
+                  <Link
+                    href="/services/air-scrubbing"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    🌬️ Air Scrubbing &amp; Spore Control
+                  </Link>
+                  <Link
+                    href="/services/indoor-air-quality"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    🌱 Indoor Air Quality Improvement
+                  </Link>
+                </div>
+              </div>
+            </div>
 
             {/* SHOP Accordion */}
             <div style={{ borderBottom: "1px solid var(--border)" }}>

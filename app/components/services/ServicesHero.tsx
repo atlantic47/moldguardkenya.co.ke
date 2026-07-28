@@ -11,7 +11,7 @@ export default function ServicesHero() {
             🛡️ Services
           </p>
           <h1 style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.15, marginBottom: "1.25rem" }}>
-            Mold Removal Solutions by MoldGuard Kenya
+            Mold Remediation Services by MoldGuard Kenya
           </h1>
           <p style={{ fontSize: "1rem", color: "var(--text-mid)", marginBottom: "1.25rem", lineHeight: 1.7 }}>
             Discovering mold in your home is stressful. <em>Your health and property safety are our top priorities.</em> At <strong>MoldGuard Kenya</strong>, our team offers expert help to quickly fix your home.
