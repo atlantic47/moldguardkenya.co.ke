@@ -99,6 +99,7 @@ export default function Navbar() {
           z-index: 99;
           opacity: 0;
           visibility: hidden;
+          pointer-events: none;
           transform: translateY(-8px);
           transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
           padding: 2.5rem 0;
@@ -107,6 +108,7 @@ export default function Navbar() {
         .nav-mega-panel:hover {
           opacity: 1;
           visibility: visible;
+          pointer-events: auto;
           transform: translateY(0);
         }
         .nav-locations-trigger:hover > a {
@@ -156,6 +158,7 @@ export default function Navbar() {
           z-index: 99;
           opacity: 0;
           visibility: hidden;
+          pointer-events: none;
           transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
           padding: 0.75rem 0;
         }
@@ -165,6 +168,7 @@ export default function Navbar() {
         .nav-services-dropdown:hover {
           opacity: 1;
           visibility: visible;
+          pointer-events: auto;
           transform: translateX(-50%) translateY(0);
         }
         .nav-shop-dropdown a,
@@ -416,7 +420,9 @@ export default function Navbar() {
             zIndex: 50,
             overflowY: "auto",
             transform: mobileMenuOpen ? "translateX(0)" : "translateX(100%)",
-            transition: "transform 0.3s ease",
+            visibility: mobileMenuOpen ? "visible" : "hidden",
+            pointerEvents: mobileMenuOpen ? "auto" : "none",
+            transition: "transform 0.3s ease, visibility 0.3s ease",
           }}
         >
           <div style={{ padding: "1.5rem", display: "flex", flexDirection: "column", gap: "0" }}>

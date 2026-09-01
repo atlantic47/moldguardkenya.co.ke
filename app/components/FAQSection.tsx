@@ -129,7 +129,7 @@ export default function FAQSection() {
                 {openIndex === i && (
                   <div style={{ padding: "0 1.25rem 1rem 1.25rem" }}>
                     {(faq as { q: string; a?: string; html?: string }).html ? (
-                      <p style={{ color: "var(--text-mid)", fontSize: "0.875rem", lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: (faq as { q: string; a?: string; html?: string }).html! }} />
+                      <div style={{ color: "var(--text-mid)", fontSize: "0.875rem", lineHeight: 1.7 }} dangerouslySetInnerHTML={{ __html: (faq as { q: string; a?: string; html?: string }).html! }} />
                     ) : (
                       <p style={{ color: "var(--text-mid)", fontSize: "0.875rem", lineHeight: 1.7 }}>{faq.a}</p>
                     )}

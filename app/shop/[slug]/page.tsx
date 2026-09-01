@@ -906,17 +906,14 @@ export default async function ProductPage({
                           ))}
                         </div>
                         <div
+                          suppressHydrationWarning
                           style={{
                             fontSize: "0.78rem",
                             color: "var(--text-light)",
                             marginTop: "0.25rem",
                           }}
                         >
-                          {new Date(review.date).toLocaleDateString("en-KE", {
-                            year: "numeric",
-                            month: "long",
-                            day: "numeric",
-                          })}
+                          {review.date}
                         </div>
                       </div>
                     </div>

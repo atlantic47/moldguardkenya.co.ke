@@ -152,7 +152,7 @@ export default function Footer() {
             padding: 0,
           }}
         >
-          <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.45)" }}>
+          <p suppressHydrationWarning style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.45)" }}>
             © {new Date().getFullYear()} MoldGuard Kenya. All rights reserved.
           </p>
           <div style={{ display: "flex", gap: "1.5rem" }}>

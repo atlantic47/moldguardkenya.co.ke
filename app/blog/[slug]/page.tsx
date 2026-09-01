@@ -61,8 +61,8 @@ export default async function BlogPostPage({ params }: Props) {
         "url": "https://moldguardkenya.co.ke/icon.tsx"
       }
     },
-    "datePublished": "2026-01-01",
-    "dateModified": new Date().toISOString().split('T')[0]
+    "datePublished": data.date || "2026-01-01",
+    "dateModified": data.date || "2026-01-01"
   };
 
   return (
