@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Will mold come back after you remove it?",
-    a: "Mold will return if the underlying moisture problem is not dealt with. That is why MoldGuard Kenya takes a root-cause approach. We do not just treat the surface — we identify where the moisture is coming from, whether it is a leaking pipe, poor roof drainage, inadequate ventilation, or rising damp, and we address it as part of our service. We also apply protective anti-mold coatings and provide you with a clear prevention plan. Follow-up inspections are available for ongoing peace of mind.",
+    a: "Mold will return if the underlying moisture problem is not dealt with. That is why MoldGuard Kenya takes a root-cause approach. We do not just treat the surface. We identify where the moisture is coming from, whether it is a leaking pipe, poor roof drainage, inadequate ventilation, or rising damp, and we address it as part of our service. We also apply protective anti-mold coatings and provide you with a clear prevention plan. Follow-up inspections are available for ongoing peace of mind.",
   },
   {
     q: "Can mold cause structural damage to my building?",

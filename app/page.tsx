@@ -17,7 +17,7 @@ const Footer = dynamic(() => import("./components/Footer"), { ssr: true });
 
 export const metadata: Metadata = {
   title: "MoldGuard Kenya | Professional Mold Removal, Remediation and Treatment Services Company in Nairobi, Kenya",
-  description: "MoldGuard Kenya is the leading professional mold removal services company in Kenya. We provide IICRC-certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses.",
+  description: "MoldGuard Kenya is the leading professional mold removal services company in Nairobi, Kenya. We provide IICRC-certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses in Nairobi and across Kenya.",
   alternates: { canonical: "https://moldguardkenya.co.ke" },
 };
 
