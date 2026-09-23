@@ -11,11 +11,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mold Removal & Remediation Services in Kenya | MoldGuard Kenya",
+  title: "Mold Removal & Remediation Services in Nairobi, Kenya | MoldGuard Kenya",
   description:
-    "MoldGuard Kenya offers expert mold removal and remediation services across Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mold and improve your indoor air quality. Call 0710907628.",
+    "MoldGuard Kenya offers expert mold removal and remediation services in Nairobi, Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mold and improve your indoor air quality. Call 0710907628.",
   keywords:
-    "mold removal Kenya, mold remediation Nairobi, indoor air quality, moisture detection, HEPA filtration, mold inspection Kenya",
+    "mold removal Nairobi, mold remediation Nairobi Kenya, mold removal Kenya, indoor air quality Nairobi, moisture detection Nairobi, HEPA filtration, mold inspection Nairobi Kenya",
   alternates: { canonical: "https://moldguardkenya.co.ke" }
 };
 
