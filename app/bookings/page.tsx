@@ -66,6 +66,7 @@ export default function BookingsPage() {
   const [selectedUrgency, setSelectedUrgency] = useState<string>("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [sendError, setSendError] = useState("");
   const [form, setForm] = useState({
     name: "", phone: "", email: "", location: "", message: "", preferredDate: "",
   });
@@ -74,14 +75,37 @@ export default function BookingsPage() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    setSendError("");
     setLoading(true);
-    // Simulate submission — replace with your actual API / form handler
-    setTimeout(() => {
-      setLoading(false);
+
+    try {
+      const res = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...form,
+          service: selectedService,
+          urgency: selectedUrgency,
+        }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Something went wrong.");
+      }
+
       setSubmitted(true);
-    }, 1200);
+    } catch (err: unknown) {
+      setSendError(
+        err instanceof Error
+          ? err.message
+          : "Could not send booking. Please call us directly on 0710907628."
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -333,6 +357,15 @@ export default function BookingsPage() {
                   <p style={{ textAlign: "center", color: "var(--text-light)", fontSize: "0.8rem" }}>
                     🔒 Your details are private and will never be shared. We respond within 1 hour.
                   </p>
+
+                  {/* Error message */}
+                  {sendError && (
+                    <div style={{ background: "#fff5f5", border: "1px solid #fc8181", borderRadius: "0.75rem", padding: "0.875rem 1.1rem", color: "#c53030", fontSize: "0.875rem", lineHeight: 1.6 }}>
+                      ⚠️ {sendError} —{" "}
+                      <a href="tel:0710907628" style={{ color: "#c53030", fontWeight: 700 }}>Call 0710907628</a> or{" "}
+                      <a href="https://wa.me/254710907628" target="_blank" rel="noopener noreferrer" style={{ color: "#c53030", fontWeight: 700 }}>WhatsApp us</a>.
+                    </div>
+                  )}
                 </form>
               )}
             </div>
