@@ -359,14 +359,6 @@ export default function Navbar() {
               >BLOG</Link>
             </li>
 
-            {/* BOOK A SERVICE */}
-            <li>
-              <Link
-                href="/bookings"
-                style={{ display: "block", padding: "0.55rem 1.1rem", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.04em", textDecoration: "none", color: "white", background: pathname === '/bookings' ? "var(--primary-dark)" : "var(--accent-dark)", borderRadius: "9999px", transition: "background 0.15s ease", whiteSpace: "nowrap" }}
-              >📅 Book Now</Link>
-            </li>
-
             {/* ABOUT US */}
             <li>
               <Link
@@ -387,7 +379,15 @@ export default function Navbar() {
           </ul>
 
           {/* CTA + Mobile Toggle */}
-          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+            {/* Book Now — desktop only, sits beside phone button */}
+            <Link
+              href="/bookings"
+              className="desktop-nav"
+              style={{ fontSize: "0.8rem", fontWeight: 700, padding: "0.55rem 1rem", borderRadius: "9999px", textDecoration: "none", color: "white", background: pathname === '/bookings' ? "var(--primary-dark)" : "var(--accent-dark)", transition: "background 0.2s ease", whiteSpace: "nowrap", display: "inline-flex", alignItems: "center", gap: "0.3rem" }}
+            >
+              📅 Book Now
+            </Link>
             <a
               href="tel:0710907628"
               className="btn-primary desktop-nav"
