@@ -1,7 +1,7 @@
 export default function ContactSection() {
   const contactInfo = [
     { method: "Phone Number", details: "0717140469" },
-    { method: "Email", details: "info@moldguardkenya.co.ke" },
+    { method: "Email", details: "moldguard@pestraid.co.ke" },
     { method: "Service Area", details: "Kenya and surrounding regions" },
   ];
 

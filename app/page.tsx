@@ -190,7 +190,7 @@ const organizationSchema = {
   "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
   "description": "MoldGuard Kenya is Kenya's leading certified mold removal and remediation company, serving Nairobi, Mombasa, and all major towns since 2015.",
   "telephone": "+254710907628",
-  "email": "info@moldguardkenya.co.ke",
+  "email": "moldguard@pestraid.co.ke",
   "foundingDate": "2015",
   "address": {
     "@type": "PostalAddress",
@@ -242,7 +242,7 @@ const localBusinessSchema = {
   "logo": "https://moldguardkenya.co.ke/Moldguard services.jpg",
   "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
   "telephone": "+254710907628",
-  "email": "info@moldguardkenya.co.ke",
+  "email": "moldguard@pestraid.co.ke",
   "foundingDate": "2015-08-22",
   "address": {
     "@type": "PostalAddress",

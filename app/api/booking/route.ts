@@ -7,6 +7,20 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
   try {
+    // ── Guard: catch missing env vars before nodemailer tries to resolve them ─
+    const smtpHost = process.env.SMTP_HOST;
+    const smtpPass = process.env.SMTP_PASS;
+    const smtpUser = process.env.SMTP_USER;
+    const toEmail  = process.env.BOOKING_TO_EMAIL;
+
+    if (!smtpHost || !smtpUser || !smtpPass || !toEmail) {
+      console.error("Missing SMTP env vars:", { smtpHost, smtpUser, toEmail });
+      return NextResponse.json(
+        { error: "Email service not configured. Please call us on 0710907628." },
+        { status: 500 }
+      );
+    }
+
     const body = await req.json();
     const { name, phone, email, location, service, urgency, preferredDate, message } = body;
 
@@ -17,17 +31,11 @@ export async function POST(req: NextRequest) {
 
     // ── SMTP transporter using the pestraid mail server ─────────────────────
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
+      host: smtpHost,
       port: Number(process.env.SMTP_PORT) || 465,
-      secure: true, // SSL on port 465
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-      tls: {
-        // Accept self-signed certs on private mail servers
-        rejectUnauthorized: false,
-      },
+      secure: true,
+      auth: { user: smtpUser, pass: smtpPass },
+      tls: { rejectUnauthorized: false },
     });
 
     // ── Urgency label map ────────────────────────────────────────────────────
@@ -93,8 +101,8 @@ export async function POST(req: NextRequest) {
 
     // ── Send the email ────────────────────────────────────────────────────────
     await transporter.sendMail({
-      from: `"MoldGuard Kenya Bookings" <${process.env.SMTP_USER}>`,
-      to: process.env.BOOKING_TO_EMAIL,
+      from: `"MoldGuard Kenya Bookings" <${smtpUser}>`,
+      to: toEmail,
       replyTo: email || undefined,
       subject: `🛡️ New Booking — ${urgencyLabels[urgency] ?? urgency} | ${name} | ${location}`,
       html,

@@ -115,7 +115,7 @@ export default function Footer() {
               📍 Development House, Moi Ave, Nairobi
             </li>
             <li style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)" }}>
-              📧 info@moldguardkenya.co.ke
+              📧 moldguard@pestraid.co.ke
             </li>
             <li style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)" }}>
               🕐 Mon–Sat: 7am – 7pm

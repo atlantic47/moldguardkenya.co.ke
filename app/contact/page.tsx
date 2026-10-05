@@ -25,9 +25,9 @@ const contactMethods = [
   {
     icon: "📧",
     label: "Email Support",
-    primary: "info@moldguardkenya.co.ke",
+    primary: "moldguard@pestraid.co.ke",
     secondary: "We respond within 2 hours",
-    href: "mailto:info@moldguardkenya.co.ke",
+    href: "mailto:moldguard@pestraid.co.ke",
     cta: "Send Email",
     bg: "var(--primary)",
   },
@@ -67,7 +67,7 @@ export default function ContactPage() {
       "@type": "LocalBusiness",
       "name": "MoldGuard Kenya",
       "telephone": "+254710907628",
-      "email": "info@moldguardkenya.co.ke",
+      "email": "moldguard@pestraid.co.ke",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Development House, Moi Avenue",

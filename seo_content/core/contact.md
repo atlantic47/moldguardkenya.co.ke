@@ -13,7 +13,7 @@ Whether you need emergency mold response after a water leak or are looking to sc
 ### How to Reach Us
 
 - **Phone & WhatsApp:** 0710 907 628
-- **Email:** info@moldguardkenya.co.ke
+- **Email:** moldguard@pestraid.co.ke
 
 ### Our Service Areas 
 We proudly serve clients across the nation, ensuring that high-quality, professional mold removal is accessible wherever you are. Our primary service hubs include:

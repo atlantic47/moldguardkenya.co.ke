@@ -68,7 +68,7 @@ export const bookingSchema = {
         "@id": "https://moldguardkenya.co.ke/#localbusiness",
         "name": "MoldGuard Kenya",
         "telephone": "+254710907628",
-        "email": "info@moldguardkenya.co.ke",
+        "email": "moldguard@pestraid.co.ke",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Development House, Moi Avenue",
