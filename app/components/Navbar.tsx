@@ -196,7 +196,7 @@ export default function Navbar() {
       `}</style>
 
       <header style={{ background: "white", borderBottom: "1px solid var(--border)", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
-        <nav className="container relative flex items-center justify-between" style={{ padding: "0.85rem 1.5rem", flexWrap: "nowrap", gap: "1rem" }}>
+        <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "nowrap", gap: "0.75rem", padding: "0.85rem 2rem", maxWidth: "1400px", margin: "0 auto", width: "100%" }}>
 
           {/* Logo + Tagline */}
           <Link href="/" className="flex items-center gap-3" onClick={() => setMobileMenuOpen(false)}>
@@ -223,7 +223,7 @@ export default function Navbar() {
                   href={href}
                   style={{
                     display: "block",
-                    padding: "0.6rem 0.85rem",
+                    padding: "0.5rem 0.65rem",
                     fontSize: "0.8rem",
                     fontWeight: 600,
                     letterSpacing: "0.04em",
@@ -231,6 +231,7 @@ export default function Navbar() {
                     color: (href === "/" ? pathname === "/" : pathname.startsWith(href)) ? "var(--primary)" : "var(--text-dark)",
                     borderRadius: "6px",
                     transition: "color 0.15s ease, background 0.15s ease",
+                    whiteSpace: "nowrap",
                   }}
                   className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
                 >
@@ -247,7 +248,7 @@ export default function Navbar() {
                   display: "flex",
                   alignItems: "center",
                   gap: "4px",
-                  padding: "0.6rem 0.85rem",
+                  padding: "0.5rem 0.65rem",
                   fontSize: "0.8rem",
                   fontWeight: 600,
                   letterSpacing: "0.04em",
@@ -255,6 +256,7 @@ export default function Navbar() {
                   color: pathname.startsWith("/services") ? "var(--primary)" : "var(--text-dark)",
                   borderRadius: "6px",
                   transition: "color 0.15s ease, background 0.15s ease",
+                  whiteSpace: "nowrap",
                 }}
                 className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
               >
@@ -278,7 +280,7 @@ export default function Navbar() {
                   display: "flex",
                   alignItems: "center",
                   gap: "4px",
-                  padding: "0.6rem 0.85rem",
+                  padding: "0.5rem 0.65rem",
                   fontSize: "0.8rem",
                   fontWeight: 600,
                   letterSpacing: "0.04em",
@@ -286,6 +288,7 @@ export default function Navbar() {
                   color: pathname.startsWith('/shop') ? "var(--primary)" : "var(--text-dark)",
                   borderRadius: "6px",
                   transition: "color 0.15s ease, background 0.15s ease",
+                  whiteSpace: "nowrap",
                 }}
                 className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
               >
@@ -310,7 +313,7 @@ export default function Navbar() {
                   display: "flex",
                   alignItems: "center",
                   gap: "4px",
-                  padding: "0.6rem 0.85rem",
+                  padding: "0.5rem 0.65rem",
                   fontSize: "0.8rem",
                   fontWeight: 600,
                   letterSpacing: "0.04em",
@@ -319,6 +322,7 @@ export default function Navbar() {
                   borderRadius: "6px",
                   transition: "color 0.15s ease, background 0.15s ease",
                   cursor: "pointer",
+                  whiteSpace: "nowrap",
                 }}
                 className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
               >
@@ -354,7 +358,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/blog"
-                style={{ display: "block", padding: "0.6rem 0.85rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname.startsWith('/blog') ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease" }}
+                style={{ display: "block", padding: "0.5rem 0.65rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname.startsWith('/blog') ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease", whiteSpace: "nowrap" }}
                 className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
               >BLOG</Link>
             </li>
@@ -363,16 +367,16 @@ export default function Navbar() {
             <li>
               <Link
                 href="/about"
-                style={{ display: "block", padding: "0.6rem 0.85rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname === '/about' ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease" }}
+                style={{ display: "block", padding: "0.5rem 0.65rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname === '/about' ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease", whiteSpace: "nowrap" }}
                 className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
-              >ABOUT US</Link>
+              >ABOUT</Link>
             </li>
 
             {/* CONTACT */}
             <li>
               <Link
                 href="/contact"
-                style={{ display: "block", padding: "0.6rem 0.85rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname === '/contact' ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease" }}
+                style={{ display: "block", padding: "0.5rem 0.65rem", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.04em", textDecoration: "none", color: pathname === '/contact' ? "var(--primary)" : "var(--text-dark)", borderRadius: "6px", transition: "color 0.15s ease, background 0.15s ease", whiteSpace: "nowrap" }}
                 className="hover:text-[var(--primary)] hover:bg-[var(--cream)]"
               >CONTACT</Link>
             </li>
@@ -448,7 +452,7 @@ export default function Navbar() {
               { label: "HOME", href: "/" },
               { label: "📅 BOOK A SERVICE", href: "/bookings" },
               { label: "BLOG", href: "/blog" },
-              { label: "ABOUT US", href: "/about" },
+              { label: "ABOUT", href: "/about" },
               { label: "CONTACT", href: "/contact" },
             ].map(({ label, href }) => (
               <Link
