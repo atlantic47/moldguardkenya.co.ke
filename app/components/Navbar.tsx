@@ -359,6 +359,14 @@ export default function Navbar() {
               >BLOG</Link>
             </li>
 
+            {/* BOOK A SERVICE */}
+            <li>
+              <Link
+                href="/bookings"
+                style={{ display: "block", padding: "0.55rem 1.1rem", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.04em", textDecoration: "none", color: "white", background: pathname === '/bookings' ? "var(--primary-dark)" : "var(--accent-dark)", borderRadius: "9999px", transition: "background 0.15s ease", whiteSpace: "nowrap" }}
+              >📅 Book Now</Link>
+            </li>
+
             {/* ABOUT US */}
             <li>
               <Link
@@ -438,6 +446,7 @@ export default function Navbar() {
 
             {[
               { label: "HOME", href: "/" },
+              { label: "📅 BOOK A SERVICE", href: "/bookings" },
               { label: "BLOG", href: "/blog" },
               { label: "ABOUT US", href: "/about" },
               { label: "CONTACT", href: "/contact" },

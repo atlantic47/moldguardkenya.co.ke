@@ -53,7 +53,7 @@ export default function HeroSection() {
               We use the latest technology to find and remove hidden moisture and mold spores. By choosing our <strong>mold remediation services</strong>, you&apos;re choosing a healthier place to live or work. We act fast to stop mold from spreading and damaging your space.
             </p>
             <p>
-              Our technicians work hard to give you lasting results all over Kenya. We know the climate challenges in <strong>Kenya</strong> are unique. Call us at 0710907628 for quick help and to book your first meeting today.
+              Our technicians work hard to give you lasting results all over Kenya. We know the climate challenges in <strong>Kenya</strong> are unique. Our <strong>mold removal services</strong> are designed for both residential and commercial properties, delivering safe and long-lasting results. Call us at 0710907628 for quick help and to book your first meeting today.
             </p>
           </div>
 

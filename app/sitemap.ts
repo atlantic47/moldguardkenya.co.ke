@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: "/blog",      file: "app/blog/page.tsx",     fallback: "2024-04-01", changeFrequency: "monthly" as const, priority: 0.8 },
     { route: "/locations", file: "app/locations/page.tsx",fallback: "2024-04-01", changeFrequency: "monthly" as const, priority: 0.8 },
     { route: "/contact",   file: "app/contact/page.tsx",  fallback: "2024-03-01", changeFrequency: "monthly" as const, priority: 0.7 },
+    { route: "/bookings",  file: "app/bookings/page.tsx", fallback: "2026-10-05", changeFrequency: "monthly" as const, priority: 0.9 },
   ].map(({ route, file, fallback, changeFrequency, priority }) => ({
     url: `${baseUrl}${route}`,
     lastModified: getFileMtime(file, fallback),
