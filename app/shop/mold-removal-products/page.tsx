@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import ShopClient from "@/app/shop/ShopClient";
 import { products } from "@/lib/data/products";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Professional Mold Removal Sprays & Remediation Products Kenya | MoldGuard",
   description: "Buy professional-grade mold remover sprays and fungicidal wall treatments in Kenya. Kill toxic black mold roots on walls, ceilings, and shower tiles with long-lasting protection.",
-  alternates: { canonical: "https://moldguardkenya.co.ke/shop/mold-removal-products" },
-};
+  path: "/shop/mold-removal-products",
+});
 
 const moldRemovalProducts = products.filter((p) => p.category === "Mold Removal Products");
 

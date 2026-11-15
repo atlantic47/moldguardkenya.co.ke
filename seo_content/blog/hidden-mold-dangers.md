@@ -1,6 +1,8 @@
 ---
 title: "Hidden Mold Dangers in Your Home | MoldGuard Kenya"
 description: "Mold doesn't always grow in plain sight. Learn the 5 most common places hidden mold lurks in Kenyan homes—from ceilings to under sinks—and how to stop it."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Out of Sight, Out of Mind? The Hidden Dangers of Concealed Mold

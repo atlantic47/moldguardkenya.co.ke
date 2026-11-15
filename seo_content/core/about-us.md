@@ -29,4 +29,4 @@ Trust is the foundation of our business. We prioritize your family's safety abov
 ### Ready for a Healthier Home?
 Don't let mold dictate your indoor air quality. Reach out to the professional mold experts today.
 
-**[Contact Us for a Free Consultation (WhatsApp 0717140469)](/contact)**
+**[Contact Us to Book an Inspection (WhatsApp 0710907628)](/contact)**

@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Langas | Effective Mold Solutions | MoldGuard Kenya"
 description: "Affordable and effective mold removal in Langas, Eldoret. MoldGuard Kenya eliminates dampness and eradicates toxic mold to restore healthy indoor living."
+date: "2026-03-27"
+updated: "2026-11-15"
 ---
 
 # Reliable Mold Removal in Langas
@@ -14,4 +16,4 @@ Langas is one of the most densely populated residential areas in Eldoret. High-d
 ## The MoldGuard Kenya Advantage
 We do not offer superficial bleaching. We provide targeted environmental restoration. We establish strict containment zones to protect your uninfected rooms while we physically extract the biohazard. We finish by utilizing HEPA air scrubbers and industrial dehumidifiers to guarantee the indoor air quality is restored.
 
-**[Get a Free Mold Inspection in Langas - WhatsApp Us Today](/contact)**
+**[Book a Mold Inspection (KES 2,500) in Langas - WhatsApp Us Today](/contact)**

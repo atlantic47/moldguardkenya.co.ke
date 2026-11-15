@@ -34,6 +34,13 @@ const services = [
   },
 ];
 
+const coreServices = [
+  { href: "/services/mold-removal", icon: "🧽", label: "Mold (Mould) Removal", note: "Bathrooms from KES 8,500" },
+  { href: "/services/mold-inspection", icon: "🔍", label: "Mold Inspection", note: "Flat fee KES 2,500 with written report" },
+  { href: "/services/black-mold-removal", icon: "☣️", label: "Black Mold Removal", note: "Full containment and HEPA filtration" },
+  { href: "/services/mold-testing", icon: "🧪", label: "Mold Testing", note: "Laboratory analysis, KES 7,500 per kit" },
+];
+
 export default function ServicesSection() {
   return (
     <section style={{ background: "white", padding: "5rem 0" }}>
@@ -47,6 +54,20 @@ export default function ServicesSection() {
         <p className="section-subheading">
           Here&apos;s What we can Do for you...
         </p>
+
+        {/* Links to the dedicated service pages */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))", gap: "0.85rem", margin: "0 0 2.5rem" }}>
+          {coreServices.map((s) => (
+            <Link
+              key={s.href}
+              href={s.href}
+              style={{ display: "flex", flexDirection: "column", gap: "0.3rem", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "1rem", padding: "1rem 1.15rem", textDecoration: "none" }}
+            >
+              <span style={{ fontWeight: 800, color: "var(--primary-dark)", fontSize: "1rem" }}>{s.icon} {s.label}</span>
+              <span style={{ color: "var(--text-mid)", fontSize: "0.85rem", lineHeight: 1.5 }}>{s.note}</span>
+            </Link>
+          ))}
+        </div>
 
         <div
           className="services-grid"

@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Kikuyu | Dampness & Mold Experts | MoldGuard Kenya"
 description: "Protect your Kikuyu property from the cold and damp. MoldGuard Kenya provides certified mold remediation and structural drying in Kikuyu."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Certified Mold Remediation in Kikuyu
@@ -14,4 +16,4 @@ Kikuyu features a significantly cooler, greener micro-climate compared to the re
 ## The MoldGuard Kenya Advantage
 We understand Kikuyu's specific climate challenges. We utilize advanced moisture mapping to detect hidden water sources and employ industrial-grade desiccant dehumidifiers to aggressively dry the structure of your home, permanently eliminating the conditions mold needs to survive.
 
-**[Schedule Your Kikuyu Mold Inspection Today - WhatsApp 0717140469](/contact)**
+**[Schedule Your Kikuyu Mold Inspection Today - WhatsApp 0710907628](/contact)**

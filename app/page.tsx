@@ -6,6 +6,7 @@ import StatsBar from "./components/StatsBar";
 import ServicesSection from "./components/ServicesSection";
 import MarkdownRenderer from "./components/MarkdownRenderer";
 import { getRawMarkdownFile } from "@/lib/markdown";
+import { buildMetadata, LOGO_URL } from "@/lib/seo";
 
 // Below-fold components — dynamically imported to reduce initial JS bundle size
 // This directly improves Time to Interactive (TTI) and INP scores
@@ -15,11 +16,11 @@ const HomepageDeepLinks = dynamic(() => import("./components/HomepageDeepLinks")
 const NewsletterSection = dynamic(() => import("./components/NewsletterSection"), { ssr: true });
 const Footer = dynamic(() => import("./components/Footer"), { ssr: true });
 
-export const metadata: Metadata = {
-  title: "MoldGuard Kenya | Professional Mold Removal, Remediation and Treatment Services Company in Nairobi, Kenya",
-  description: "MoldGuard Kenya is the leading professional mold removal services company in Nairobi, Kenya. We provide IICRC-certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses in Nairobi and across Kenya.",
-  alternates: { canonical: "https://moldguardkenya.co.ke" },
-};
+export const metadata: Metadata = buildMetadata({
+  title: "Mold Removal Services in Nairobi, Kenya | MoldGuard Kenya",
+  description: "MoldGuard Kenya is the leading professional mold (mould) removal services company in Nairobi, Kenya. We provide IICRC-certified mold inspections, safe black mold eradication, and permanent moisture solutions for homes and businesses in Nairobi and across Kenya.",
+  path: "",
+});
 
 const BASE = "https://moldguardkenya.co.ke";
 const THUMB = `${BASE}/Moldguard services.jpg`;
@@ -39,7 +40,7 @@ const heroVideoSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "MoldGuard Kenya",
-    "logo": { "@type": "ImageObject", "url": THUMB }
+    "logo": { "@type": "ImageObject", "url": LOGO_URL }
   }
 };
 
@@ -179,14 +180,9 @@ const organizationSchema = {
   "@type": "Organization",
   "@id": "https://moldguardkenya.co.ke/#organization",
   "name": "MoldGuard Kenya",
-  "alternateName": ["Mold Guard Kenya", "MoldGuard"],
+  "alternateName": ["Mold Guard Kenya", "MoldGuard", "Mould Guard Kenya"],
   "url": "https://moldguardkenya.co.ke",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://moldguardkenya.co.ke/Moldguard services.jpg",
-    "width": 1200,
-    "height": 630
-  },
+  "logo": { "@type": "ImageObject", "url": LOGO_URL },
   "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
   "description": "MoldGuard Kenya is Kenya's leading certified mold removal and remediation company, serving Nairobi, Mombasa, and all major towns since 2015.",
   "telephone": "+254710907628",
@@ -211,7 +207,7 @@ const organizationSchema = {
   ]
 };
 
-// ── WebSite — enables Sitelinks Searchbox on brand name SERP ─────────────────
+// ── WebSite — names the site entity (no SearchAction: the site has no search page) ──
 const webSiteSchema = {
   "@type": "WebSite",
   "@id": "https://moldguardkenya.co.ke/#website",
@@ -221,14 +217,6 @@ const webSiteSchema = {
   "inLanguage": "en-KE",
   "publisher": {
     "@id": "https://moldguardkenya.co.ke/#organization"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://moldguardkenya.co.ke/blog?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
   }
 };
 
@@ -239,7 +227,7 @@ const localBusinessSchema = {
   "name": "MoldGuard Kenya",
   "description": "MoldGuard Kenya is a trusted specialist in professional mold removal, mold inspection, and complete mold remediation services in Nairobi and surrounding areas. We focus on identifying, treating, and preventing mold problems in homes and commercial properties to ensure safe and healthy indoor environments. Our team uses advanced detection methods and proven techniques to remove mold at the source, including black mold, damp walls, and hidden growth behind ceilings and flooring. We deliver reliable solutions with minimal disruption and long term prevention. Contact MoldGuard Kenya today for expert mold inspection and removal services you can trust.",
   "url": "https://moldguardkenya.co.ke",
-  "logo": "https://moldguardkenya.co.ke/Moldguard services.jpg",
+  "logo": LOGO_URL,
   "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
   "telephone": "+254710907628",
   "email": "moldguard@pestraid.co.ke",

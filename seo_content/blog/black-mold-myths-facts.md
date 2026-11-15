@@ -1,6 +1,8 @@
 ---
 title: "Toxic Black Mold: Myths vs. Facts | MoldGuard Kenya"
 description: "Separate fact from fiction when it comes to Toxic Black Mold. Learn what Stachybotrys chartarum really is and how MoldGuard Kenya safely eradicates it."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Toxic Black Mold: Myths vs. Facts Explained by the Experts

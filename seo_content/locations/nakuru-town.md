@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Nakuru Town | Reliable Remediation | MoldGuard Kenya"
 description: "Effective mold removal in Nakuru Town. MoldGuard Kenya offers certified mold inspection and permanent remediation to protect your health and property."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Expert Mold Removal in Nakuru Town

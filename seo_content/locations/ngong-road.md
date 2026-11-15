@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Ngong Road | Trusted Experts | MoldGuard Kenya"
 description: "Eradicate dampness and mold along Ngong Road. MoldGuard Kenya offers certified mold inspection and permanent remediation for offices and residential properties."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Expert Mold Removal Along Ngong Road

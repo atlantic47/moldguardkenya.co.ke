@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroVideo from "./HeroVideo";
 
 export default function HeroSection() {
   return (
@@ -32,7 +33,7 @@ export default function HeroSection() {
               marginBottom: "1.25rem",
             }}
           >
-            Mold Removal Company in Nairobi, Kenya | Remediation &amp; Treatment Services | MoldGuard Kenya
+            Mold (Mould) Removal &amp; Remediation Services in Nairobi, Kenya
           </h1>
           <div
             style={{
@@ -109,17 +110,8 @@ export default function HeroSection() {
             style={{ objectFit: "cover" }}
             priority
           />
-          {/* Video layers on top — preload=none means ZERO network cost on page load */}
-          <video
-            src="/Mold removal service in Nairobi.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="none"
-            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
-            aria-label="MoldGuard Kenya mold removal service in Nairobi"
-          />
+          {/* Video overlays the image on desktop only, after page load (see HeroVideo) */}
+          <HeroVideo />
           {/* Rating badge */}
           <div
             style={{

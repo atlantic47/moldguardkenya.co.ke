@@ -55,7 +55,7 @@ const trustPoints = [
 
 const faqs = [
   { q: "How soon will you get back to me after I submit a booking?", a: "We confirm all bookings within 1 hour during business hours and within 3 hours outside of them. For emergencies, call us directly on 0710907628 for an immediate response." },
-  { q: "Is the initial inspection free?", a: "Yes. We offer a free initial consultation and site assessment for residential properties within our core Nairobi and Mombasa service areas. Remote or large commercial assessments may involve a nominal call-out fee, which we will confirm before visiting." },
+  { q: "Is the initial inspection free?", a: "No. A site inspection costs a flat KES 2,500. It includes moisture metering, thermal scanning, an air quality check and a written report with a quotation. Laboratory mold testing, when needed, is KES 7,500 per kit." },
   { q: "What should I do before the technician arrives?", a: "Do not disturb or try to clean the mold yourself, as this spreads spores. Ventilate the affected room if possible by opening windows. Note any areas of damp smell or discolouration and be ready to describe how long you have noticed it." },
   { q: "Do you work with rental properties and landlords?", a: "Absolutely. We regularly work with landlords, property managers, real estate agencies, and corporate tenants across Kenya. Every job comes with a detailed remediation report and photographic documentation." },
   { q: "Can I book for a property outside Nairobi?", a: "Yes. We cover Mombasa, Kiambu, Nakuru, Eldoret, and much of Kenya. Select your area from the dropdown or describe your location in the message box and we will confirm availability." },
@@ -115,7 +115,7 @@ export default function BookingsPage() {
         {/* ── HERO ─────────────────────────────────────────────────────────── */}
         <PageHero
           title="Book a Mold Removal Service in Nairobi, Kenya"
-          subtitle="Schedule a free mold inspection or full remediation service. MoldGuard Kenya's certified technicians respond fast across Nairobi and all of Kenya."
+          subtitle="Schedule a mold inspection (KES 2,500) or full remediation service. MoldGuard Kenya's certified technicians respond fast across Nairobi and all of Kenya."
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Book a Service" }]}
         />
 
@@ -438,7 +438,7 @@ export default function BookingsPage() {
               {[
                 { step: "1", icon: "📋", title: "Submit Your Booking", desc: "Fill in the form above or call us. Tell us your location, the type of mold problem, and urgency level." },
                 { step: "2", icon: "📞", title: "We Confirm Within 1 Hour", desc: "Our team calls or WhatsApps you to confirm the appointment date, time, and any prep instructions." },
-                { step: "3", icon: "🔍", title: "Free On-Site Assessment", desc: "A certified technician visits, uses moisture meters and thermal cameras to map the full extent of the mold." },
+                { step: "3", icon: "🔍", title: "On-Site Inspection (KES 2,500)", desc: "A certified technician visits, uses moisture meters and thermal cameras to map the full extent of the mold." },
                 { step: "4", icon: "🛡️", title: "Remediation & Sign-Off", desc: "We execute the treatment plan, verify air quality, and issue a written clearance certificate." },
               ].map((s, i, arr) => (
                 <div key={s.step} style={{ textAlign: "center", position: "relative" }}>

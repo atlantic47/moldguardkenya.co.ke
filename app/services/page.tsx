@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllSeoMetadata } from "@/lib/markdown";
+import { buildMetadata } from "@/lib/seo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import NewsletterSection from "../components/NewsletterSection";
@@ -22,11 +23,11 @@ import InsuranceClaims from "../components/services/InsuranceClaims";
 import ContactSection from "../components/services/ContactSection";
 import ServicesFAQ from "../components/services/ServicesFAQ";
 
-export const metadata: Metadata = {
-  title: "Mold Remediation Services in Kenya | MoldGuard",
-  description: "Professional mold remediation services by MoldGuard Kenya. Learn about our mold containment, certified black mold extraction, and preventative drying treatments.",
-  alternates: { canonical: "https://moldguardkenya.co.ke/services" },
-};
+export const metadata: Metadata = buildMetadata({
+  title: "Mold (Mould) Remediation Services in Kenya | MoldGuard",
+  description: "Professional mold (mould) remediation services by MoldGuard Kenya. Learn about our mold containment, certified black mold extraction, and preventative drying treatments.",
+  path: "/services",
+});
 
 export default function ServicesPage() {
   const blogPosts = getAllSeoMetadata("blog").slice(0, 4);

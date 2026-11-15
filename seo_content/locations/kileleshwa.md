@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Kileleshwa | Permanent Remediation | MoldGuard Kenya"
 description: "Protect your Kileleshwa property from toxic mold. MoldGuard Kenya delivers certified mold inspection and permanent removal services in Kileleshwa, Nairobi."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Professional Mold Remediation in Kileleshwa
@@ -23,4 +25,4 @@ Wiping your walls with bleach is dangerous and ineffective against structural mo
 
 Your health and your property investment deserve professional care. Stop the mold cycle today.
 
-**[Schedule Your Kileleshwa Mold Inspection - WhatsApp 0717140469](/contact)**
+**[Schedule Your Kileleshwa Mold Inspection - WhatsApp 0710907628](/contact)**

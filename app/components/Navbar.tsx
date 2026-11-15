@@ -267,6 +267,10 @@ export default function Navbar() {
               </Link>
               <div className="nav-services-dropdown">
                 <Link href="/services">🛡️ Mold Remediation Services</Link>
+                <Link href="/services/mold-removal">🧽 Mold (Mould) Removal</Link>
+                <Link href="/services/mold-inspection">🔍 Mold Inspection</Link>
+                <Link href="/services/black-mold-removal">☣️ Black Mold Removal</Link>
+                <Link href="/services/mold-testing">🧪 Mold Testing</Link>
                 <Link href="/services/air-scrubbing">🌬️ Air Scrubbing &amp; Spore Control</Link>
                 <Link href="/services/indoor-air-quality">🌱 Indoor Air Quality Improvement</Link>
               </div>
@@ -505,7 +509,7 @@ export default function Navbar() {
               <div
                 style={{
                   overflow: "hidden",
-                  maxHeight: openMobileAccordion === "services" ? "300px" : "0",
+                  maxHeight: openMobileAccordion === "services" ? "520px" : "0",
                   transition: "max-height 0.35s ease",
                 }}
               >
@@ -516,6 +520,34 @@ export default function Navbar() {
                     style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
                   >
                     🛡️ Mold Remediation Services →
+                  </Link>
+                  <Link
+                    href="/services/mold-removal"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    🧽 Mold (Mould) Removal
+                  </Link>
+                  <Link
+                    href="/services/mold-inspection"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    🔍 Mold Inspection
+                  </Link>
+                  <Link
+                    href="/services/black-mold-removal"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    ☣️ Black Mold Removal
+                  </Link>
+                  <Link
+                    href="/services/mold-testing"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{ color: "var(--text-mid)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", padding: "0.5rem 0", display: "block" }}
+                  >
+                    🧪 Mold Testing
                   </Link>
                   <Link
                     href="/services/air-scrubbing"

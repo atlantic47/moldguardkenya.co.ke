@@ -4,6 +4,7 @@ description: "Professional industrial air scrubbing & HEPA filtration guide in K
 date: "2026-07-28"
 author: "MoldGuard Kenya Technical Team"
 image: "/air-scrubbing-services-moldguard-kenya.jpg"
+updated: "2026-07-28"
 ---
 
 If you've ever walked into a room and been hit by that unmistakable musty smell, or noticed dark patches creeping across your ceiling after the long rains, you already know that mold and dampness are more than a cosmetic nuisance in Kenya. From the humid coastal air in Mombasa to the perpetually damp basements of Nairobi's older buildings, mold spores are a silent, year-round problem for homeowners, landlords, hospitals, schools, and business owners across the country.
@@ -25,7 +26,7 @@ At MoldGuard Kenya, we specialize in professional air scrubbing services designe
 10. [DIY Mold Control vs. Hiring Professionals](#10-diy-mold-control-vs-hiring-professionals)
 11. [How to Choose the Right Air Scrubbing Company in Kenya](#11-how-to-choose-the-right-air-scrubbing-company-in-kenya)
 12. [Frequently Asked Questions](#12-frequently-asked-questions)
-13. [Get a Free Mold & Air Quality Assessment](#13-get-a-free-mold--air-quality-assessment)
+13. [Book a Mold & Air Quality Inspection](#13-book-a-mold--air-quality-inspection)
 
 ---
 
@@ -179,7 +180,7 @@ Every property is different, and pricing for air scrubbing services depends on s
 * **Whether containment and negative air pressure setup is needed**
 * **Additional surface remediation or moisture-proofing work** requested alongside air scrubbing
 
-Because of this variation, MoldGuard Kenya provides a free, no-obligation on-site assessment before quoting any project, so you know exactly what you're paying for and why.
+Because of this variation, MoldGuard Kenya carries out an on-site inspection (a flat KES 2,500) before quoting any project, so you know exactly what you're paying for and why.
 
 ---
 
@@ -238,8 +239,8 @@ A: MoldGuard Kenya serves clients across Kenya's key urban centers. Reach out to
 
 ---
 
-## 13. Get a Free Mold & Air Quality Assessment
+## 13. Book a Mold & Air Quality Inspection
 
 Mold and dampness don't resolve themselves — and every week of delay gives spores more time to spread through your walls, ductwork, and furnishings. Whether you're dealing with a musty smell that won't go away, visible mold after the rainy season, or a water damage incident that needs professional follow-up, MoldGuard Kenya is ready to help.
 
-**Contact MoldGuard Kenya today for a free, no-obligation assessment and take the first step toward cleaner, healthier indoor air.**
+**Contact MoldGuard Kenya today to book a site inspection (KES 2,500) and take the first step toward cleaner, healthier indoor air.**

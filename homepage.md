@@ -16,7 +16,9 @@ Our technicians work hard to give you lasting results all over Kenya. We know th
 *   Rapid response times help minimize property damage and **health risks**.
 *   You can reach our experts directly at 0710907628 for a consultation.
 
-## Understanding the Mold Crisis in Kenyan Homes and Businesses
+**Mold or mould?** Both spellings mean the same thing. Kenyans usually write *mould*, as in mould removal, black mould and mould on walls, while *mold* is the American spelling. Whichever you use, our mould removal and mould treatment services in Nairobi and across Kenya are the ones described on this page.
+
+## Understanding the Mold (Mould) Crisis in Kenyan Homes and Businesses
 
 Kenya's climate and geography make it a hotspot for mold in homes and businesses. The tropical climate, with its high temperatures and humidity, is perfect for mold growth. This affects the air quality inside and the health of those living or working there.
 
@@ -70,7 +72,7 @@ The main reason DIY fails is it doesn't fix the moisture problem. Without solvin
 | Equipment | Basic cleaning supplies | Specialized equipment like HEPA filters and air scrubbers |
 | Training | Lack of professional training | Trained professionals with expertise in mold remediation |
 
-## Comprehensive Mold Inspection and Assessment Procedures
+## Comprehensive Mold (Mould) Inspection and Assessment Procedures
 
 We tackle mold infestations with a detailed inspection process. Our methods are designed to find out how much mold there is and why it's there.
 
@@ -116,7 +118,7 @@ Some molds make **mycotoxins**, which are harmful. _Even small amounts can be da
 | Allergic Reactions | Skin rashes, allergic rhinitis | Individuals with allergies, sensitive skin |
 | Long-term Toxic Effects | Neurological damage, immune system suppression, organ damage | Everyone, specially those with prolonged exposure |
 
-## Our Specialized Mold Remediation Process
+## Our Specialized Mold (Mould) Remediation Process
 
 Our **mold remediation process** is key to our service. It ensures mold is removed and your property is restored. At MoldGuard Kenya, we tackle mold infestations with a custom approach.
 
@@ -271,7 +273,7 @@ Our team does a full assessment to make sure safety standards are met. This mean
 
 We give you detailed reports of the verification process. This is important for insurance and keeping your property value up. Our reports include _clearance certificates_ and test results, giving you peace of mind and a valuable record.
 
-## Common Misconceptions About Mold Growth
+## Common Misconceptions About Mold and Mould Growth
 
 At MoldGuard Kenya, we often see wrong ideas about mold. These ideas can make the problem worse. Mold growth is a big deal that needs a good understanding to fix.
 
@@ -429,7 +431,7 @@ After checking the environment, we sometimes take samples for lab tests. Accurat
 
 Each mold needs a special way to be removed. Knowing the type helps us create a safe and effective plan. Our focus on detail means your property gets the **best care** in Kenya.
 
-## Average Cost Estimates for Residential Mold Removal
+## Average Cost Estimates for Residential Mold (Mould) Removal
 
 Understanding **mold infestation costs** is key to managing them well. We believe in clear pricing to help you make smart choices for your home's health. Knowing the scope of work lets you plan your budget for restoring your space.
 
@@ -1579,11 +1581,15 @@ Choosing professional mold removal helps keep your property's value up. We're he
 
 ## FAQ
 
-### Why is mold so common in Kenyan homes and offices?
+### Is there a difference between mold and mould?
+
+No. Mold is the American spelling and mould is the British spelling used in Kenya, so mould removal, mould treatment and mould remediation are the same services as mold removal, mold treatment and mold remediation. The fungus, the health risks and the way we treat it are identical. If you search for mould removal in Nairobi or mould cleaning in Kenya, you are looking for exactly what MoldGuard Kenya does.
+
+### Why is mold (mould) so common in Kenyan homes and offices?
 
 Kenya's climate is one of the biggest culprits. During both the long and short rains, humidity levels rise sharply, and most buildings were not designed with moisture control in mind. Poorly ventilated bathrooms, flat concrete roofs that trap moisture, leaking gutters, and water-damaged walls all create the perfect conditions for mold to take hold and spread quickly. In cities like Nairobi, Mombasa, Kisumu, and Nakuru, we see mold problems year-round.
 
-### How do I know if I have a mold problem in my house?
+### How do I know if I have a mold or mould problem in my house?
 
 The most obvious sign is dark or black patches on walls, ceilings, or around window frames. But mold does not always show itself right away. A persistent musty smell in a room, peeling paint or wallpaper, chronic condensation on windows, or unexplained sneezing and coughing among your family members are all strong indicators. If you suspect mold, do not wait for it to become visible, because by the time you can see it clearly, it has usually already spread behind surfaces.
 
@@ -1617,4 +1623,4 @@ Yes, and this is a significant part of our work. Mold in rental properties is on
 
 ### How long does mold removal take and how much does it cost in Kenya?
 
-Timelines and costs vary depending on the size of the affected area and the severity of the infestation. A single room can often be treated within a few hours, while a whole-property remediation or a severe commercial infestation may take one to three days. MoldGuard Kenya offers a free initial assessment and transparent, itemised pricing with no hidden charges. We cover Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika, and across all 47 counties. Reach out to us for a custom quote.
+Timelines and costs vary depending on the size of the affected area and the severity of the infestation. A single room can often be treated within a few hours, while a whole-property remediation or a severe commercial infestation may take one to three days. MoldGuard Kenya offers a site inspection for a flat KES 2,500 and transparent, itemised pricing with no hidden charges. We cover Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika, and across all 47 counties. Reach out to us for a custom quote.

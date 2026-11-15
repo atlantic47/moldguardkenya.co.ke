@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
@@ -6,12 +7,11 @@ import Footer from "../components/Footer";
 import NewsletterSection from "../components/NewsletterSection";
 import PageHero from "../components/PageHero";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "About MoldGuard Kenya | Certified Mold Remediation Experts",
-  description:
-    "Learn about MoldGuard Kenya, the leading professional mold removal experts in Kenya. Discover our mission, our certified processes, and why we are trusted.",
-  alternates: { canonical: "https://moldguardkenya.co.ke/about" },
-};
+  description: "Learn about MoldGuard Kenya, the leading professional mold removal experts in Kenya. Discover our mission, our certified processes, and why we are trusted.",
+  path: "/about",
+});
 
 const process = [
   {
@@ -156,7 +156,7 @@ export default function AboutPage() {
               <p style={{ color: "var(--text-mid)", lineHeight: 1.85, marginBottom: "2rem", fontSize: "1rem" }}>
                 By utilizing state-of-the-art moisture mapping technology and adhering to strict international remediation standards, we strive to be the most trusted name in mold removal throughout the country.
               </p>
-              <Link href="/contact" className="btn-primary">Get a Free Consultation →</Link>
+              <Link href="/contact" className="btn-primary">Book an Inspection →</Link>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
               {values.map((v) => (

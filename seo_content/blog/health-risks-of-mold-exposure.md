@@ -1,6 +1,8 @@
 ---
 title: "Health Risks of Mold Exposure | MoldGuard Kenya"
 description: "Is mold making you sick? Understand the severe health risks of indoor mold exposure, from allergies to black mold toxicity. Protect your family in Kenya today."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # The Silent Threat: Health Risks of Indoor Mold Exposure

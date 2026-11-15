@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Kiambu | Expert Mold Remediation | MoldGuard Kenya"
 description: "Protect your Kiambu property from dampness and mold damage. MoldGuard Kenya delivers top-tier mold removal and inspection services across Kiambu County."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Professional Mold Removal in Kiambu
@@ -23,4 +25,4 @@ Our teams are highly familiar with the specific architectural styles and climate
 
 Don't let the damp climate compromise your living space. Secure your property with the industry leaders in fungal remediation.
 
-**[Contact Our Kiambu Mold Experts Today - WhatsApp 0717140469](/contact)**
+**[Contact Our Kiambu Mold Experts Today - WhatsApp 0710907628](/contact)**

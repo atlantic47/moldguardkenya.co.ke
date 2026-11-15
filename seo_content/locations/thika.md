@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Thika | Industrial & Residential Mold Remediation | MoldGuard Kenya"
 description: "Effective mold removal in Thika. MoldGuard Kenya provides specialized remediation for industrial warehouses and residential estates in Thika."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Professional Mold Removal in Thika
@@ -14,4 +16,4 @@ Thika is famous for its massive industrial sector and rapidly expanding resident
 ## Why Choose Us in Thika?
 We possess the scale and technical expertise to handle both delicate residential jobs and massive industrial cleanups. MoldGuard Kenya uses heavy-duty, truck-mounted water extraction units and commercial desiccant dehumidifiers capable of drying out entire warehouse floors. 
 
-**[Secure your Thika property from mold today. Contact MoldGuard Kenya via WhatsApp (0717140469)](/contact)**
+**[Secure your Thika property from mold today. Contact MoldGuard Kenya via WhatsApp (0710907628)](/contact)**

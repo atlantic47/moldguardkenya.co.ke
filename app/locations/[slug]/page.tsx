@@ -6,6 +6,9 @@ import Footer from "../../components/Footer";
 import NewsletterSection from "../../components/NewsletterSection";
 import { getSeoMarkdownFile, getAllSeoSlugs, getAllSeoMetadata } from "@/lib/markdown";
 import PageHero from "../../components/PageHero";
+import ReactMarkdown from "react-markdown";
+import { locationNeighbours } from "@/lib/data/locationNeighbours";
+import { buildMetadata, breadcrumbSchema, BUSINESS_ID } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -14,15 +17,24 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const { data } = getSeoMarkdownFile("locations", slug);
-  return {
+  return buildMetadata({
     title: data.title || `Mold Removal in ${slug.replace(/-/g, " ")} | MoldGuard Kenya`,
     description: data.description || `Professional mold removal and inspection services in ${slug.replace(/-/g, " ")}.`,
-    alternates: { canonical: `https://moldguardkenya.co.ke/locations/${slug}` },
-  };
+    path: `/locations/${slug}`,
+  });
 }
 
 export async function generateStaticParams() {
   return getAllSeoSlugs("locations").map((slug) => ({ slug }));
+}
+
+interface Section {
+  heading: string;
+  items: string[];
+  body?: string;
+  /** Untouched markdown lines, used where links and bold text should survive */
+  raw: string[];
+  level: 2 | 3;
 }
 
 // Parse markdown content into structured sections
@@ -31,8 +43,8 @@ function parseLocationContent(raw: string) {
 
   let h1 = "";
   let intro = "";
-  const sections: { heading: string; items: string[]; body?: string }[] = [];
-  let currentSection: { heading: string; items: string[]; body?: string } | null = null;
+  const sections: Section[] = [];
+  let currentSection: Section | null = null;
 
   for (const line of lines) {
     const trimmed = line.trim();
@@ -42,11 +54,12 @@ function parseLocationContent(raw: string) {
       h1 = trimmed.replace(/^# /, "");
     } else if (trimmed.startsWith("## ")) {
       if (currentSection) sections.push(currentSection);
-      currentSection = { heading: trimmed.replace(/^## /, ""), items: [] };
+      currentSection = { heading: trimmed.replace(/^## /, ""), items: [], raw: [], level: 2 };
     } else if (trimmed.startsWith("### ")) {
       if (currentSection) sections.push(currentSection);
-      currentSection = { heading: trimmed.replace(/^### /, ""), items: [] };
+      currentSection = { heading: trimmed.replace(/^### /, ""), items: [], raw: [], level: 3 };
     } else if (trimmed.startsWith("- ") || trimmed.startsWith("* ")) {
+      if (currentSection) currentSection.raw.push(trimmed);
       const item = trimmed
         .replace(/^[-*] /, "")
         .replace(/\*\*(.+?)\*\*/g, "$1")
@@ -63,6 +76,7 @@ function parseLocationContent(raw: string) {
         if (!h1 || (!intro && sections.length === 0)) {
           if (clean.length > 20) intro = clean;
         } else if (currentSection) {
+          currentSection.raw.push("", trimmed, "");
           currentSection.body = (currentSection.body || "") + " " + clean;
         }
       }
@@ -83,18 +97,25 @@ export default async function LocationPostPage({ params }: Props) {
   const parsed = parseLocationContent(content);
 
   const problemsSection = parsed.sections.find(
-    (s) => s.heading.toLowerCase().includes("common") || s.heading.toLowerCase().includes("issue") || s.heading.toLowerCase().includes("problem")
+    (s) => /common|issue|problem|risk|thrive/.test(s.heading.toLowerCase()) && s.items.length > 0
   );
   const whySection = parsed.sections.find(
-    (s) => s.heading.toLowerCase().includes("why") || s.heading.toLowerCase().includes("choose")
+    (s) => s !== problemsSection && (s.heading.toLowerCase().includes("why choose") || s.heading.toLowerCase().includes("choose"))
   );
   const servicesSection = parsed.sections.find(
-    (s) => s.heading.toLowerCase().includes("service") || s.heading.toLowerCase().includes("offer") || s.heading.toLowerCase().includes("include")
+    (s) => s !== problemsSection && s !== whySection && s.items.length > 0 &&
+      (s.heading.toLowerCase().includes("service") || s.heading.toLowerCase().includes("offer") || s.heading.toLowerCase().includes("include"))
+  );
+  // Every other section in the markdown file is rendered below the designed
+  // blocks, so nothing written in the file is silently dropped from the page.
+  const extraSections = parsed.sections.filter(
+    (s) => s !== problemsSection && s !== whySection && s !== servicesSection && (s.body || s.items.length > 0)
   );
 
-  // Nearby locations: all slugs except current, take 6
+  // Nearby locations: real geographic neighbours (falls back to the first 6 for unmapped slugs)
   const allLocationSlugs = getAllSeoSlugs("locations");
-  const nearbyLocationSlugs = allLocationSlugs.filter((s) => s !== slug).slice(0, 6);
+  const mapped = (locationNeighbours[slug] || []).filter((s) => allLocationSlugs.includes(s));
+  const nearbyLocationSlugs = mapped.length > 0 ? mapped : allLocationSlugs.filter((s) => s !== slug).slice(0, 6);
   const nearbyLocations = nearbyLocationSlugs.map((s) => ({
     slug: s,
     name: s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
@@ -103,24 +124,35 @@ export default async function LocationPostPage({ params }: Props) {
   // Top blog posts for resource strip
   const blogPosts = getAllSeoMetadata("blog").slice(0, 3);
 
+  // A Service offered in this area by the one real business (declared on the
+  // homepage). Declaring a separate LocalBusiness per area, with no address,
+  // tells Google there are 33 businesses.
   const locationSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Service",
     "name": `Mold Removal & Inspection in ${locationName}`,
-    "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
-    "telephone": "+254710907628",
+    "serviceType": "Mold removal and remediation",
+    "description": data.description,
     "url": `https://moldguardkenya.co.ke/locations/${slug}`,
+    "image": "https://moldguardkenya.co.ke/Moldguard services.jpg",
     "areaServed": {
-      "@type": "City",
-      "name": locationName,
-      "addressCountry": "KE"
+      "@type": "Place",
+      "name": `${locationName}, Kenya`
     },
-    "parentOrganization": {
+    "provider": {
       "@type": "LocalBusiness",
+      "@id": BUSINESS_ID,
       "name": "MoldGuard Kenya",
-      "url": "https://moldguardkenya.co.ke/"
+      "telephone": "+254710907628",
+      "url": "https://moldguardkenya.co.ke"
     }
   };
+
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "" },
+    { name: "Locations", path: "/locations" },
+    { name: locationName, path: `/locations/${slug}` },
+  ]);
 
   return (
     <>
@@ -129,6 +161,10 @@ export default async function LocationPostPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbs) }}
         />
         {/* HERO */}
         <PageHero
@@ -157,7 +193,7 @@ export default async function LocationPostPage({ params }: Props) {
                   {parsed.intro}
                 </p>
                 <a href="tel:0710907628" className="btn-primary">
-                  📞 Get a Free Inspection
+                  📞 Book an Inspection (KES 2,500)
                 </a>
               </div>
               <div style={{ position: "relative", height: "420px", borderRadius: "1.5rem", overflow: "hidden", boxShadow: "0 20px 60px rgba(45,80,22,0.15)" }}>
@@ -274,6 +310,55 @@ export default async function LocationPostPage({ params }: Props) {
             </div>
           </section>
         )}
+
+        {/* ── REAL JOB VIDEO — set `video` and `videoCaption` in the markdown frontmatter ── */}
+        {data.video && (
+          <section style={{ background: "var(--cream)", padding: "4rem 0" }}>
+            <div className="container" style={{ maxWidth: "820px", textAlign: "center" }}>
+              <h2 className="section-heading" style={{ marginBottom: "0.75rem" }}>Watch a Real Mold Removal Job in {locationName}</h2>
+              {data.videoCaption && (
+                <p style={{ color: "var(--text-mid)", lineHeight: 1.7, marginBottom: "1.5rem" }}>{data.videoCaption}</p>
+              )}
+              <video
+                src={data.video}
+                controls
+                playsInline
+                preload="none"
+                poster="/Mold removal-muthaiga.jpg"
+                style={{ width: "100%", maxWidth: "360px", aspectRatio: "9/16", objectFit: "cover", borderRadius: "1rem", background: "#000" }}
+                aria-label={`MoldGuard Kenya mold removal job in ${locationName}`}
+              />
+            </div>
+          </section>
+        )}
+
+        {/* ── ADDITIONAL CONTENT — every remaining markdown section ── */}
+        {extraSections.length > 0 && (
+          <section style={{ background: "white", padding: "4rem 0" }}>
+            <div className="container" style={{ maxWidth: "820px" }}>
+              {extraSections.map((sec) => (
+                <div key={sec.heading} style={{ marginBottom: "2rem" }}>
+                  {sec.level === 2 ? (
+                    <h2 style={{ fontWeight: 800, fontSize: "clamp(1.35rem, 2.5vw, 1.75rem)", color: "var(--primary-dark)", lineHeight: 1.25, marginBottom: "0.75rem" }}>{sec.heading}</h2>
+                  ) : (
+                    <h3 style={{ fontWeight: 700, fontSize: "1.1rem", color: "var(--primary-dark)", lineHeight: 1.35, marginBottom: "0.5rem" }}>{sec.heading}</h3>
+                  )}
+                  <div className="location-prose">
+                    <ReactMarkdown>{sec.raw.join("\n")}</ReactMarkdown>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <style>{`
+          .location-prose p { color: var(--text-mid); line-height: 1.8; margin: 0 0 0.75rem; }
+          .location-prose ul { color: var(--text-mid); line-height: 1.8; padding-left: 1.25rem; margin: 0; list-style: disc; }
+          .location-prose li { margin-bottom: 0.35rem; }
+          .location-prose strong { color: var(--primary-dark); }
+          .location-prose a { color: var(--primary); font-weight: 600; text-decoration: underline; }
+        `}</style>
 
         {/* ── NEARBY LOCATIONS ── */}
         <section style={{ background: "white", padding: "3.5rem 0", borderTop: "1px solid var(--border)" }}>

@@ -1,6 +1,6 @@
 export default function ContactSection() {
   const contactInfo = [
-    { method: "Phone Number", details: "0717140469" },
+    { method: "Phone Number", details: "0710907628" },
     { method: "Email", details: "moldguard@pestraid.co.ke" },
     { method: "Service Area", details: "Kenya and surrounding regions" },
   ];
@@ -20,7 +20,7 @@ export default function ContactSection() {
           
           <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "1rem" }}>Contacting Our Specialists</h3>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            To talk to our mold experts, just call <strong>0717140469</strong>. We&apos;re here to answer your questions and set up a meeting. We&apos;re quick to respond, so you can start fixing your mold issues fast.
+            To talk to our mold experts, just call <strong>0710907628</strong>. We&apos;re here to answer your questions and set up a meeting. We&apos;re quick to respond, so you can start fixing your mold issues fast.
           </p>
 
           <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "1rem" }}>Scheduling Your Initial Consultation</h3>
@@ -70,8 +70,8 @@ export default function ContactSection() {
               </tbody>
             </table>
             
-            <a href="tel:0717140469" className="btn-gold" style={{ marginTop: "2rem", width: "100%", justifyContent: "center" }}>
-              📞 Call 0717140469 Now
+            <a href="tel:0710907628" className="btn-gold" style={{ marginTop: "2rem", width: "100%", justifyContent: "center" }}>
+              📞 Call 0710907628 Now
             </a>
           </div>
         </div>

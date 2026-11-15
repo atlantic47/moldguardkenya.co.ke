@@ -19,6 +19,17 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 86400, // 24 hours — safe for images
   },
 
+  async redirects() {
+    return [
+      // Merged into the main cost guide so the two posts stop competing for the same searches
+      {
+        source: "/blog/mold-removal-remediation-prices-kenya-2026",
+        destination: "/blog/cost-of-mold-removal-in-kenya",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       // ── HTML pages — NEVER cache. Google must be able to re-crawl freely. ──

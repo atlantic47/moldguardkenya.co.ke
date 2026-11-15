@@ -4,6 +4,7 @@ description: "Comprehensive guide to testing, diagnosing, and improving indoor a
 date: "2026-07-28"
 author: "MoldGuard Kenya Technical Team"
 image: "/Indoor-Air-Quality-mold-guard-kenya.webp"
+updated: "2026-07-28"
 ---
 
 Most of us assume that once we're indoors, we're safe from the dust, pollution, and allergens of the outside world. In reality, the air inside Kenyan homes, offices, schools, and hospitals is often more contaminated than the air outside — sometimes by a significant margin. Trapped humidity, mold spores, dust mites, cooking fumes, poor ventilation, and chemical off-gassing from furniture and paint all combine to create indoor environments that can quietly affect health, comfort, and productivity for months without anyone noticing the cause.

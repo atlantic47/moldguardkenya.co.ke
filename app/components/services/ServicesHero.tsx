@@ -11,7 +11,7 @@ export default function ServicesHero() {
             🛡️ Services
           </p>
           <h1 style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", fontWeight: 800, color: "var(--primary-dark)", lineHeight: 1.15, marginBottom: "1.25rem" }}>
-            Mold Remediation Services by MoldGuard Kenya
+            Mold (Mould) Remediation Services by MoldGuard Kenya
           </h1>
           <p style={{ fontSize: "1rem", color: "var(--text-mid)", marginBottom: "1.25rem", lineHeight: 1.7 }}>
             Discovering mold in your home is stressful. <em>Your health and property safety are our top priorities.</em> At <strong>MoldGuard Kenya</strong>, our team offers expert help to quickly fix your home.
@@ -19,8 +19,8 @@ export default function ServicesHero() {
           <p style={{ fontSize: "1rem", color: "var(--text-mid)", marginBottom: "2rem", lineHeight: 1.7 }}>
             Effective <strong>mold removal</strong> needs precision and the right tools. We begin with a detailed <strong>mold inspection</strong> to find hidden moisture. This ensures we tackle every spore. Our experts use top techniques to remove all contamination. If you smell musty or see mold, don&apos;t delay. Let us make your home clean and healthy again.
           </p>
-          <a href="tel:0717140469" className="btn-primary">
-            Call 0717140469 for an Expert Consultation
+          <a href="tel:0710907628" className="btn-primary">
+            Call 0710907628 for an Expert Consultation
           </a>
         </div>
 

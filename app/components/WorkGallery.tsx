@@ -95,7 +95,7 @@ export default function WorkGallery() {
             className="btn-gold"
             style={{ fontSize: "1rem", padding: "0.85rem 2.5rem" }}
           >
-            📞 Call 0710 907 628 for a Free Assessment
+            📞 Call 0710 907 628 to Book an Inspection
           </a>
         </div>
       </div>

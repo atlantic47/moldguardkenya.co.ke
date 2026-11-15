@@ -403,14 +403,14 @@ export default function AirScrubbingPage() {
             {/* FINAL CTA BANNER */}
             <div style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0d3c26 100%)", borderRadius: "1.5rem", padding: "3rem 2rem", color: "white", textAlign: "center" }}>
               <h3 style={{ fontSize: "1.6rem", fontWeight: 900, marginBottom: "0.75rem" }}>
-                Get a Free Mold &amp; Air Quality Assessment Today
+                Book a Mold &amp; Air Quality Inspection Today
               </h3>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "650px", margin: "0 auto 2rem" }}>
                 Mold and dampness don&apos;t resolve themselves. Don&apos;t let airborne spores spread through your building. Speak with MoldGuard Kenya&apos;s certified environmental technicians.
               </p>
               <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-                <a href="https://wa.me/254710907628?text=Hi%20MoldGuard%2C%20I%20would%20like%20a%20free%20Air%20Quality%20and%20Air%20Scrubbing%20assessment." target="_blank" rel="noopener noreferrer" className="btn-gold" style={{ padding: "0.85rem 1.8rem", fontSize: "1rem" }}>
-                  💬 Book Free Assessment on WhatsApp
+                <a href="https://wa.me/254710907628?text=Hi%20MoldGuard%2C%20I%20would%20like%20an%20Air%20Quality%20and%20Air%20Scrubbing%20assessment." target="_blank" rel="noopener noreferrer" className="btn-gold" style={{ padding: "0.85rem 1.8rem", fontSize: "1rem" }}>
+                  💬 Book an Inspection on WhatsApp
                 </a>
                 <Link href="/shop/air-purifiers" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.4)", padding: "0.85rem 1.8rem", fontSize: "1rem" }}>
                   Explore Air Purifiers Shop →

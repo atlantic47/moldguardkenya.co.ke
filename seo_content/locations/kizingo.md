@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Kizingo | Historic Coastal Remediation | MoldGuard Kenya"
 description: "Expert mold removal tailored for Kizingo's unique architecture and coastal humidity. Trust MoldGuard Kenya for permanent dampness and mold solutions."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Expert Mold Removal in Kizingo

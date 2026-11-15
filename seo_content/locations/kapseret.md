@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Kapseret | Dampness Experts | MoldGuard Kenya"
 description: "Professional mold removal and inspection services in Kapseret. MoldGuard Kenya permanently eradicates mold and secures your property from water damage."
+date: "2026-03-27"
+updated: "2026-11-15"
 ---
 
 # Professional Mold Remediation in Kapseret
@@ -14,4 +16,4 @@ Kapseret is a rapidly developing area on the outskirts of Eldoret, experiencing 
 ## Why MoldGuard Kenya?
 Scrubbing walls only hides the problem for a week. MoldGuard Kenya offers a permanent, science-backed solution. We don't guess where the water is coming from; we use specialized moisture meters to definitively locate the leak or defect. We safely remove the toxic mold using containment barriers and execute structural drying so the mold cannot physically return.
 
-**[Contact MoldGuard Kenya in Kapseret for a Free Inspection](/contact)**
+**[Contact MoldGuard Kenya in Kapseret to Book an Inspection (KES 2,500)](/contact)**

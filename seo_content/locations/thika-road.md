@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Thika Road | Certified Remediation | MoldGuard Kenya"
 description: "Professional mold removal and inspection services along the Thika Road corridor. MoldGuard Kenya permanently eradicates mold and dampness from your property."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Professional Mold Removal along the Thika Road Corridor

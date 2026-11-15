@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Diani | Luxury Villa & Hotel Remediation | MoldGuard Kenya"
 description: "Discreet mold removal for luxury villas and hospitality venues in Diani. MoldGuard Kenya offers premium mold inspection, containment, and AC duct cleaning."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Premium Coastal Mold Removal in Diani

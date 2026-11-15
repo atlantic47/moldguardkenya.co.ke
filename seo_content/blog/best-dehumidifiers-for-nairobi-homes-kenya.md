@@ -4,6 +4,7 @@ description: "Discover the best dehumidifiers for Nairobi homes, ground-floor ap
 date: "2026-07-20"
 author: "MoldGuard Kenya Technical Team"
 category: "Equipment Guides"
+updated: "2026-07-21"
 ---
 
 # Best Dehumidifier for Nairobi Homes & Damp Bedrooms (2026 Buying Guide)

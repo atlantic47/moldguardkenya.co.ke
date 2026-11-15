@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Likoni | Complete Dampness Solutions | MoldGuard Kenya"
 description: "Effective and affordable mold remediation in Likoni. MoldGuard Kenya eliminates dampness and eradicates toxic mold to secure your property."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Certified Mold Remediation in Likoni

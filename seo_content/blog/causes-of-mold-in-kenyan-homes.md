@@ -1,6 +1,8 @@
 ---
 title: "Top Causes of Mold in Kenyan Homes | MoldGuard Kenya"
 description: "Discover the primary causes of indoor mold growth in Kenya. From rainy seasons to poor ventilation, learn how to protect your home. Contact MoldGuard Kenya."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Top Causes of Mold in Kenyan Homes

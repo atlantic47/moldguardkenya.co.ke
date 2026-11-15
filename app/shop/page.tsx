@@ -1,16 +1,17 @@
 // SERVER COMPONENT — no "use client". This allows metadata export and SSR schema injection.
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ShopClient from "./ShopClient";
 import { products } from "@/lib/data/products";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Shop Dehumidifiers, Air Purifiers & Mold Remediation Products | MoldGuard Kenya",
   description: "Buy professional-grade dehumidifiers, air purifiers, and mold removal products in Kenya. Protect your home and health with certified indoor air quality equipment. Fast Nairobi delivery.",
-  alternates: { canonical: "https://moldguardkenya.co.ke/shop" },
-};
+  path: "/shop",
+});
 
 // ItemList schema
 const shopSchema = {

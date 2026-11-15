@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -6,12 +7,11 @@ import NewsletterSection from "../components/NewsletterSection";
 import PageHero from "../components/PageHero";
 import { getAllSeoMetadata } from "@/lib/markdown";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Mold Removal Blog | Expert Advice & Guides | MoldGuard Kenya",
-  description:
-    "Read the latest tips, guides, and expert advice on mold removal, prevention, and indoor air quality in Kenya from MoldGuard Kenya's certified specialists.",
-  alternates: { canonical: "https://moldguardkenya.co.ke/blog" },
-};
+  description: "Read the latest tips, guides, and expert advice on mold removal, prevention, and indoor air quality in Kenya from MoldGuard Kenya's certified specialists.",
+  path: "/blog",
+});
 
 const BLOG_ICONS = ["🌧️", "🦠", "🏠", "💰", "💧", "☔", "⚠️", "📋", "🔬", "🌊"];
 

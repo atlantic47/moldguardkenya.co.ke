@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import ShopClient from "@/app/shop/ShopClient";
 import { products } from "@/lib/data/products";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Air Purifiers for Mold Spores & Dust Allergies in Kenya | MoldGuard",
   description: "Buy True HEPA air purifiers in Kenya to capture mold spores, dust mite allergens, smoke, and odors. Featuring Xiaomi, HAVIT & Green Lion smart purifiers with fast delivery.",
-  alternates: { canonical: "https://moldguardkenya.co.ke/shop/air-purifiers" },
-};
+  path: "/shop/air-purifiers",
+});
 
 const airPurifierProducts = products.filter((p) => p.category === "Air Purifiers");
 

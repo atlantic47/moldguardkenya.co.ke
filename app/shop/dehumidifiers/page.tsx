@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import ShopClient from "@/app/shop/ShopClient";
 import { products } from "@/lib/data/products";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Best Dehumidifiers for Mold & Dampness in Kenya | Nairobi Buying Guide",
   description: "Buy professional 20L, 25L, 35L & 60L compressor dehumidifiers in Kenya. Stop damp bedrooms, window condensation, and wall mold in Nairobi, Mombasa & nationwide.",
-  alternates: { canonical: "https://moldguardkenya.co.ke/shop/dehumidifiers" },
-};
+  path: "/shop/dehumidifiers",
+});
 
 const dehumidifierProducts = products.filter((p) => p.category === "Dehumidifiers");
 

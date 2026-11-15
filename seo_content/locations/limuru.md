@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Limuru | Complete Dampness Solutions | MoldGuard Kenya"
 description: "Eliminate stubborn mold in Limuru's cold climate. MoldGuard Kenya offers expert mold inspection, containment, and permanent removal services in Limuru."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Expert Mold Removal in Limuru

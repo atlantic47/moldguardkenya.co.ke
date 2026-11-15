@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Nyali | Coastal Mold Remediation | MoldGuard Kenya"
 description: "Protect your Nyali property from coastal humidity and toxic mold. MoldGuard Kenya provides premium mold remediation and AC duct cleaning in Nyali."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Premium Mold Removal in Nyali

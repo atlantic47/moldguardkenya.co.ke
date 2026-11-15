@@ -1,6 +1,10 @@
 ---
-title: "Mold Removal Mombasa | Coastal Mold Remediation | MoldGuard Kenya"
+title: "Mold (Mould) Removal in Mombasa | MoldGuard Kenya"
 description: "Effectively combat coastal humidity with professional mold removal in Mombasa. MoldGuard Kenya offers certified containment and remediation services at the coast."
+date: "2026-03-27"
+updated: "2026-11-15"
+video: "/mold-removal-mombasa.mp4"
+videoCaption: "A short clip from a mold removal and treatment job our team completed in Mombasa."
 ---
 
 # Expert Mold Removal in Mombasa
@@ -23,4 +27,31 @@ We understand that coastal mold behaves differently. Our Mombasa remediation pro
 
 Protect your coastal investment from the devastating effects of rot and mold. Our certified professionals are ready to secure your property.
 
-**[Get a Free Mombasa Mold Inspection - WhatsApp Us Now](/contact)**
+**[Book a Mombasa Mold Inspection (KES 2,500) - WhatsApp Us Now](/contact)**
+
+## How Our Mold (Mould) Removal Process Works in Mombasa
+At the coast the air itself is the moisture source, so treatment has to be paired with humidity control or the mould returns.
+- **Inspection:** We measure indoor humidity as well as wall moisture, and check air-conditioning units, wardrobes, mattresses and soft furnishings.
+- **Containment:** Affected rooms are sealed before any cleaning starts.
+- **HEPA air scrubbing:** Filtration removes the heavy spore load that builds up in humid, closed rooms.
+- **Removal and treatment:** Contaminated boards and fabrics that cannot be saved are removed and the surfaces treated with antimicrobial products.
+- **Humidity control plan:** We dry the structure and recommend the right dehumidifier capacity and ventilation for the room, since coastal humidity stays high all year.
+
+## Mold Removal Cost in Mombasa
+A site inspection is a flat KES 2,500 and covers moisture metering, thermal scanning and a written report. Treating a single bathroom typically costs KES 8,500 – 10,000 and a standard bedroom KES 15,000 – 20,000. Hotels, holiday rentals and whole apartments are quoted after the inspection. Our [mold removal cost guide](/blog/cost-of-mold-removal-in-kenya) explains the figures, and our [dehumidifier range](/shop/dehumidifiers) covers the equipment we recommend for coastal homes.
+
+## Parts of Mombasa We Cover
+We serve Mombasa Island, the north coast and the south coast, including:
+- **Mombasa Island:** Kizingo, Tudor, Ganjoni and the Old Town area.
+- **North coast:** Nyali, Bamburi, Shanzu and Mtwapa.
+- **South coast:** Likoni and Diani.
+
+## Frequently Asked Questions About Mold in Mombasa
+### Why does mould grow on clothes, shoes and leather at the coast?
+Mould needs moisture and something organic to feed on. Mombasa's humidity stays high throughout the year, so closed wardrobes and stored leather stay damp enough for it to grow without any leak at all.
+
+### Does air conditioning stop mould?
+It lowers humidity while it runs, but rooms that are cooled and then switched off get condensation on cold surfaces, and dirty AC units spread spores. A dehumidifier and regular AC servicing work better together.
+
+### Can you treat a holiday home or Airbnb between guests?
+Yes. Tell us the dates the property is empty and we will plan the inspection and treatment within that window.

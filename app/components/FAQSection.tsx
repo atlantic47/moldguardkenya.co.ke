@@ -5,11 +5,15 @@ import Image from "next/image";
 
 const faqs = [
   {
-    q: "Why is mold so common in Kenyan homes and offices?",
+    q: "Is there a difference between mold and mould?",
+    a: "No. Mold is the American spelling and mould is the British spelling used in Kenya, so mould removal, mould treatment and mould remediation are the same services as mold removal, mold treatment and mold remediation. The fungus, the health risks and the way we treat it are identical. If you search for mould removal in Nairobi or mould cleaning in Kenya, you are looking for exactly what MoldGuard Kenya does.",
+  },
+  {
+    q: "Why is mold (mould) so common in Kenyan homes and offices?",
     a: "Kenya's climate is one of the biggest culprits. During both the long and short rains, humidity levels rise sharply, and most buildings were not designed with moisture control in mind. Poorly ventilated bathrooms, flat concrete roofs that trap moisture, leaking gutters, and water-damaged walls all create the perfect conditions for mold to take hold and spread quickly. In cities like Nairobi, Mombasa, Kisumu, and Nakuru, we see mold problems year-round.",
   },
   {
-    q: "How do I know if I have a mold problem in my house?",
+    q: "How do I know if I have a mold or mould problem in my house?",
     a: "The most obvious sign is dark or black patches on walls, ceilings, or around window frames. But mold does not always show itself right away. A persistent musty smell in a room, peeling paint or wallpaper, chronic condensation on windows, or unexplained sneezing and coughing among your family members are all strong indicators. If you suspect mold, do not wait for it to become visible, because by the time you can see it clearly, it has usually already spread behind surfaces.",
   },
   {
@@ -42,7 +46,7 @@ const faqs = [
   },
   {
     q: "How long does mold removal take and how much does it cost in Kenya?",
-    a: "Timelines and costs vary depending on the size of the affected area and the severity of the infestation. A single room can often be treated within a few hours, while a whole-property remediation or a severe commercial infestation may take one to three days. MoldGuard Kenya offers a free initial assessment and transparent, itemised pricing with no hidden charges. We cover Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika, and across all 47 counties. Reach out to us for a custom quote.",
+    a: "Timelines and costs vary depending on the size of the affected area and the severity of the infestation. A single room can often be treated within a few hours, while a whole-property remediation or a severe commercial infestation may take one to three days. MoldGuard Kenya offers a site inspection for a flat KES 2,500 and transparent, itemised pricing with no hidden charges. We cover Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika, and across all 47 counties. Reach out to us for a custom quote.",
   },
   {
     q: "Do you handle mold caused by fire suppression or sprinkler system discharge?",

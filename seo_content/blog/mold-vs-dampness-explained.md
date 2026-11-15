@@ -1,6 +1,8 @@
 ---
 title: "Mold vs. Dampness Explained | MoldGuard Kenya"
 description: "What is the difference between mold and dampness? Learn how to identify rising damp, penetrating damp, and why they inevitably lead to toxic mold growth."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Mold vs. Dampness: What is the Difference and Why Does it Matter?

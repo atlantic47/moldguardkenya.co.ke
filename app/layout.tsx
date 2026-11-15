@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SITE_URL, buildMetadata } from "@/lib/seo";
 
 // Load Inter via next/font — zero layout shift, auto font-display:swap, self-hosted by Next.js
 const inter = Inter({
@@ -11,12 +12,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mold Removal & Remediation Services in Nairobi, Kenya | MoldGuard Kenya",
-  description:
-    "MoldGuard Kenya offers expert mold removal and remediation services in Nairobi, Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mold and improve your indoor air quality. Call 0710907628.",
-  keywords:
-    "mold removal Nairobi, mold remediation Nairobi Kenya, mold removal Kenya, indoor air quality Nairobi, moisture detection Nairobi, HEPA filtration, mold inspection Nairobi Kenya",
-  alternates: { canonical: "https://moldguardkenya.co.ke" }
+  // metadataBase makes relative image URLs in Open Graph / Twitter tags absolute
+  metadataBase: new URL(SITE_URL),
+  ...buildMetadata({
+    title: "Mold Removal Services in Nairobi, Kenya | MoldGuard Kenya",
+    description:
+      "MoldGuard Kenya offers expert mold (mould) removal and remediation services in Nairobi, Kenya. We use advanced moisture detection, HEPA filtration, and proven protocols to eliminate mold and improve your indoor air quality. Call 0710907628.",
+    path: "",
+  }),
 };
 
 export default function RootLayout({

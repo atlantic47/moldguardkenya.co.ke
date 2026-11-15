@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Embakasi | Reliable Mold Remediation | MoldGuard Kenya"
 description: "Professional and affordable mold removal services in Embakasi, Nairobi. MoldGuard Kenya effectively eliminates black mold and restores healthy indoor air."
+date: "2026-03-27"
+updated: "2026-11-15"
 ---
 
 # Professional Mold Removal in Embakasi
@@ -23,4 +25,4 @@ Scrubbing walls with Dettol or bleach only hides the problem for a week. MoldGua
 
 Stop living with a musty smell and constant allergies. Reclaim your home.
 
-**[Contact MoldGuard Kenya in Embakasi for a Free Inspection - WhatsApp 0717140469](/contact)**
+**[Contact MoldGuard Kenya in Embakasi to Book an Inspection (KES 2,500) - WhatsApp 0710907628](/contact)**

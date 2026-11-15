@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal South B & South C | Certified Experts | MoldGuard Kenya"
 description: "Expert mold remediation in Nairobi South. MoldGuard Kenya eliminates dampness and toxic mold in South B and South C to restore healthy indoor living."
+date: "2026-03-27"
+updated: "2026-11-15"
 ---
 
 # Certified Mold Remediation in South B and South C
@@ -23,4 +25,4 @@ We understand the specific environmental challenges facing Nairobi South. We res
 
 Protect your health and the structural integrity of your home. Call the experts who fix the problem permanently.
 
-**[Schedule a Free Mold Inspection in South B or C Today](/contact)**
+**[Schedule a Mold Inspection (KES 2,500) in South B or C Today](/contact)**

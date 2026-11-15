@@ -1,6 +1,8 @@
 ---
 title: "Preventing Mold During the Rainy Season | MoldGuard Kenya"
 description: "Prepare your home for Kenya's long and short rains. Learn effective strategies for preventing mold growth during the wettest months of the year."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Preventing Mold During Kenya’s Rainy Season

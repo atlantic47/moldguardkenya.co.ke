@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import NewsletterSection from "../../components/NewsletterSection";
 import { getSeoMarkdownFile, getAllSeoSlugs, getAllSeoMetadata } from "@/lib/markdown";
 import PageHero from "../../components/PageHero";
+import { buildMetadata, breadcrumbSchema, LOGO_URL, ORG_ID } from "@/lib/seo";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -15,11 +16,13 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const { data } = getSeoMarkdownFile("blog", slug);
-  return {
+  return buildMetadata({
     title: data.title || `${slug.replace(/-/g, " ")} | MoldGuard Kenya`,
     description: data.description || "Professional mold removal and prevention advice.",
-    alternates: { canonical: `https://moldguardkenya.co.ke/blog/${slug}` },
-  };
+    path: `/blog/${slug}`,
+    image: "/Mold removal-muthaiga.jpg",
+    type: "article",
+  });
 }
 
 export async function generateStaticParams() {
@@ -36,7 +39,8 @@ export default async function BlogPostPage({ params }: Props) {
   const relatedPosts = allPosts.filter((p) => p.slug !== slug).slice(0, 3);
 
   // Strip frontmatter before passing to ReactMarkdown
-  const body = content.replace(/^---[\s\S]+?---\n?/, "").trim();
+  // Also drop the markdown "# Title" line: PageHero already renders the page's single H1
+  const body = content.replace(/^---[\s\S]+?---\n?/, "").trim().replace(/^# .+\n+/, "");
 
   const blogSchema = {
     "@context": "https://schema.org",
@@ -50,20 +54,28 @@ export default async function BlogPostPage({ params }: Props) {
     "image": "https://moldguardkenya.co.ke/Mold removal-muthaiga.jpg",  
     "author": {
       "@type": "Organization",
+      "@id": ORG_ID,
       "name": "MoldGuard Kenya",
       "url": "https://moldguardkenya.co.ke/"
     },  
     "publisher": {
       "@type": "Organization",
+      "@id": ORG_ID,
       "name": "MoldGuard Kenya",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://moldguardkenya.co.ke/icon.tsx"
+        "url": LOGO_URL
       }
     },
-    "datePublished": data.date || "2026-01-01",
-    "dateModified": data.date || "2026-01-01"
+    "datePublished": data.date || "2026-03-27",
+    "dateModified": data.updated || data.date || "2026-03-27"
   };
+
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "" },
+    { name: "Blog", path: "/blog" },
+    { name: title, path: `/blog/${slug}` },
+  ]);
 
   return (
     <>
@@ -72,6 +84,10 @@ export default async function BlogPostPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbs) }}
         />
         {/* HERO */}
         <PageHero

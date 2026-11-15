@@ -90,7 +90,10 @@ export default function Footer() {
               { label: "🛡️ Mold Remediation Services", href: "/services" },
               { label: "🌬️ Air Scrubbing & Spore Control", href: "/services/air-scrubbing" },
               { label: "🌱 Indoor Air Quality Improvement", href: "/services/indoor-air-quality" },
-              { label: "🔬 Moisture Mapping & Inspection", href: "/services" },
+              { label: "🧽 Mold (Mould) Removal", href: "/services/mold-removal" },
+              { label: "🔍 Mold Inspection", href: "/services/mold-inspection" },
+              { label: "☣️ Black Mold Removal", href: "/services/black-mold-removal" },
+              { label: "🧪 Mold Testing", href: "/services/mold-testing" },
             ].map((s) => (
               <li key={s.label}>
                 <Link

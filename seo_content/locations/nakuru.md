@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Nakuru | Certified Mold Experts | MoldGuard Kenya"
 description: "Need reliable mold remediation in Nakuru? MoldGuard Kenya provides advanced mold removal, inspection, and structural drying in Nakuru and the Rift Valley."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Expert Mold Removal in Nakuru

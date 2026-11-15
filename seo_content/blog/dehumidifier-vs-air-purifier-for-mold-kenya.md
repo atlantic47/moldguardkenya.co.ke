@@ -4,6 +4,7 @@ description: "Confused between a dehumidifier and an air purifier for mold contr
 date: "2026-07-21"
 author: "MoldGuard Kenya Technical Team"
 category: "Equipment Guides"
+updated: "2026-07-21"
 ---
 
 # Dehumidifier vs. Air Purifier for Mold Spores & Dampness in Kenya: Which Do You Need?

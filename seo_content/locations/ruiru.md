@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Ruiru | Reliable Mold Experts | MoldGuard Kenya"
 description: "Protect your Ruiru home from dampness and toxic mold. MoldGuard Kenya provides certified mold inspection and permanent remediation in Ruiru."
+date: "2026-03-27"
+updated: "2026-11-15"
 ---
 
 # Expert Mold Remediation in Ruiru
@@ -14,4 +16,4 @@ Ruiru's rapid transformation from an agricultural hub into a booming residential
 ## Why Rely on MoldGuard Kenya?
 We do not offer temporary fixes. Our certified technicians use thermal imaging to find the exact source of your dampness. We then deploy HEPA air scrubbers to guarantee your family breathes clean air while we safely extract the toxic mold. Finally, we implement structural drying to ensure the issue is resolved permanently.
 
-**[Get a Free Mold Inspection in Ruiru - WhatsApp Us Today](/contact)**
+**[Book a Mold Inspection (KES 2,500) in Ruiru - WhatsApp Us Today](/contact)**

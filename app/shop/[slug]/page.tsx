@@ -10,6 +10,7 @@ import {
   buildProductSchema,
 } from "@/lib/data/products";
 import { notFound } from "next/navigation";
+import { buildMetadata } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -23,15 +24,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
-  return {
+  // Sets the canonical too: without it every product page inherited the
+  // root layout's canonical and pointed Google at the homepage.
+  return buildMetadata({
     title: `${product.name} | Buy in Kenya | MoldGuard Kenya Shop`,
     description: `${product.shortDescription} — Sold by MoldGuard Kenya. Price: ${product.priceDisplay}. Fast delivery across Nairobi & Kenya.`,
-    openGraph: {
-      title: `${product.name} — ${product.priceDisplay}`,
-      description: product.shortDescription,
-      type: "website",
-    },
-  };
+    path: `/shop/${product.slug}`,
+    image: product.image || undefined,
+  });
 }
 
 const categoryIcons: Record<string, string> = {

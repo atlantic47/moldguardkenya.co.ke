@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Kasarani | Professional Remediation | MoldGuard Kenya"
 description: "Protect your Kasarani property from toxic mold. MoldGuard Kenya offers expert mold inspection, structural drying, and remediation for homes in Kasarani."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Expert Mold Removal in Kasarani
@@ -23,4 +25,4 @@ Do not let your domestic staff tackle structural mold with household cleaners—
 
 Ensure your home is safe, fresh, and mold-free. Trust the certified professionals for permanent results.
 
-**[Contact MoldGuard Kenya in Kasarani via WhatsApp (0717140469)](/contact)**
+**[Contact MoldGuard Kenya in Kasarani via WhatsApp (0710907628)](/contact)**

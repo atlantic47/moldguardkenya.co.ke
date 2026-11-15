@@ -1,6 +1,8 @@
 ---
 title: "Mold in Rentals: Tenant vs. Landlord Rights | MoldGuard Kenya"
 description: "Who is responsible for fixing mold in a rented apartment in Kenya? Learn about the duties of landlords and tenants regarding dampness and mold remediation."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Mold in Rented Apartments: Tenant vs. Landlord Responsibilities in Kenya

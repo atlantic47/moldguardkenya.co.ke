@@ -3,7 +3,8 @@
 import { useState } from "react";
 
 const faqs = [
-  { q: "What makes the mold removal solutions from MoldGuard Kenya the right choice for my property?", a: "At MoldGuard Kenya, we offer top-notch mold removal services. Our team uses advanced technology and years of experience. This ensures your home or office is safe. Call us at 0717140469 to talk about your needs and schedule a visit." },
+  { q: "Is there a difference between mold and mould?", a: "No. Mold is the American spelling and mould is the British spelling used in Kenya, so mould removal, mould treatment and mould remediation are the same services as mold removal, mold treatment and mold remediation. The fungus, the health risks and the way we treat it are identical. If you search for mould removal in Nairobi or mould cleaning in Kenya, you are looking for exactly what MoldGuard Kenya does." },
+  { q: "What makes the mold removal solutions from MoldGuard Kenya the right choice for my property?", a: "At MoldGuard Kenya, we offer top-notch mold removal services. Our team uses advanced technology and years of experience. This ensures your home or office is safe. Call us at 0710907628 to talk about your needs and schedule a visit." },
   { q: "Why should I be concerned about indoor mold growth in my home?", a: "Indoor mold is a serious health risk. It can cause long-term respiratory issues and severe allergic reactions. Our team works fast to protect your health and make your home safe again." },
   { q: "How do you identify mold that isn't visible to the naked eye?", a: "We use professional mold inspection and assessment protocols. This includes advanced moisture mapping and leak detection techniques. Our special equipment finds hidden moisture, ensuring we tackle the root cause." },
   { q: "What measures do you take to prevent mold spores from spreading during the cleaning process?", a: "We use comprehensive mold containment strategies. This includes physical barriers and negative air machines. It keeps mold spores in the affected area, preventing them from spreading." },
@@ -13,7 +14,7 @@ const faqs = [
   { q: "How do I know for sure that the mold has been successfully eradicated?", a: "We do post-remediation verification and clearance testing. This confirms the mold is gone and moisture levels are stable. It makes sure the area is safe for occupancy." },
   { q: "What steps can I take to prevent mold from returning in the future?", a: "We offer preventative maintenance plans and structural drying and dehumidification solutions. Regular checks and managing moisture stop mold before it starts." },
   { q: "Does MoldGuard Kenya assist with insurance claims for mold damage?", a: "Yes, we help with navigating insurance claims for mold damage restoration. We provide the needed documentation to ensure your restoration is covered." },
-  { q: "What should I do if I discover a sudden mold outbreak or water leak?", a: "Call our emergency mold response team at 0717140469 right away. We act fast to prevent damage and stop mold from spreading." },
+  { q: "What should I do if I discover a sudden mold outbreak or water leak?", a: "Call our emergency mold response team at 0710907628 right away. We act fast to prevent damage and stop mold from spreading." },
 ];
 
 export default function ServicesFAQ() {

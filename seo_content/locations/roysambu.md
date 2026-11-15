@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Roysambu | Effective Mold Solutions | MoldGuard Kenya"
 description: "Permanent mold removal in Roysambu, Nairobi. MoldGuard Kenya uses advanced technology to eliminate dampness and eradicate toxic black mold safely."
+date: "2026-03-27"
+updated: "2026-11-15"
 ---
 
 # Professional Mold Remediation in Roysambu
@@ -23,4 +25,4 @@ We offer discreet, efficient, and permanent solutions. We know that in a shared 
 
 Protect your investment and your respiratory health. Don't fight a losing DIY battle against mold.
 
-**[Get a Free Mold Inspection in Roysambu Today](/contact)**
+**[Book a Mold Inspection (KES 2,500) in Roysambu Today](/contact)**

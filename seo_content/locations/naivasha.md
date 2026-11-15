@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Naivasha | Resort & Residential Mold Experts | MoldGuard Kenya"
 description: "Protect your Naivasha property from lake-effect humidity. MoldGuard Kenya provides specialized mold remediation for resorts, farms, and homes in Naivasha."
+date: "2026-03-27"
+updated: "2026-03-30"
 ---
 
 # Professional Mold Removal in Naivasha

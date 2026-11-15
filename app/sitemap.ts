@@ -1,74 +1,73 @@
 import { MetadataRoute } from "next";
-import { getAllSeoSlugs } from "@/lib/markdown";
+import { getAllSeoMetadata } from "@/lib/markdown";
 import { products } from "@/lib/data/products";
-import fs from "fs";
-import path from "path";
+import { servicePages } from "@/lib/data/services";
 
-// Helper to dynamically read the last modification date of a file.
-// If the file exists, it returns its actual filesystem modification timestamp (mtime).
-// Otherwise, it falls back to a safe baseline date.
-function getFileMtime(relativeFilePath: string, fallbackDateStr: string): Date {
-  try {
-    const fullPath = path.join(process.cwd(), relativeFilePath);
-    if (fs.existsSync(fullPath)) {
-      return fs.statSync(fullPath).mtime;
-    }
-  } catch (error) {
-    console.error(`Error reading mtime for ${relativeFilePath}:`, error);
-  }
-  return new Date(fallbackDateStr);
+// lastModified must reflect when the CONTENT last changed. File modification
+// times cannot be used: on Vercel every file gets the build time, so all URLs
+// reported the same date and Google learned to ignore it.
+//
+// - Blog and location pages: read `updated` (or `date`) from the markdown frontmatter.
+// - Static pages: the dates below. Bump the date when you edit that page.
+const PRODUCTS_UPDATED = "2026-07-19";
+
+const staticRoutes: { route: string; updated: string; changeFrequency: "weekly" | "monthly"; priority: number }[] = [
+  { route: "",                               updated: "2026-11-15", changeFrequency: "weekly",  priority: 1.0 },
+  { route: "/about",                         updated: "2026-05-15", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/services",                      updated: "2026-11-15", changeFrequency: "weekly",  priority: 0.9 },
+  { route: "/services/air-scrubbing",        updated: "2026-07-28", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/services/indoor-air-quality",   updated: "2026-07-28", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/shop",                          updated: "2026-07-21", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/shop/dehumidifiers",            updated: "2026-07-21", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/shop/air-purifiers",            updated: "2026-07-21", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/shop/mold-removal-products",    updated: "2026-07-21", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/blog",                          updated: "2026-11-15", changeFrequency: "weekly",  priority: 0.7 },
+  { route: "/locations",                     updated: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/contact",                       updated: "2026-10-05", changeFrequency: "monthly", priority: 0.7 },
+  { route: "/bookings",                      updated: "2026-10-05", changeFrequency: "monthly", priority: 0.9 },
+];
+
+function contentDate(data: { date?: string; updated?: string }, fallback: string): Date {
+  return new Date(data.updated || data.date || fallback);
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://moldguardkenya.co.ke";
 
-  // 1. Base static routes — read real-time filesystem modification times dynamically
-  const staticRoutes = [
-    { route: "",           file: "homepage.md",           fallback: "2024-01-01", changeFrequency: "weekly" as const, priority: 1.0 },
-    { route: "/about",     file: "app/about/page.tsx",    fallback: "2024-03-01", changeFrequency: "monthly" as const, priority: 0.8 },
-    { route: "/services",  file: "services.md",           fallback: "2024-03-01", changeFrequency: "weekly" as const, priority: 0.9 },
-    { route: "/services/air-scrubbing", file: "app/services/air-scrubbing/page.tsx", fallback: "2026-07-28", changeFrequency: "weekly" as const, priority: 0.8 },
-    { route: "/services/indoor-air-quality", file: "app/services/indoor-air-quality/page.tsx", fallback: "2026-07-28", changeFrequency: "weekly" as const, priority: 0.8 },
-    { route: "/shop",      file: "app/shop/page.tsx",     fallback: "2024-06-01", changeFrequency: "monthly" as const, priority: 0.9 },
-    { route: "/shop/dehumidifiers", file: "app/shop/dehumidifiers/page.tsx", fallback: "2026-07-20", changeFrequency: "weekly" as const, priority: 0.9 },
-    { route: "/shop/air-purifiers", file: "app/shop/air-purifiers/page.tsx", fallback: "2026-07-20", changeFrequency: "weekly" as const, priority: 0.9 },
-    { route: "/shop/mold-removal-products", file: "app/shop/mold-removal-products/page.tsx", fallback: "2026-07-20", changeFrequency: "weekly" as const, priority: 0.9 },
-    { route: "/blog",      file: "app/blog/page.tsx",     fallback: "2024-04-01", changeFrequency: "monthly" as const, priority: 0.8 },
-    { route: "/locations", file: "app/locations/page.tsx",fallback: "2024-04-01", changeFrequency: "monthly" as const, priority: 0.8 },
-    { route: "/contact",   file: "app/contact/page.tsx",  fallback: "2024-03-01", changeFrequency: "monthly" as const, priority: 0.7 },
-    { route: "/bookings",  file: "app/bookings/page.tsx", fallback: "2026-10-05", changeFrequency: "monthly" as const, priority: 0.9 },
-  ].map(({ route, file, fallback, changeFrequency, priority }) => ({
+  const pages = staticRoutes.map(({ route, updated, changeFrequency, priority }) => ({
     url: `${baseUrl}${route}`,
-    lastModified: getFileMtime(file, fallback),
+    lastModified: new Date(updated),
     changeFrequency,
     priority,
   }));
 
-  // 2. Shop dynamic routes — read the products data file modification time
-  const productRoutes = products.map((product) => ({
-    url: `${baseUrl}/shop/${product.slug}`,
-    lastModified: getFileMtime("lib/data/products.ts", "2024-06-01"),
+  const serviceRoutes = servicePages.map((service) => ({
+    url: `${baseUrl}/services/${service.slug}`,
+    lastModified: new Date(service.updated),
     changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
 
-  // 3. Blog dynamic routes — read each specific blog article markdown file's modification time
-  const blogSlugs = getAllSeoSlugs("blog");
-  const blogRoutes = blogSlugs.map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: getFileMtime(`seo_content/blog/${slug}.md`, "2024-04-01"),
-    changeFrequency: "weekly" as const,
+  const productRoutes = products.map((product) => ({
+    url: `${baseUrl}/shop/${product.slug}`,
+    lastModified: new Date(PRODUCTS_UPDATED),
+    changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
-  // 4. Locations dynamic routes — read each specific location landing page markdown file's modification time
-  const locationSlugs = getAllSeoSlugs("locations");
-  const locationRoutes = locationSlugs.map((slug) => ({
+  const blogRoutes = getAllSeoMetadata("blog").map(({ slug, data }) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: contentDate(data, "2026-03-27"),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const locationRoutes = getAllSeoMetadata("locations").map(({ slug, data }) => ({
     url: `${baseUrl}/locations/${slug}`,
-    lastModified: getFileMtime(`seo_content/locations/${slug}.md`, "2024-04-01"),
-    changeFrequency: "weekly" as const,
+    lastModified: contentDate(data, "2026-03-27"),
+    changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...productRoutes, ...blogRoutes, ...locationRoutes];
+  return [...pages, ...serviceRoutes, ...productRoutes, ...blogRoutes, ...locationRoutes];
 }

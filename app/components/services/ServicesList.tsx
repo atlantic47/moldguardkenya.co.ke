@@ -13,7 +13,7 @@ export default function ServicesList() {
         
         <div>
           <h2 style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, marginBottom: "1.25rem", color: "var(--primary-dark)" }}>
-            Different services we provide as Mold removal company - MoldGuard Kenya
+            Different services we provide as a Mold (Mould) removal company - MoldGuard Kenya
           </h2>
           <p style={{ marginBottom: "1.25rem", lineHeight: 1.7, fontSize: "0.95rem", color: "rgba(30,58,15,0.8)" }}>
             At <strong>MoldGuard Kenya</strong>, we&apos;re proud to offer a wide range of <strong>mold removal services</strong>. Our team works hard to provide top-quality services. We aim to make sure our clients have a safe and healthy place to live.

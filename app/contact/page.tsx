@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import NewsletterSection from "../components/NewsletterSection";
 import PageHero from "../components/PageHero";
 
-export const metadata: Metadata = {
-  title: "Contact MoldGuard Kenya | Free Mold Inspection | Call 0710907628",
-  description:
-    "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0710907628. Serving Nairobi, Mombasa, Kiambu, Nakuru and across Kenya.",
-  alternates: { canonical: "https://moldguardkenya.co.ke/contact" },
-};
+export const metadata: Metadata = buildMetadata({
+  title: "Contact MoldGuard Kenya | Book a Mold Inspection | 0710907628",
+  description: "Contact MoldGuard Kenya for emergency mold removal, mold inspections (KES 2,500), and expert advice. Call or WhatsApp us on 0710907628. Serving Nairobi, Mombasa, Kiambu, Nakuru and across Kenya.",
+  path: "/contact",
+});
 
 const contactMethods = [
   {
@@ -44,14 +44,14 @@ const contactMethods = [
 
 const faqs = [
   { q: "How quickly can you respond?", a: "We offer same-day and emergency 24/7 response for severe mold outbreaks. Standard inspections are scheduled within 24–48 hours." },
-  { q: "Is the inspection free?", a: "We offer free initial consultations for residential properties in our core service areas. Contact us to confirm availability in your location." },
+  { q: "Is the inspection free?", a: "No. A site inspection costs a flat KES 2,500. It includes moisture metering, thermal scanning, an air quality check and a written report with a quotation. Laboratory mold testing, when needed, is KES 7,500 per kit." },
   { q: "How long does mold removal take?", a: "A standard remediation for a single room takes 1–3 days. Severe whole-house infestations may require 3–7 days depending on scope." },
   { q: "Do you serve my area?", a: "We cover Nairobi (all suburbs), Mombasa, Kiambu, Nakuru, Eldoret, and surrounding regions. Contact us to confirm your specific location." },
 ];
 
 const processSteps = [
   { icon: "📋", title: "Submit Your Request", desc: "Call, WhatsApp, or email us with your details and location." },
-  { icon: "🔍", title: "Free Consultation", desc: "Our specialist calls you back to assess the situation and schedule an inspection." },
+  { icon: "🔍", title: "Phone Consultation", desc: "Our specialist calls you back to discuss the situation and schedule a site inspection (KES 2,500)." },
   { icon: "🏠", title: "On-Site Inspection", desc: "Certified technician visits, maps moisture sources, and provides a full remediation plan." },
   { icon: "✅", title: "Complete Remediation", desc: "We execute the plan, do post-removal air quality verification, and issue a clearance certificate." },
 ];
@@ -61,7 +61,7 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact MoldGuard Kenya",
-    "description": "Contact MoldGuard Kenya for emergency mold removal, free inspections, and expert advice. Call or WhatsApp us on 0710907628.",
+    "description": "Contact MoldGuard Kenya for emergency mold removal, mold inspections (KES 2,500), and expert advice. Call or WhatsApp us on 0710907628.",
     "url": "https://moldguardkenya.co.ke/contact",
     "mainEntity": {
       "@type": "LocalBusiness",

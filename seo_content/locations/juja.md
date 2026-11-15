@@ -1,6 +1,8 @@
 ---
 title: "Mold Removal Juja | Student & Residential Mold Solutions | MoldGuard Kenya"
 description: "Effective mold removal in Juja. MoldGuard Kenya eradicates indoor mold in apartments, student hostels, and family homes securely and permanently."
+date: "2026-03-27"
+updated: "2026-11-15"
 ---
 
 # Professional Mold Removal in Juja
@@ -14,4 +16,4 @@ Juja is a dynamic town characterized by a huge student population and growing fa
 ## Why Choose Us in Juja?
 We offer discreet, efficient, and science-backed solutions. We know that in shared blocks, containing a mold issue is critical. We use heavy-duty plastic containment and negative air machines to ensure toxic spores do not spread to neighboring units while we safely execute physical removal and structural drying.
 
-**[Contact MoldGuard Kenya in Juja for a Free Consultation](/contact)**
+**[Contact MoldGuard Kenya in Juja to Book an Inspection (KES 2,500)](/contact)**

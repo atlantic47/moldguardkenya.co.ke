@@ -1,6 +1,8 @@
 ---
 title: "The Crucial First 48 Hours: Drying Spaces After Floods | MoldGuard Kenya"
 description: "Flooding in Kenya can devastate a property. Learn why structural drying within the first 48 hours is critical to prevent massive mold infestations."
+date: "2026-03-27"
+updated: "2026-04-13"
 ---
 
 # The Crucial First 48 Hours: Drying Your Property After a Flood
@@ -39,4 +41,4 @@ If your property has suffered a flood or a severe water leak, time is your enemy
 
 **MoldGuard Kenya** offers rapid emergency response services to extract water, execute scientific structural drying, and apply anti-microbial treatments to guarantee mold cannot take root in your flooded property.
 
-**[Has your property suffered water damage? Do not wait. Contact our Emergency Response Team immediately via WhatsApp (0717140469).](/contact)**
+**[Has your property suffered water damage? Do not wait. Contact our Emergency Response Team immediately via WhatsApp (0710907628).](/contact)**
