@@ -72,6 +72,7 @@ export default function HeroSection() {
           <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
             {[
               { icon: "🌿", label: "Eco-Friendly" },
+              { icon: "🏆", label: "IICRC Certified" },
               { icon: "✅", label: "ISO Certified" },
               { icon: "⭐", label: "Safe Results" },
             ].map((badge) => (
