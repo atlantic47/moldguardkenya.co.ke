@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroVideo from "./HeroVideo";
+import { GOOGLE_PROFILE_URL } from "@/lib/seo";
 
 export default function HeroSection() {
   return (
@@ -113,9 +114,14 @@ export default function HeroSection() {
           />
           {/* Video overlays the image on desktop only, after page load (see HeroVideo) */}
           <HeroVideo />
-          {/* Rating badge */}
-          <div
+          {/* Rating badge — links to the Google Business Profile so the claim can be checked */}
+          <a
+            href={GOOGLE_PROFILE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Read MoldGuard Kenya reviews on Google"
             style={{
+              textDecoration: "none",
               position: "absolute",
               bottom: "1rem",
               right: "1rem",
@@ -129,8 +135,8 @@ export default function HeroSection() {
             }}
           >
             <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--primary)" }}>4.9★</div>
-            <div style={{ fontSize: "0.7rem", color: "var(--text-mid)" }}>300+ Reviews</div>
-          </div>
+            <div style={{ fontSize: "0.7rem", color: "var(--text-mid)" }}>300+ Google Reviews</div>
+          </a>
         </div>
       </div>
 

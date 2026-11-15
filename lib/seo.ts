@@ -7,6 +7,8 @@ export const DEFAULT_OG_IMAGE = "/og-moldguard-kenya.jpg";
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const BUSINESS_ID = `${SITE_URL}/#localbusiness`;
 export const LOGO_URL = `${SITE_URL}/icon`;
+// Google Business Profile share link (reviews live here)
+export const GOOGLE_PROFILE_URL = "https://share.google/rvBrYPkspvx5K0wnz";
 
 interface PageMetaInput {
   title: string;

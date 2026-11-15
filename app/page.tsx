@@ -6,7 +6,7 @@ import StatsBar from "./components/StatsBar";
 import ServicesSection from "./components/ServicesSection";
 import MarkdownRenderer from "./components/MarkdownRenderer";
 import { getRawMarkdownFile } from "@/lib/markdown";
-import { buildMetadata, LOGO_URL } from "@/lib/seo";
+import { buildMetadata, LOGO_URL, GOOGLE_PROFILE_URL } from "@/lib/seo";
 
 // Below-fold components — dynamically imported to reduce initial JS bundle size
 // This directly improves Time to Interactive (TTI) and INP scores
@@ -202,6 +202,7 @@ const organizationSchema = {
     "availableLanguage": ["English", "Swahili"]
   },
   "sameAs": [
+    GOOGLE_PROFILE_URL,
     "https://web.facebook.com/moldguardKenya",
     "https://wa.me/254710907628"
   ]
@@ -258,9 +259,11 @@ const localBusinessSchema = {
     "Mombasa"
   ],
   "sameAs": [
+    GOOGLE_PROFILE_URL,
     "https://wa.me/254710907628",
     "https://web.facebook.com/moldguardKenya"
   ],
+  "hasMap": GOOGLE_PROFILE_URL,
   "parentOrganization": {
     "@id": "https://moldguardkenya.co.ke/#organization"
   }
