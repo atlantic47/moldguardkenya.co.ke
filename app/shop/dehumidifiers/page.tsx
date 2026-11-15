@@ -6,9 +6,13 @@ import Footer from "@/app/components/Footer";
 import ShopClient from "@/app/shop/ShopClient";
 import { products } from "@/lib/data/products";
 
+// Lowest price in a list, formatted like "Ksh 5,999", so titles never go stale when prices change
+const fromPrice = (list: { price: number }[]) => `Ksh ${Math.min(...list.map((p) => p.price)).toLocaleString("en-US")}`;
+const dehumidifierList = products.filter((p) => p.category === "Dehumidifiers");
+
 export const metadata: Metadata = buildMetadata({
-  title: "Best Dehumidifiers for Mold & Dampness in Kenya | Nairobi Buying Guide",
-  description: "Buy professional 20L, 25L, 35L & 60L compressor dehumidifiers in Kenya. Stop damp bedrooms, window condensation, and wall mold in Nairobi, Mombasa & nationwide.",
+  title: `Dehumidifiers for Sale in Kenya | From ${fromPrice(dehumidifierList)}`,
+  description: `Buy a dehumidifier in Kenya: mini, 20L, 25L, 35L and 60L models that stop damp walls, condensation and mold. From ${fromPrice(dehumidifierList)}. Same-day Nairobi delivery.`,
   path: "/shop/dehumidifiers",
 });
 

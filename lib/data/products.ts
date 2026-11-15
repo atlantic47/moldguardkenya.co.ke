@@ -786,16 +786,22 @@ export function buildProductSchema(product: Product, pageUrl: string) {
     image: product.images && product.images.length > 1
       ? product.images.map(resolveImg)
       : resolveImg(product.image),
+    sku: product.slug,
+    category: product.category,
+    url: pageUrl,
     brand: { "@type": "Brand", name: product.brand },
     offers: {
       "@type": "Offer",
       url: pageUrl,
       priceCurrency: product.currency,
       price: product.price,
-      priceValidUntil: "2026-12-31",
+      // Rolls forward automatically: a fixed date expires and Google drops the price snippet
+      priceValidUntil: `${new Date().getFullYear() + 1}-12-31`,
+      itemCondition: "https://schema.org/NewCondition",
       availability: product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       seller: {
         "@type": "Organization",
+        "@id": "https://moldguardkenya.co.ke/#organization",
         name: "MoldGuard Kenya",
         url: "https://moldguardkenya.co.ke",
       },

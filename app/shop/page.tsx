@@ -7,9 +7,12 @@ import Footer from "../components/Footer";
 import ShopClient from "./ShopClient";
 import { products } from "@/lib/data/products";
 
+// Lowest price in a list, formatted like "Ksh 5,999", so titles never go stale when prices change
+const fromPrice = (list: { price: number }[]) => `Ksh ${Math.min(...list.map((p) => p.price)).toLocaleString("en-US")}`;
+
 export const metadata: Metadata = buildMetadata({
-  title: "Shop Dehumidifiers, Air Purifiers & Mold Remediation Products | MoldGuard Kenya",
-  description: "Buy professional-grade dehumidifiers, air purifiers, and mold removal products in Kenya. Protect your home and health with certified indoor air quality equipment. Fast Nairobi delivery.",
+  title: "Dehumidifiers, Air Purifiers & Mold Sprays Kenya | MoldGuard",
+  description: `Shop dehumidifiers, HEPA air purifiers and MoldKill Max mold spray in Kenya. Prices from ${fromPrice(products)}. Same-day Nairobi delivery. Order on 0710907628.`,
   path: "/shop",
 });
 

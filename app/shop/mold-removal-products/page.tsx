@@ -6,9 +6,13 @@ import Footer from "@/app/components/Footer";
 import ShopClient from "@/app/shop/ShopClient";
 import { products } from "@/lib/data/products";
 
+// Lowest price in a list, formatted like "Ksh 5,999", so titles never go stale when prices change
+const fromPrice = (list: { price: number }[]) => `Ksh ${Math.min(...list.map((p) => p.price)).toLocaleString("en-US")}`;
+const sprayList = products.filter((p) => p.category === "Mold Removal Products");
+
 export const metadata: Metadata = buildMetadata({
-  title: "Professional Mold Removal Sprays & Remediation Products Kenya | MoldGuard",
-  description: "Buy professional-grade mold remover sprays and fungicidal wall treatments in Kenya. Kill toxic black mold roots on walls, ceilings, and shower tiles with long-lasting protection.",
+  title: `Mold Remover Spray in Kenya | MoldKill Max From ${fromPrice(sprayList)}`,
+  description: `Buy MoldKill Max mold (mould) remover spray in Kenya. Kills mold on walls, tiles and fabric and protects for up to 6 months. From ${fromPrice(sprayList)}. Call 0710907628.`,
   path: "/shop/mold-removal-products",
 });
 

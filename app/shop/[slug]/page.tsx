@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import {
@@ -10,7 +9,8 @@ import {
   buildProductSchema,
 } from "@/lib/data/products";
 import { notFound } from "next/navigation";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
+import { getProductSeo } from "@/lib/data/productSeo";
 
 export async function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -24,15 +24,40 @@ export async function generateMetadata({
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
+  const seo = getProductSeo(product.slug);
   // Sets the canonical too: without it every product page inherited the
   // root layout's canonical and pointed Google at the homepage.
   return buildMetadata({
-    title: `${product.name} | Buy in Kenya | MoldGuard Kenya Shop`,
-    description: `${product.shortDescription} — Sold by MoldGuard Kenya. Price: ${product.priceDisplay}. Fast delivery across Nairobi & Kenya.`,
+    // Hand-written title (under 60 characters) and description (under 155) per product;
+    // the fallbacks cover any product not yet added to lib/data/productSeo.ts
+    title: seo?.seoTitle || `${product.name} | ${product.priceDisplay} | MoldGuard Kenya`,
+    description: seo?.seoDescription || `${product.shortDescription} Price: ${product.priceDisplay}. Delivery across Kenya.`,
     path: `/shop/${product.slug}`,
     image: product.image || undefined,
   });
 }
+
+const categoryPaths: Record<string, string> = {
+  Dehumidifiers: "/shop/dehumidifiers",
+  "Air Purifiers": "/shop/air-purifiers",
+  "Mold Removal Products": "/shop/mold-removal-products",
+};
+
+// Buying guides linked from each product page, by category
+const categoryGuides: Record<string, { href: string; label: string }[]> = {
+  Dehumidifiers: [
+    { href: "/blog/best-dehumidifiers-for-nairobi-homes-kenya", label: "Best dehumidifiers for Nairobi homes" },
+    { href: "/blog/dehumidifier-vs-air-purifier-for-mold-kenya", label: "Dehumidifier or air purifier for mold?" },
+  ],
+  "Air Purifiers": [
+    { href: "/blog/dehumidifier-vs-air-purifier-for-mold-kenya", label: "Dehumidifier or air purifier for mold?" },
+    { href: "/services/indoor-air-quality", label: "Indoor air quality testing" },
+  ],
+  "Mold Removal Products": [
+    { href: "/blog/how-to-remove-mold-permanently", label: "How to remove mold permanently" },
+    { href: "/services/mold-removal", label: "Professional mold (mould) removal" },
+  ],
+};
 
 const categoryIcons: Record<string, string> = {
   Dehumidifiers: "💧",
@@ -52,6 +77,27 @@ export default async function ProductPage({
   const related = getRelatedProducts(product.slug, product.category);
   const pageUrl = `https://moldguardkenya.co.ke/shop/${product.slug}`;
   const schema = buildProductSchema(product, pageUrl);
+  const seo = getProductSeo(product.slug);
+  const categoryPath = categoryPaths[product.category] || "/shop";
+  const guides = categoryGuides[product.category] || [];
+
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "" },
+    { name: "Shop", path: "/shop" },
+    { name: product.category, path: categoryPath },
+    { name: product.name, path: `/shop/${product.slug}` },
+  ]);
+  const faqSchema = seo
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": seo.faqs.map((f) => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
+      }
+    : null;
 
   const whatsappMsg = encodeURIComponent(
     `Hi MoldGuard Kenya, I'd like to order the *${product.name}* priced at ${product.priceDisplay}. Please advise on availability and delivery.`
@@ -71,11 +117,17 @@ export default async function ProductPage({
   return (
     <>
       {/* JSON-LD Product Schema – WooCommerce-equivalent for SEO */}
-      <Script
-        id="product-schema"
+      {/* Plain <script>, not next/script: next/script injects it after hydration,
+          so the Product schema was missing from the HTML that crawlers download */}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(crumbs) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       <Navbar />
       <main>
@@ -120,9 +172,16 @@ export default async function ProductPage({
               Shop
             </Link>
             <span>/</span>
-            <span style={{ color: "var(--text-light)" }}>
+            <Link
+              href={categoryPath}
+              style={{
+                color: "var(--primary)",
+                textDecoration: "none",
+                fontWeight: 600,
+              }}
+            >
               {product.category}
-            </span>
+            </Link>
             <span>/</span>
             <span style={{ color: "var(--text-dark)", fontWeight: 600 }}>
               {product.name}
@@ -396,6 +455,24 @@ export default async function ProductPage({
               >
                 {product.shortDescription}
               </p>
+
+              {/* Who this product is for */}
+              {seo && (
+                <p
+                  style={{
+                    background: "var(--cream)",
+                    border: "1px solid var(--border)",
+                    borderRadius: "0.85rem",
+                    padding: "0.85rem 1rem",
+                    color: "var(--text-mid)",
+                    fontSize: "0.92rem",
+                    lineHeight: 1.6,
+                    margin: "0 0 1.25rem",
+                  }}
+                >
+                  <strong style={{ color: "var(--primary-dark)" }}>Best for:</strong> {seo.bestFor}
+                </p>
+              )}
 
               {/* Price block */}
               <div
@@ -741,6 +818,49 @@ export default async function ProductPage({
             </div>
           </div>
         </section>
+
+        {/* WHY BUY + FAQ */}
+        {seo && (
+          <section style={{ background: "white", padding: "4rem 0", borderTop: "1px solid var(--border)" }}>
+            <div className="container" style={{ maxWidth: "900px" }}>
+              <h2 style={{ fontWeight: 800, fontSize: "clamp(1.35rem, 2.5vw, 1.75rem)", color: "var(--primary-dark)", marginBottom: "1rem" }}>
+                Why Choose the {product.name.split(" — ")[0]}
+              </h2>
+              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2.5rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                {seo.reasons.map((r) => (
+                  <li key={r} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start", color: "var(--text-mid)", lineHeight: 1.7 }}>
+                    <span style={{ color: "var(--primary)", fontWeight: 800 }}>✓</span>
+                    <span>{r}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <h2 style={{ fontWeight: 800, fontSize: "clamp(1.35rem, 2.5vw, 1.75rem)", color: "var(--primary-dark)", marginBottom: "1rem" }}>
+                Questions Buyers Ask
+              </h2>
+              {seo.faqs.map((f) => (
+                <div key={f.q} style={{ background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "1rem", padding: "1.15rem 1.4rem", marginBottom: "0.85rem" }}>
+                  <h3 style={{ fontWeight: 700, fontSize: "1.02rem", color: "var(--primary-dark)", margin: "0 0 0.4rem" }}>{f.q}</h3>
+                  <p style={{ color: "var(--text-mid)", lineHeight: 1.7, margin: 0 }}>{f.a}</p>
+                </div>
+              ))}
+
+              {guides.length > 0 && (
+                <p style={{ color: "var(--text-mid)", lineHeight: 1.8, margin: "1.5rem 0 0" }}>
+                  <strong style={{ color: "var(--primary-dark)" }}>Helpful guides:</strong>{" "}
+                  {guides.map((g, i) => (
+                    <span key={g.href}>
+                      {i > 0 && " · "}
+                      <Link href={g.href} style={{ color: "var(--primary)", fontWeight: 600 }}>{g.label}</Link>
+                    </span>
+                  ))}
+                  {" · "}
+                  <Link href={categoryPath} style={{ color: "var(--primary)", fontWeight: 600 }}>All {product.category.toLowerCase()}</Link>
+                </p>
+              )}
+            </div>
+          </section>
+        )}
 
         {/* CUSTOMER REVIEWS */}
         {product.reviews.length > 0 && (

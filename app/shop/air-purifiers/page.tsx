@@ -6,9 +6,13 @@ import Footer from "@/app/components/Footer";
 import ShopClient from "@/app/shop/ShopClient";
 import { products } from "@/lib/data/products";
 
+// Lowest price in a list, formatted like "Ksh 5,999", so titles never go stale when prices change
+const fromPrice = (list: { price: number }[]) => `Ksh ${Math.min(...list.map((p) => p.price)).toLocaleString("en-US")}`;
+const purifierList = products.filter((p) => p.category === "Air Purifiers");
+
 export const metadata: Metadata = buildMetadata({
-  title: "Air Purifiers for Mold Spores & Dust Allergies in Kenya | MoldGuard",
-  description: "Buy True HEPA air purifiers in Kenya to capture mold spores, dust mite allergens, smoke, and odors. Featuring Xiaomi, HAVIT & Green Lion smart purifiers with fast delivery.",
+  title: `Air Purifiers for Sale in Kenya | HEPA From ${fromPrice(purifierList)}`,
+  description: `Buy a HEPA air purifier in Kenya: Xiaomi, HAVIT and Green Lion models that capture mold spores, dust and smoke. From ${fromPrice(purifierList)}. Same-day Nairobi delivery.`,
   path: "/shop/air-purifiers",
 });
 
