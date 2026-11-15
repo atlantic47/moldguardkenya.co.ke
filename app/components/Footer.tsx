@@ -121,7 +121,7 @@ export default function Footer() {
               📧 moldguard@pestraid.co.ke
             </li>
             <li style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.6)" }}>
-              🕐 Mon–Sat: 7am – 7pm
+              🕐 Open 24/7, every day
             </li>
           </ul>
 

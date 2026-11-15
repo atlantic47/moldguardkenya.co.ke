@@ -60,6 +60,20 @@ const values = [
   { icon: "🚀", title: "Rapid Response", desc: "Same-day and emergency response teams covering all major areas in Kenya." },
 ];
 
+const quickFacts = [
+  { label: "What we do", value: "Mold (mould) removal, remediation, inspection and laboratory testing for homes, apartments, offices and commercial buildings." },
+  { label: "Based in", value: "Development House, Moi Avenue, Nairobi, Kenya." },
+  { label: "Areas served", value: "Nairobi, Kiambu, Mombasa and the coast, Nakuru, Naivasha and Eldoret." },
+  { label: "Founded", value: "2015." },
+  { label: "Certification", value: "IICRC certified." },
+  { label: "Site inspection", value: "KES 2,500 flat fee, including moisture metering, thermal scanning, an air quality check and a written report." },
+  { label: "Mold testing", value: "KES 7,500 per laboratory testing kit." },
+  { label: "Mold removal", value: "KES 8,500 – 10,000 for a single bathroom and KES 15,000 – 20,000 for a standard bedroom. Larger jobs are quoted after inspection." },
+  { label: "Opening hours", value: "Open 24 hours a day, 7 days a week." },
+  { label: "Phone and WhatsApp", value: "0710907628." },
+  { label: "Google rating", value: "4.9 stars from 300+ reviews." },
+];
+
 export default function AboutPage() {
   const aboutSchema = {
     "@context": "https://schema.org",
@@ -209,6 +223,22 @@ export default function AboutPage() {
               <a href="tel:0710907628" className="btn-gold" style={{ fontSize: "1rem", padding: "0.85rem 2rem" }}>📞 Call 0710907628</a>
               <Link href="/contact" className="btn-outline" style={{ color: "white", borderColor: "rgba(255,255,255,0.6)", fontSize: "1rem", padding: "0.85rem 2rem" }}>WhatsApp Us →</Link>
             </div>
+          </div>
+        </section>
+        {/* QUICK FACTS — plain, checkable statements that search engines and AI assistants can quote */}
+        <section style={{ background: "white", padding: "4rem 0", borderTop: "1px solid var(--border)" }}>
+          <div className="container" style={{ maxWidth: "860px" }}>
+            <h2 style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 800, color: "var(--primary-dark)", marginBottom: "1.25rem" }}>
+              MoldGuard Kenya at a Glance
+            </h2>
+            <dl style={{ display: "grid", gridTemplateColumns: "minmax(140px, 220px) 1fr", gap: "0.75rem 1.5rem", color: "var(--text-mid)", lineHeight: 1.7, margin: 0 }}>
+              {quickFacts.map((f) => (
+                <div key={f.label} style={{ display: "contents" }}>
+                  <dt style={{ fontWeight: 700, color: "var(--primary-dark)" }}>{f.label}</dt>
+                  <dd style={{ margin: 0 }}>{f.value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
       </main>

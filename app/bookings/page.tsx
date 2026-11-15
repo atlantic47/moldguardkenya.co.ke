@@ -411,9 +411,9 @@ export default function BookingsPage() {
               <div style={{ background: "var(--cream)", borderRadius: "1.25rem", padding: "1.5rem", border: "1px solid var(--border)" }}>
                 <h3 style={{ fontWeight: 800, color: "var(--primary-dark)", fontSize: "0.9rem", marginBottom: "0.875rem" }}>🕐 Office Hours</h3>
                 {[
-                  { day: "Mon – Fri", hours: "8:00 AM – 5:00 PM" },
-                  { day: "Saturday", hours: "8:00 AM – 5:00 PM" },
-                  { day: "Sunday", hours: "8:00 AM – 5:00 PM" },
+                  { day: "Mon – Fri", hours: "Open 24 hours" },
+                  { day: "Saturday", hours: "Open 24 hours" },
+                  { day: "Sunday", hours: "Open 24 hours" },
                   { day: "Emergencies", hours: "24 / 7 — Call Anytime" },
                 ].map((r) => (
                   <div key={r.day} style={{ display: "flex", justifyContent: "space-between", padding: "0.5rem 0", borderBottom: "1px solid var(--border)", fontSize: "0.85rem" }}>
