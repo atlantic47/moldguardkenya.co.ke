@@ -8,23 +8,25 @@ import { servicePages } from "@/lib/data/services";
 // reported the same date and Google learned to ignore it.
 //
 // - Blog and location pages: read `updated` (or `date`) from the markdown frontmatter.
-// - Static pages: the dates below. Bump the date when you edit that page.
-const PRODUCTS_UPDATED = "2026-07-19";
+// - Static pages and products: the dates below. Bump the date whenever you edit
+//   that page (including product copy in lib/data/productSeo.ts), then deploy and
+//   run `npm run indexnow` to tell Bing and the other IndexNow engines.
+const PRODUCTS_UPDATED = "2026-11-15";
 
 const staticRoutes: { route: string; updated: string; changeFrequency: "weekly" | "monthly"; priority: number }[] = [
   { route: "",                               updated: "2026-11-15", changeFrequency: "weekly",  priority: 1.0 },
-  { route: "/about",                         updated: "2026-05-15", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/about",                         updated: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
   { route: "/services",                      updated: "2026-11-15", changeFrequency: "weekly",  priority: 0.9 },
-  { route: "/services/air-scrubbing",        updated: "2026-07-28", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/services/air-scrubbing",        updated: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
   { route: "/services/indoor-air-quality",   updated: "2026-07-28", changeFrequency: "monthly", priority: 0.8 },
-  { route: "/shop",                          updated: "2026-07-21", changeFrequency: "monthly", priority: 0.8 },
-  { route: "/shop/dehumidifiers",            updated: "2026-07-21", changeFrequency: "monthly", priority: 0.8 },
-  { route: "/shop/air-purifiers",            updated: "2026-07-21", changeFrequency: "monthly", priority: 0.8 },
-  { route: "/shop/mold-removal-products",    updated: "2026-07-21", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/shop",                          updated: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/shop/dehumidifiers",            updated: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/shop/air-purifiers",            updated: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
+  { route: "/shop/mold-removal-products",    updated: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
   { route: "/blog",                          updated: "2026-11-15", changeFrequency: "weekly",  priority: 0.7 },
   { route: "/locations",                     updated: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
-  { route: "/contact",                       updated: "2026-10-05", changeFrequency: "monthly", priority: 0.7 },
-  { route: "/bookings",                      updated: "2026-10-05", changeFrequency: "monthly", priority: 0.9 },
+  { route: "/contact",                       updated: "2026-11-15", changeFrequency: "monthly", priority: 0.7 },
+  { route: "/bookings",                      updated: "2026-11-15", changeFrequency: "monthly", priority: 0.9 },
 ];
 
 function contentDate(data: { date?: string; updated?: string }, fallback: string): Date {
